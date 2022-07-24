@@ -36,8 +36,7 @@
 body {
 	font-family: var(--body-font);
   	font-size: 1vw;
-  	background-color: var(--body-color);
-  	color: var(--text-color);
+  	color: var(--second-color);
 }
 
 .container {
@@ -50,6 +49,7 @@ body {
 	position: fixed;
 	padding-top: 1.85vw;
 	background: url('./img/header-bg.jpg') no-repeat center top / cover;
+	transition: all 1.5s ease;
 }
 
 /* nav */
@@ -92,7 +92,7 @@ body {
 
 /* Home Section */
 .home_content {
-	min-height: 35vw;
+	min-height: 41.5vw;
 	color: #FFFFFF;
 	margin-top: 11vw;
 	text-align: right;
