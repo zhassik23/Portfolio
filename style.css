@@ -1,0 +1,138 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* variables */
+:root {
+	--header-height: 3.3vw;
+
+    /* colors */
+    --first-color: #fff;
+    --second-color: #000;
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    /* font-family */
+    --body-font: 'Poppins', sans-serif;
+
+    /* font-weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+ }
+
+body {
+	font-family: var(--body-font);
+  	font-size: 1vw;
+  	background-color: var(--body-color);
+  	color: var(--text-color);
+}
+
+.container {
+	width: 85vw;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	padding-top: 1.85vw;
+	background: url('./img/header-bg.jpg') no-repeat center top / cover;
+}
+
+/* nav */
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav_logo {
+	height: 2.8vw;
+}
+
+.nav_menu {
+	display: flex;
+	margin-left: auto;
+}
+
+.nav_item {
+	display: block;
+	margin-right: 2.78vw;
+}
+
+.nav_link {
+	font-size: 0.9vw;
+	font-weight: var(--font-medium);
+	color: var(--first-color);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.nav_icon {
+	color: var(--first-color);
+	font-size: 1.3vw;
+	cursor: pointer;
+}
+
+.nav_link:hover, .nav_icon:hover {
+	color: var(--second-color);
+}
+
+/* Home Section */
+.home_content {
+	min-height: 35vw;
+	color: #FFFFFF;
+	margin-top: 11vw;
+	text-align: right;
+	font-weight: var( --font-semi-bold);
+}
+
+.home_content .p1 {
+	font-size: 1.625vw;
+	letter-spacing: 0.15em;
+}
+
+.home_content .p1:hover {
+	color: #FF9800;
+}
+
+.home_content .p2 {
+	color: #FF9800;
+	font-size: 4.5vw;
+	letter-spacing: 0.11em;
+}
+
+.home_content .p2:hover {
+	color: white;
+}
+
+.home_content .p3 {
+	font-size: 3vw;
+	letter-spacing: 0.05em;
+}
+
+.home_content .p3:hover {
+	color: #FF9800;
+}
+
+.home_content a {
+	color: #FF9800;
+	font-size: 2vw;
+	margin: 1vw;
+}
+
+.home_content a:hover {
+	color: white;
+}
