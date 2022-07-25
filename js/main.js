@@ -8,6 +8,7 @@ const navL = document.querySelectorAll('.nav_link')
 if (navT) {
 	navT.addEventListener('click', (e) => {
 		navM.classList.add('show_menu');
+		navT.classList.add('hide_toggle');
 	})
 }
 
