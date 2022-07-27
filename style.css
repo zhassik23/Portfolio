@@ -95,15 +95,15 @@ img {
 }
 
 .section_title {
-	font-size: 30px;
-	color: rgb(197, 190, 190);
+	font-size: 35px;
+	color: hsla(0, 0%, 100%, 0.85);
 }
 
 .section_subtitle {
 	display: block;
 	font-size: 12px;
-	color: rgb(142, 126, 126);
-	margin-bottom: var(--mb-3);
+	color: hsla(0, 0%, 100%, 0.6);
+	margin-bottom: 45px;
 }
 
 .section_title, 
@@ -141,7 +141,7 @@ img {
 	transition: 0.3s;
 }
  
-/* header (navbar) */
+/* HEADER (navbar) */
 .header {
 	width: 100%;
 	position: fixed;
@@ -223,7 +223,7 @@ img {
 	bottom: 0;
 }
 
-/* home */
+/* HOME */
 .home_content {
 	width: 90%;
 	grid-template-columns: 1fr 2.5fr;
@@ -231,7 +231,7 @@ img {
 	align-items: center;
 }
 
-.home_contact {
+.home_items {
 	display: grid;
 	grid-template-columns: max-content;
 	row-gap: 15px;
@@ -307,7 +307,7 @@ img {
 	margin: 4px;
 }
 
-/* about */
+/* ABOUT */
 .about_image {
 	width: 200px;
 	border-radius: 20px;
@@ -317,7 +317,7 @@ img {
 
 .about_description {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .about_info {
@@ -345,4 +345,250 @@ img {
 .about_button {
 	display: flex;
 	justify-content: center;
+}
+
+/* SKILLS */
+.skills_container {
+	row-gap: 0;
+}
+
+.skills_header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+
+.skills_icon {
+	margin-right: 12px;
+}
+
+.skills_icon,
+.skills_arrow {
+	font-size: 30px;
+	color: hsl(97, 67%, 61%);
+}
+
+.skills_icon:hover,
+.skills_arrow:hover {
+	color: hsl(97, 47%, 43%);
+}
+
+.skills_title {
+	font-size: 16px;
+	color: hsl(0, 0%, 100%);
+}
+
+.skills_title:hover {
+	color: hsl(0, 1%, 77%);
+}
+
+.skills_subtitle {
+	font-size: 13px;
+	color: hsl(100, 3%, 64%);
+}
+
+.skills_subtitle:hover {
+	color: hsl(90, 1%, 37%);
+}
+
+.skills_arrow {
+	margin-left: auto;
+	transition: 0.4s;
+}
+
+.skills_list {
+	row-gap: 14px;
+	padding-left: 40px;
+}
+
+.skills_data {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.skills_name,
+.skills_percentage {
+	font-size: 15px;
+	font-weight: 550;
+}
+
+.skills_bar {
+	height: 5px;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	background: hsl(221, 15%, 25%);
+	box-shadow: 0 0 10px hsl(97, 67%, 61%);
+	position: relative;
+}
+
+.skills_bar::before {
+	content: "";
+	height: 100%;
+	position: absolute;
+	background: hsl(97, 47%, 43%);
+}
+
+.html::before {
+	width: 100%;
+}
+
+.css::before {
+	width: 90%;
+}
+
+.js::before {
+	width: 70%;
+}
+
+.less_sass::before {
+	width: 80%;
+}
+
+.bootstrap::before {
+	width: 75%;
+}
+
+.react::before {
+	width: 65%;
+}
+
+.premiere_pro::before {
+	width: 85%;
+}
+
+.after_effects::before {
+	width: 70%;
+}
+
+.imovie::before {
+	width: 80%;
+}
+
+.vn::before {
+	width: 100%;
+}
+
+.adobe_photoshop::before {
+	width: 95%;
+}
+
+.figma::before {
+	width: 85%;
+}
+
+.fusion::before {
+	width: 75%;
+}
+
+.coreldraw::before {
+	width: 70%;
+}
+
+.english::before {
+	width: 80%;
+}
+
+.kazakh::before {
+	width: 100%;
+}
+
+.russian::before {
+	width: 90%;
+}
+
+.turkish::before {
+	width: 70%;
+}
+
+.chinese::before {
+	width: 50%;
+}
+
+.skills_close .skills_list {
+	height: 0;
+	overflow: hidden;
+}
+
+.skills_open .skills_list {
+	height: max-content;
+	margin-bottom: 30px;
+}
+
+.skills_open .skills_arrow {
+	transform: rotate(-180deg);
+}
+
+/* QUALIFICATION */
+.qualification_header {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 30px;
+}
+
+.qualification_button {
+	font-size: 17px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.qualification_button:hover {
+	color: hsl(97, 67%, 61%)
+}
+
+.qualification_button.qualification_active {
+	color:hsl(97, 67%, 61%);
+}
+
+.qualification_icon {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.qualification_item {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	column-gap: 25px;
+}
+
+.qualification_title {
+	font-size: 13px;
+	font-weight: 650;
+}
+
+.qualification_subtitle {
+	display: inline-block;
+	font-size: 10px;
+	margin-bottom: 6px;
+}
+
+.qualification_period {
+	font-size: 8px;
+	color:hsl(0, 0%, 78%);
+}
+
+.qualification_rounder {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color:hsl(97, 67%, 61%);
+	border-radius: 50%;
+}
+
+.qualification_line {
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color:hsl(97, 67%, 61%);
+	transform: translate(6px, -7px);
+}
+
+.qualification_hide {
+	display: none;
+}
+
+.qualification_show {
+	display: block;
 }
