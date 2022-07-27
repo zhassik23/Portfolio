@@ -45,8 +45,8 @@ function toggleSkills() {
 		this.parentNode.className = 'skills_content skills_open';
 }
 
-header.forEach(element =>{
-	element.addEventListener('click', toggleSkills)
+header.forEach(element => {
+	element.addEventListener('click', toggleSkills);
 });
 
 
@@ -55,17 +55,42 @@ header.forEach(element =>{
 const tabContents = document.getElementsByClassName('qualification_list');
 const tabs = document.querySelectorAll('[data-target]');
 
-tabs.forEach(tab =>{
-	tab.addEventListener('click', () =>{
+tabs.forEach(tab => {
+	tab.addEventListener('click', () => {
 		const target = document.querySelector(tab.dataset.target);
-		// content
+		// content show/hide
 		for (var i = 0; i < tabContents.length; i++) 
 			tabContents[i].className = 'qualification_list qualification_hide';
 		target.className = 'qualification_list qualification_show';
-		// tab
-		tabs.forEach(tab =>{
+		// tab color switch
+		tabs.forEach(tab => {
 			tab.classList.remove('qualification_active');
 		})
 		tab.classList.add('qualification_active');
-	})
-})
+	});
+});
+
+
+// experience
+// variables
+const items = document.querySelectorAll('.experience_item');
+const viewButtons = document.querySelectorAll('.experience_button');
+const closeButtons = document.querySelectorAll('.experience_close');
+
+var item = function(itemClick) {
+	items[itemClick].classList.add('item_active');
+}
+
+viewButtons.forEach((viewBtn, i) => {
+	viewBtn.addEventListener('click', () => {
+		item(i);
+	});
+});
+
+closeButtons.forEach(closeBtn => {
+	closeBtn.addEventListener('click', () => {
+		items.forEach(item => {
+			item.classList.remove('item_active');
+		});
+	});
+});
