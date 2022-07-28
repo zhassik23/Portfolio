@@ -34,7 +34,7 @@ img {
 
 /* For all sections */
 .main	{
-	background: url('/img/background.jpeg') no-repeat center top / cover;
+	background: url('./img/background.jpeg') no-repeat center top / cover;
 }
 
 .container {
@@ -44,7 +44,7 @@ img {
 }
 
 .section {
-	padding: 50px 0;
+	padding: 32px 0 64px;
 }
 
 .section_title {
@@ -685,30 +685,23 @@ img {
 }
 
 .projects_content {
-	text-align: center;
 	padding: 0 25px;
 }
 
 .project_image {
-	width: 300px;
-	height: 205px;
+	width: 265px;
+	height: 145px;
 	border-radius: 15px;
 	justify-self: center;
 }
 
 .project_title {
-	font-size: 23px;
-}
-
-.project_instruments {
-	font-size: 10px;
-	color:hsl(0, 0%, 78%);
-	margin-bottom: 12px;
+	margin-bottom: 5px;
 }
 
 .project_description {
-	font-size: 14px;
-	margin-bottom: 25px;	
+	font-size: 13px;
+	margin-bottom: 10px;	
 }
 
 .project_button:hover .button_icon {
