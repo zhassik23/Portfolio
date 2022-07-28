@@ -32,6 +32,7 @@ img {
 	text-align: right;
 }
 
+
 /* For all sections */
 .main	{
 	background: url('img/background.jpeg') no-repeat center top / cover;
@@ -70,6 +71,7 @@ img {
 	gap: 24px;
 }
 
+
 /* button */
 .button {
 	display: inline-block;
@@ -100,7 +102,7 @@ img {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 100;
+	z-index: 12;
 	/* transition: all 1.5s ease; */
 }
 
@@ -140,7 +142,7 @@ img {
 	
 	.nav_list {
 		grid-template-columns: repeat(3, 1fr);
-		gap: 32px;
+		gap: 30px;
 	}
 	
 	.nav_link {
@@ -148,6 +150,7 @@ img {
 		flex-direction: column;
 		align-items: center;
 		color: #000;
+		font-size: 16px;
 		font-weight: 500;
 	}
 	
@@ -156,7 +159,7 @@ img {
 	}
 	
 	.nav_icon {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	
 	.nav_close {
@@ -379,7 +382,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: 0 15px;
-	z-index: 1000;
+	z-index: 15;
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.3s;
@@ -755,7 +758,7 @@ img {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	border: 2px #fff solid;
+	border: 2px solid #fff;
 	box-shadow: 0 -4px 10px hsl(0, 0%, 78%);;
 }
 
@@ -769,7 +772,7 @@ img {
 }
 
 .recomendation_line {
-	border-left:#fff 3px solid;
+	border-left: 3px solid #fff;
 	height: 60px;
 }
 
@@ -879,6 +882,10 @@ label {
 .footer_link:hover,
 .footer_social:hover {
 	color:hsl(97, 40%, 35%);
+}
+
+.footer_link:hover {
+	text-decoration: underline;
 }
 
 .footer_copy {

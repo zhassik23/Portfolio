@@ -6,17 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
-	
+
 	<!-- icons -->
-	<!-- <link rel="android-chrome" sizes="36x36" href="img/icons/android-chrome-36x36.png">
-	<link rel="android-chrome" sizes="48x48" href="img/icons/android-chrome-48x48.png">
-	<link rel="android-chrome" sizes="72x72" href="img/icons/android-chrome-72x72.png">
-	<link rel="android-chrome" sizes="96x96" href="img/icons/android-chrome-96x96.png">
-	<link rel="android-chrome" sizes="144x144" href="img/icons/android-chrome-144x144.png">
-	<link rel="android-chrome" sizes="192x192" href="img/icons/android-chrome-192x192.png">
-	<link rel="android-chrome" sizes="256x256" href="img/icons/android-chrome-256x256.png">
-	<link rel="android-chrome" sizes="384x384" href="img/icons/android-chrome-384x384.png">
-	<link rel="android-chrome" sizes="512x512" href="img/icons/android-chrome-512x512.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
@@ -26,29 +17,57 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="36x36"  href="img/icons/android-chrome-36x36.png">
+	<link rel="icon" type="image/png" sizes="48x48"  href="img/icons/android-chrome-48x48.png">
+	<link rel="icon" type="image/png" sizes="72x72"  href="img/icons/android-chrome-72x72.png">
+	<link rel="icon" type="image/png" sizes="96x96"  href="img/icons/android-chrome-96x96.png">
+	<link rel="icon" type="image/png" sizes="144x144"  href="img/icons/android-chrome-144x144.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="256x256"  href="img/icons/android-chrome-256x256.png">
+	<link rel="icon" type="image/png" sizes="384x384"  href="img/icons/android-chrome-384x384.png">
+	<link rel="icon" type="image/png" sizes="512x512"  href="img/icons/android-chrome-512x512.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="img/icons/favicon.png">
 	<link rel="manifest" href="img/icons/site.webmanifest">
 	<link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="msapplication-TileImage" content="img/icons/mstile-70x70.png">
 	<meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png">
-	<meta name="theme-color" content="#110909"> -->
+	<meta name="msapplication-TileImage" content="img/icons/mstile-150x150.png">
+	<meta name="theme-color" content="#110909"> 
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/items.css">
 	<!-- swiper CSS -->
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<!-- Fonts -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel='stylesheet'>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Typing -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
 <body>
+	<!-- Loader -->
+	<div id="page_preloader" class="page_preloader">
+		<div class="loader"></div>
+  </div>
+
+	<!-- Progress bar (in the right side) -->
+	<div id="progress_bar"></div>
+	<div id="scrollPath"></div>
+
+	<!-- Scroll up button (in the bottom-right side) -->
+	<div class="scroll_up_button">
+		<i class="fa-solid fa-angles-up"></i>
+  </div>
+
 	<header class="header" id="header">
 		<div class="nav container">
 			<!-- logo -->
@@ -123,8 +142,8 @@
 						<h1 class="p2">Zhassulan Serikuly</h1>
             		<h3 class="p3"><span class="typing"></span></h3>
 
-						<a href="https://www.instagram.com/zhassulaan__/" class="button button_flex">
-							Social media
+						<a href="https://hh.kz/applicant/resumes/5d166231ff0ae9aa040039ed1f4d6772377352" class="button button_flex">
+							Head Hunter
 							<i class="fa-brands fa-instagram button_icon"></i>
 						</a>
 					</div>
@@ -844,7 +863,7 @@
 					<i class="fa-solid fa-star"></i>
 					<i class="fa-solid fa-star"></i>
 				</div>
-				<a download="" href="filer/Characteristics.pdf" class="recomendation_data">
+				<a download="" href="files/Characteristics.pdf" class="recomendation_data">
 					<i class="fa-solid fa-file recomendation_icon"></i>
 					<div class="recomendation_line"></div>
 					<div class="recomentation_info">
@@ -890,27 +909,27 @@
 					<!-- <div class="contact_inputs"> -->
 						<div class="contact_content">
 							<label for="" class="contact_label">Name - Surname</label>
-							<input type="text" class="contact_input">
+							<input type="text" placeholder="Name-Surname" required class="contact_input">
 						</div>
 						<div class="contact_content">
 							<label for="" class="contact_label">Email</label>
-							<input type="email" class="contact_input">
+							<input type="email" placeholder="Email" required class="contact_input">
 						</div>
 					<!-- </div> -->
 					<div class="contact_content">
 						<label for="" class="contact_label">Project</label>
-						<input type="text" class="contact_input">
+						<input type="text" placeholder="Project" required class="contact_input">
 					</div>
 					<div class="contact_content">
 						<label for="" class="contact_label">Message</label>
-						<textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
+						<textarea name="" id="" cols="0" rows="10" placeholder="Message..." required class="contact_input"></textarea>
 					</div>
 					<!-- button -->
 					<div class="contacts_button">
-						<a href="files/Zhassulan_Serikuly_CV.pdf" class="button button_flex">
+						<button type="submit" class="button button_flex">
 							Send Message
 							<i class="fa-solid fa-paper-plane"></i>
-						</a>
+						</button>
 					</div>
 				</form>
 			</div>
@@ -955,13 +974,18 @@
 						<i class="fa-solid fa-at footer_icon"></i>
 					</a>
 				</div>
-				<p class="footer_copy">&#169; Serikuly Zh. All right reserved.</p>	
+				<p class="footer_copy">&copy; Serikuly Zh. All right reserved.</p>
 			</div>
 	 	</div>      
 	</footer>
-			
+	
 
-	<!-- Scrool top -->
+	<!-- Loader JS -->
+	<script src="js/Loader.js"></script>
+	<!-- Progress bar JS -->
+	<script src="js/progress.js"></script>
+	<!-- Scroll-up button JS -->
+	<script src="js/scroll_up_button.js"></script>
 	<!-- Swiper JS -->
 	<script src="js/swiper-bundle.min.js"></script>
 	<!-- Main JS -->
