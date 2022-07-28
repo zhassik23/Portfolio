@@ -44,7 +44,7 @@ img {
 }
 
 .section {
-	padding: 50px 0;
+	padding: 64px 0;
 }
 
 .section_title {
@@ -84,7 +84,7 @@ img {
 }
 
 .button:hover {
-	background-color: hsl(97, 47%, 43%);
+	background-color: hsl(97, 40%, 35%);
 }
 
 .button_icon {
@@ -166,7 +166,7 @@ img {
 	}
 	
 	.nav_close:hover {
-		color: hsl(97, 47%, 43%);
+		color: hsl(97, 40%, 35%);
 	}
 }
 
@@ -194,7 +194,7 @@ img {
 }
 
 .home_icon:hover {
-	color: hsl(97, 47%, 43%);
+	color: hsl(97, 40%, 35%);
 }
 
 .home_data {
@@ -209,7 +209,7 @@ img {
 }
 
 .p1:hover {
-	color: hsl(97, 47%, 43%);
+	color: hsl(97, 40%, 35%);
 }
 
 .p2 {
@@ -232,7 +232,7 @@ img {
 }
 
 .p3:hover {
-	color: hsl(97, 47%, 43%);
+	color: hsl(97, 40%, 35%);
 }
 
 .scroll_button {
@@ -342,7 +342,7 @@ img {
 .borderless_button:hover {
 	font-size: 10px;
 	background-color: transparent;
-	color:hsl(97, 47%, 43%);
+	color: hsl(97, 40%, 35%);
 }
 
 .experience_button:hover .button_icon {
@@ -528,7 +528,7 @@ img {
 
 .skills_icon:hover,
 .skills_arrow:hover {
-	color: hsl(97, 47%, 43%);
+	color: hsl(97, 40%, 35%);
 }
 
 .skills_title {
@@ -586,7 +586,7 @@ img {
 	content: "";
 	height: 100%;
 	position: absolute;
-	background: hsl(97, 47%, 43%);
+	background: hsl(97, 40%, 35%);
 }
 
 .html::before {
@@ -679,8 +679,9 @@ img {
 	transform: rotate(-180deg);
 }
 
+
 /* PROJECT */
-.project_container {
+.projects_content_container {
 	overflow: initial;
 }
 
@@ -714,3 +715,54 @@ img {
 .project_button:hover .button_icon {
 	transform: translateX(5px);
 }
+
+
+/* RECOMENDATION */
+.stars {
+	text-align: center;
+	margin-bottom: 10px;
+	color: hsl(97, 67%, 61%);
+	text-shadow: 0.8px 0.8px rgb(255, 253, 253);
+}
+
+.recomendation_data {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 2px hsl(0, 0%, 100%) solid;
+	box-shadow: 0 -10px 15px hsla(84, 2%, 47%, 0.5);
+}
+
+.recomendation_icon {
+	font-size: 40px;
+	color: hsl(97, 67%, 61%);
+}
+
+.recomendation_icon:hover{
+	color: hsl(97, 40%, 35%);
+}
+
+.recomendation_line {
+	border-left:rgb(255, 255, 255) 3px solid;
+	height: 60px;
+}
+
+.recomendation_name {
+	color: hsl(0, 0%, 100%);
+}
+
+.recomendation_name:hover {
+	color: hsl(0, 1%, 77%);
+}
+
+.recomendation_place {
+	font-size: 10px;
+	color: hsl(100, 3%, 64%);
+}
+
+.recomendation_place:hover {
+	color: hsl(90, 1%, 37%);
+}
+
+
+/* CONTACTS */
