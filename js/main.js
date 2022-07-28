@@ -28,46 +28,12 @@ if (navC) {
 }
 
 
-// skills
-// variables
-const content = document.getElementsByClassName('skills_content');
-const	header = document.querySelectorAll('.skills_header');
-
-function toggleSkills() {
-	var currentClass = this.parentNode.className;
-	
-	// hide skills bars
-	for (var i = 0; i < content.length; i++) 
-		content[i].className = 'skills_content skills_close';
-	
-	// show skills bars
-	if (currentClass === 'skills_content skills_close') 
-		this.parentNode.className = 'skills_content skills_open';
-}
-
-header.forEach(element => {
-	element.addEventListener('click', toggleSkills);
-});
-
-
-// qualification
-// variables
-const tabContents = document.getElementsByClassName('qualification_list');
-const tabs = document.querySelectorAll('[data-target]');
-
-tabs.forEach(tab => {
-	tab.addEventListener('click', () => {
-		const target = document.querySelector(tab.dataset.target);
-		// content show/hide
-		for (var i = 0; i < tabContents.length; i++) 
-			tabContents[i].className = 'qualification_list qualification_hide';
-		target.className = 'qualification_list qualification_show';
-		// tab color switch
-		tabs.forEach(tab => {
-			tab.classList.remove('qualification_active');
-		})
-		tab.classList.add('qualification_active');
-	});
+// home
+// typing script
+var typed = new Typed(".typing", {
+	strings: ["Frontend Developer", "UI/UX Designer", "React Developer"],
+	typeSpeed: 75,
+	loop: true
 });
 
 
@@ -96,8 +62,51 @@ closeButtons.forEach(closeBtn => {
 });
 
 
+// qualification
+// variables
+const tabContents = document.getElementsByClassName('qualification_list');
+const tabs = document.querySelectorAll('[data-target]');
+
+tabs.forEach(tab => {
+	tab.addEventListener('click', () => {
+		const target = document.querySelector(tab.dataset.target);
+		// content show/hide
+		for (var i = 0; i < tabContents.length; i++) 
+			tabContents[i].className = 'qualification_list qualification_hide';
+		target.className = 'qualification_list qualification_show';
+		// tab color switch
+		tabs.forEach(tab => {
+			tab.classList.remove('qualification_active');
+		})
+		tab.classList.add('qualification_active');
+	});
+});
+
+
+// skills
+// variables
+const content = document.getElementsByClassName('skills_content');
+const	header = document.querySelectorAll('.skills_header');
+
+function toggleSkills() {
+	var currentClass = this.parentNode.className;
+	
+	// hide skills bars
+	for (var i = 0; i < content.length; i++) 
+		content[i].className = 'skills_content skills_close';
+	
+	// show skills bars
+	if (currentClass === 'skills_content skills_close') 
+		this.parentNode.className = 'skills_content skills_open';
+}
+
+header.forEach(element => {
+	element.addEventListener('click', toggleSkills);
+});
+
+
 // swiper
-var swiper = new Swiper(".project_container", {
+var swiper = new Swiper(".projects_container", {
 	spaceBetween: 30,
 	centeredSlides: true,
 	autoplay: {
