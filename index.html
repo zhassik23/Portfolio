@@ -118,8 +118,10 @@
 			</div>
 
 			<!-- toggle -->
-			<div class="nav_toggle" id="nav_toggle">
-				<i class="fa-solid fa-bars"></i>
+			<div class="nav_buttons">
+				<div class="nav_toggle" id="nav_toggle">
+					<i class="fa-solid fa-bars"></i>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -128,7 +130,7 @@
 		<!-- home -->
 		<section class="home section" id="home">
 			<div class="container grid">
-				<div class="home_content grid">
+				<div class="home_content">
 					<div class="home_items">
 						<a href="https://github.com/zhassik23" target="_blank" class="home_icon"><i class="fa-brands fa-github"></i></a>
 						<a href="https://www.linkedin.com/in/zhassulan-serikuly-137626244" target="_blank" class="home_icon"><i class="fa-brands fa-linkedin"></i></a>
@@ -162,7 +164,7 @@
 			<h1 class="section_title">About me</h1>
 			<span class="section_subtitle">My introduction</span>
 
-			<div class="container grid">
+			<div class="about_container container grid">
 				<img src="img/photo.png" alt="Zhassulan" class="about_image">
 
 				<div class="about_content">
@@ -851,7 +853,7 @@
 		</section>
 
 		<!-- recomendation -->
-		<section class="recomendation section">
+		<section class="recomendation section" id="recomendation">
 			<h1 class="section_title">Recomendation</h1>
 			<span class="section_subtitle">My characteristics from my boss</span>
 
@@ -880,30 +882,33 @@
 			<span class="section_subtitle">Get in touch</span>
 
 			<div class="contacts_container container grid">
-				<!-- Phone -->
-				<div class="contact_info">
-					<i class="fa-solid fa-phone contact_icon"></i>
-					<div>
-						<h3 class="contact_title">Phone</h3>
-						<span class="contact_subtitle">+7 (775) 976-41-65</span>
+				<div>
+					<!-- Phone -->
+					<div class="contact_info">
+						<i class="fa-solid fa-phone contact_icon"></i>
+						<div>
+							<h3 class="contact_title">Phone</h3>
+							<span class="contact_subtitle">+7 (775) 976-41-65</span>
+						</div>
+					</div>
+					<!-- Email -->
+					<div class="contact_info">
+						<i class="fa-solid fa-envelope contact_icon"></i>
+						<div>
+							<h3 class="contact_title">Email</h3>
+							<span class="contact_subtitle">serikuly.zhassulan@gmail.com</span>
+						</div>
+					</div>
+					<!-- Location -->
+					<div class="contact_info">
+						<i class="fa-solid fa-location-dot contact_icon"></i>
+						<div>
+							<h3 class="contact_title">Location</h3>
+							<span class="contact_subtitle">Almaty, Kazakhstan</span>
+						</div>
 					</div>
 				</div>
-				<!-- Email -->
-				<div class="contact_info">
-					<i class="fa-solid fa-envelope contact_icon"></i>
-					<div>
-						<h3 class="contact_title">Email</h3>
-						<span class="contact_subtitle">serikuly.zhassulan@gmail.com</span>
-					</div>
-				</div>
-				<!-- Location -->
-				<div class="contact_info">
-					<i class="fa-solid fa-location-dot contact_icon"></i>
-					<div>
-						<h3 class="contact_title">Location</h3>
-						<span class="contact_subtitle">Almaty, Kazakhstan</span>
-					</div>
-				</div>
+				
 				<!-- Form -->
 				<form action="" class="contacts_form grid">
 					<!-- <div class="contact_inputs"> -->
@@ -940,7 +945,7 @@
   <footer class="footer">
     	<div class="footer_container container grid">
 			<div>
-				<h1 class="footer_title">Serikuly Zhassulan</h1>
+				<h2 class="footer_title">Serikuly Zhassulan</h1>
 				<span class="footer_subtitle">Frontend Developer</span>
 			</div>
 
@@ -953,6 +958,9 @@
 				</li>
 				<li class="footer_item"> 
 					<a href="#projects" class="footer_link">Projects</a> 
+				</li>
+				<li class="footer_item"> 
+					<a href="#recomendation" class="footer_link">Recomendation</a> 
 				</li>
 			</ul>
 
@@ -978,10 +986,9 @@
 			</div>
 	 	</div>      
 	</footer>
-	
 
 	<!-- Loader JS -->
-	<script src="js/Loader.js"></script>
+	<script src="js/loader.js"></script>
 	<!-- Progress bar JS -->
 	<script src="js/progress.js"></script>
 	<!-- Scroll-up button JS -->
