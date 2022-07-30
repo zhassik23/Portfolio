@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="36x36"  href="img/icons/android-chrome-36x36.png">
+	<link rel="icon" type="image/png" sizes="48x48"  href="img/icons/android-chrome-48x48.png">
+	<link rel="icon" type="image/png" sizes="72x72"  href="img/icons/android-chrome-72x72.png">
+	<link rel="icon" type="image/png" sizes="96x96"  href="img/icons/android-chrome-96x96.png">
+	<link rel="icon" type="image/png" sizes="144x144"  href="img/icons/android-chrome-144x144.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="256x256"  href="img/icons/android-chrome-256x256.png">
+	<link rel="icon" type="image/png" sizes="384x384"  href="img/icons/android-chrome-384x384.png">
+	<link rel="icon" type="image/png" sizes="512x512"  href="img/icons/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="img/icons/favicon.png">
+	<link rel="manifest" href="img/icons/site.webmanifest">
+	<link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-TileImage" content="img/icons/mstile-70x70.png">
+	<meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png">
+	<meta name="msapplication-TileImage" content="img/icons/mstile-150x150.png">
+	<meta name="theme-color" content="#110909"> 
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/items.css">
+	<!-- swiper CSS -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel='stylesheet'>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Typing -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+</head>
+<body>
+	<!-- Loader -->
+	<div id="page_preloader" class="page_preloader">
+		<div class="loader"></div>
+  </div>
+
+	<!-- Progress bar (in the right side) -->
+	<div id="progress_bar"></div>
+	<div id="scrollPath"></div>
+
+	<!-- Scroll up button (in the bottom-right side) -->
+	<div class="scroll_up_button">
+		<i class="fa-solid fa-angles-up"></i>
+  </div>
+
+	<header class="header" id="header">
+		<div class="nav container">
+			<!-- logo -->
+			<img src="img/logo.png" alt="Zhassulan Serikyluy" class="nav_logo">
+		
+			<!-- items -->
+			<div class="nav_menu" id="nav_menu">
+         	<ul class="nav_list grid">
+					<li class="nav_item"> 
+						<a href="#home" class="nav_link">
+							<i class="fa-solid fa-house nav_icon"></i> Home
+						</a>
+					</li>
+					<li class="nav_item"> 
+						<a href="#about" class="nav_link">
+							<i class="fa-solid fa-user nav_icon"></i> About me
+						</a>
+					</li>
+					<li class="nav_item"> 
+						<a href="#experience" class="nav_link">
+							<i class="fa-solid fa-briefcase nav_icon"></i> Experience
+						</a> 
+					</li>
+					<li class="nav_item"> 
+						<a href="#qualification" class="nav_link">
+							<i class="fa-solid fa-graduation-cap nav_icon"></i> Qualification
+						</a> 
+					</li>
+					<li class="nav_item"> 
+						<a href="#skills" class="nav_link">
+							<i class="fa-solid fa-file nav_icon"></i> Skills
+						</a> 
+					</li>
+					<li class="nav_item"> 
+						<a href="#projects" class="nav_link">
+							<i class="fa-solid fa-laptop-code nav_icon"></i> Projects
+						</a> 
+					</li>
+					<li class="nav_item"> 
+						<a href="#contacts" class="nav_link">
+							<i class="fa-solid fa-address-book nav_icon"></i> Contacts
+						</a> 
+					</li>
+			  	</ul>
+
+				<!-- toggle close button -->
+				<i class="fa-solid fa-xmark nav_close" id="nav_close"></i>
+			</div>
+
+			<!-- toggle -->
+			<div class="nav_buttons">
+				<div class="nav_toggle" id="nav_toggle">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="main">
+		<!-- home -->
+		<section class="home section" id="home">
+			<div class="container grid">
+				<div class="home_content">
+					<div class="home_items">
+						<a href="https://github.com/zhassik23" target="_blank" class="home_icon"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/zhassulan-serikuly-137626244" target="_blank" class="home_icon"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJTCptGktzQtCcfJfZfGRwzKXScjBqCkrfHRBPblHzwkgdhFMbxvbsxgSzqnbBmMBqpB" target="_blank" class="home_icon"><i class="fa-solid fa-envelope"></i></a>
+						<a href="https://msng.link/o/?young_flovver=tg" target="_blank" class="home_icon"><i class="fa-brands fa-telegram"></i></a>
+						<a href="tel:+77759764165" target="_blank" class="home_icon"><i class="fa-solid fa-phone"></i></a>
+				 	</div>
+
+					<div class="home_data">
+						<p class="p1">Hello, my name is</p>
+						<h1 class="p2">Zhassulan Serikuly</h1>
+            		<h3 class="p3"><span class="typing"></span></h3>
+
+						<a href="https://hh.kz/applicant/resumes/5d166231ff0ae9aa040039ed1f4d6772377352" class="button button_flex">
+							Head Hunter
+							<i class="fa-brands fa-instagram button_icon"></i>
+						</a>
+					</div>
+				</div>
+					
+				<a href="#about" class="button_flex scroll_button">
+					<i class="fa-solid fa-square-caret-down scroll_arrow"></i>
+					<span class="scroll_name">Scroll Down</span>
+					<i class="fa-solid fa-square-caret-down scroll_arrow"></i>
+				</a>
+			 </div>
+		</section>
+
+		<!-- about -->
+		<section class="about section" id="about">
+			<h1 class="section_title">About me</h1>
+			<span class="section_subtitle">My introduction</span>
+
+			<div class="about_container container grid">
+				<img src="img/photo.png" alt="Zhassulan" class="about_image">
+
+				<div class="about_content">
+					<p class="about_description">Web developer with knowledge of the React library. Experience with HTML, CSS and JS from 3 years. I have been designing since my school days, have experience in design development and I have creative abilities.</p>
+
+					<div class="about_info">
+						<div>
+							<span class="about_info_title">06</span>
+							<span class="about_info_name">Project <br> works</span>
+						</div>
+						<div>
+							<span class="about_info_title">05</span>
+							<span class="about_info_name">Language <br> profiency</span>
+						</div>
+						<div>
+							<span class="about_info_title">03</span>
+							<span class="about_info_name">Companies <br> worked</span>
+						</div>
+					</div>
+
+					<div class="about_button">
+						<a download="" href="files/Zhassulan_Serikuly_CV.pdf" class="button button_flex">
+							Download CV
+							<i class="fa-solid fa-cloud-arrow-down button_icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- experience -->
+		<section class="experience section" id="experience">
+			<h1 class="section_title">Experience</h1>
+			<span class="section_subtitle">My profesional journey</span>
+
+			<div class="experience_container container grid">
+				<!-- 1st workplace -->
+				<div class="experience_content">
+					<div>
+						<i class="fa-solid fa-laptop-code experience_icon"></i>
+						<h3 class="experience_title">TOO <br> "KasHIM"</h3>
+					</div>
+
+					<div class="experience_button">
+						<span class="button button_flex borderless_button">
+							View More
+							<i class="fa-solid fa-angle-down button_icon"></i>
+						</span>
+					</div>
+
+					<div class="experience_item">
+						<div class="experience_data">
+							<div class="experience_header">
+								<div>
+									<h4 class="experience_title">IT Specialist</h4>
+									<p class="experience_period">June, 2022 - August, 2021 / Atyrau</p>
+								</div>
+								<div class="company">
+									<h4 class="company_title">ТОО <br> "КасХИМ"</h4>
+									<img src="img/kashim_logo.png" alt="КасХИМ" class="company_logo">
+								</div>
+							</div>
+							<i class="fa-solid fa-xmark experience_close"></i>
+
+							<ul class="responsibility_list">
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Perform assembly and installation of technical and software tools for the normal operation of the terminal.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Install all the software you need to get started.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Comply with the rules and regulations of labor protection, safety.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Carrying out routine maintenance.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 2nd workplace -->
+				<div class="experience_content">
+					<div>
+						<i class="fa-solid fa-file-code experience_icon"></i>
+						<h3 class="experience_title">Technopark <br> SDU</h3>
+					</div>
+
+					<div class="experience_button">
+						<span class="button button_flex borderless_button">
+							View More
+							<i class="fa-solid fa-angle-down button_icon"></i>
+						</span>
+					</div>
+
+					<div class="experience_item">
+						<div class="experience_data">
+							<div class="experience_header">
+								<div>
+									<h4 class="experience_title">Frontend Developer</h4>
+									<p class="experience_period">September, 2021 - February, 2022 / Almaty</p>
+								</div>
+								<div class="company">
+									<h4 class="company_title">Technopark <br> SDU</h4>
+									<img src="img/technopark_logo.png" alt="Technopark" class="company_logo">
+								</div>
+							</div>
+							<i class="fa-solid fa-xmark experience_close"></i>
+
+							<ul class="responsibility_list">
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Creating a web page based on design layouts, that is, layout using HTML and CSS.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Binding to the user interface of scripts that provide visualization and animation of the site pages.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Providing the required level of UI and UX.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 3rd workplace -->
+				<div class="experience_content">
+					<div>
+						<i class="fa-solid fa-glasses experience_icon"></i>
+						<h3 class="experience_title">Jops <br> Optics</h3>
+					</div>
+
+					<div class="experience_button">
+						<span class="button button_flex borderless_button">
+							View More
+							<i class="fa-solid fa-angle-down button_icon"></i>
+						</span>
+					</div>
+
+					<div class="experience_item">
+						<div class="experience_data">
+							<div class="experience_header">
+								<div>
+									<h4 class="experience_title">SMM Model</h4>
+									<p class="experience_period">April, 2022 - May, 2022 / Almaty</p>
+								</div>
+								<div class="company">
+									<h4 class="company_title">Jops <br> Optics</h4>
+									<img src="img/jops_optics_logo.png" alt="Jops Optics" class="company_logo">
+								</div>
+							</div>
+							<i class="fa-solid fa-xmark experience_close"></i>
+
+							<ul class="responsibility_list">
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Demonstration of glasses models during their manufacture.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Posing for sketches, as well as for photo and video shooting.</p>
+								</li>
+								<li class="responsibility">
+									<i class="fa-solid fa-circle responsibility_icon"></i>
+									<p>Production fitting of models during their manufacture.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- qualification -->
+		<section class="qualification section" id="qualification">
+			<h1 class="section_title">Qualification</h1>
+			<span class="section_subtitle">My knowledge and certificates</span>
+
+			<div class="container">
+				<div class="qualification_header">
+					<div class="qualification_button button_flex qualification_active" data-target='#education'>
+						<i class="fa-solid fa-graduation-cap qualification_icon"></i>
+						Education
+					</div>
+					<div class="qualification_button button_flex" data-target="#achievements">
+						<i class="fa-solid fa-briefcase qualification_icon"></i>
+						Achievements
+					</div>
+				</div>
+
+				<div class="qualification_content">
+					<!-- Education -->
+					<div class="qualification_list qualification_show" id="education">
+						<!-- 1st institution -->
+						<div class="qualification_item right_side">
+							<div class="qualification_data">
+								<h3 class="qualification_title">National School-Gymnasium No. 13</h3>
+								<span class="qualification_subtitle">Primary School - Atyrau</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2008-2014
+								</div>
+							</div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+						</div>
+						<!-- 2nd institution -->
+						<div class="qualification_item">
+							<div></div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+							<div class="qualification_data">
+								<h3 class="qualification_title">Kazakh-Turkish Lyceum</h3>
+								<span class="qualification_subtitle">High School - Atyrau</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2014-2019
+								</div>
+							</div>
+						</div>
+						<!-- 3rd institution -->
+						<div class="qualification_item right_side">
+							<div class="qualification_data">
+								<h3 class="qualification_title">Suleyman Demirel University</h3>
+								<span class="qualification_subtitle">Bachelor of "Engineering and Natural Sciences" - Almaty</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2019-2023
+								</div>
+							</div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+						</div>
+						<!-- courses -->
+						<div class="qualification_item">
+							<div></div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+							<div class="qualification_data">
+								<h3 class="qualification_title">HTML, CSS, and JS for Web Developers</h3>
+								<span class="qualification_subtitle">Coursera</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									May-2021
+								</div>
+							</div>
+						</div>
+						<div class="qualification_item right_side">
+							<div class="qualification_data">
+								<h3 class="qualification_title">Front-End Web Development with React</h3>
+								<span class="qualification_subtitle">Coursera</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									April-2022
+								</div>
+							</div>
+							<div>
+								<span class="qualification_rounder"></span>
+							</div>
+						</div>
+					</div>
+					<!-- Achievements -->
+					<div class="qualification_list qualification_hide" id="achievements">
+						<!-- 1st achievement -->
+						<div class="qualification_item">
+							<div></div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+							<div class="qualification_data">
+								<a href="https://drive.google.com/file/d/1QIK14gniw9aCTPQyj2P6_G8WOHAo9bGT" class="qualification_title">Olympiad in Mathematics</a>
+								<br>
+								<span class="qualification_subtitle">2nd place</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2013
+								</div>
+							</div>
+						</div>
+						<!-- 2nd achievement -->
+						<div class="qualification_item right_side">
+							<div class="qualification_data">
+								<a href="https://drive.google.com/drive/folders/16WG-8UdOVlIGvyUVuViux6dRmsN0kBWw" class="qualification_title">Regional Olympiad in Informatics</a>
+								<br>
+								<span class="qualification_subtitle">1st place</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2017
+								</div>
+							</div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+						</div>
+						<!-- 3rd achievements -->
+						<div class="qualification_item">
+							<div></div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+							<div class="qualification_data">
+								<a href="https://drive.google.com/file/d/1L4cqfLH6yWzUn6alOxFx8yH-sK-Ce3AY" class="qualification_title">International Competition “Infomatrix”</a>
+								<br>
+								<span class="qualification_subtitle">Silver medal</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2018
+								</div>
+							</div>
+						</div>
+						<!-- 4th achievement -->
+						<div class="qualification_item right_side">
+							<div>
+								<a href="https://drive.google.com/drive/folders/16WG-8UdOVlIGvyUVuViux6dRmsN0kBWw" class="qualification_title">Euler Olympiad in Mathematics</a>
+								<br>
+								<span class="qualification_subtitle">Participation</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2018
+								</div>
+							</div>
+
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+						</div>
+						<!-- 5th achievement -->
+						<div class="qualification_item">
+							<div></div>
+							<div>
+								<span class="qualification_rounder"></span>
+								<span class="qualification_line"></span>
+							</div>
+							<div class="qualification_data">
+								<a href="https://drive.google.com/file/d/1YrOGC99EDwAo4mqZ3f9pPenBv4t5BrEu" class="qualification_title">Secondary Education</a>
+								<br>
+								<span class="qualification_subtitle">Red diploma</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2019
+								</div>
+							</div>
+						</div>
+						<!-- 6th achievement -->
+						<div class="qualification_item right_side">
+							<div class="qualification_data">
+								<a href="https://drive.google.com/file/d/1Rjn0puqVeO6YfC44Hpw0-zjWefFTztlj" class="qualification_title">"Film fest"</a>
+								<br>
+								<span class="qualification_subtitle">3rd place</span>
+								<div class="qualification_period">
+									<i class="fa-solid fa-calendar-days"></i>
+									2022
+								</div>
+							</div>
+							<div>
+								<span class="qualification_rounder"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- skills -->
+		<section class="skills section" id="skills">
+			<h1 class="section_title">Skills</h1>
+			<span class="section_subtitle">My abilities</span>
+			
+			<div class="skills_container container grid">
+				<!-- 1st skill -->
+				<div class="skills_content skills_open">
+					<div class="skills_header">
+						<i class="fa-solid fa-code skills_icon"></i>
+
+						<div>
+							<h1 class="skills_title">Frontend Developer</h1>
+							<span class="skills_subtitle">Aproximately 3 years</span>
+						</div>
+
+						<i class="fa-solid fa-angle-down skills_arrow"></i>
+					</div>
+
+					<div class="skills_list grid">
+						<!-- html -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">HTML</h3>
+								<span class="skills_percentage">100%</span>
+							</div>
+							
+							<div class="skills_bar html"></div>
+						</div>
+						<!-- css -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">CSS</h3>
+								<span class="skills_percentage">90%</span>
+							</div>
+
+							<div class="skills_bar css"></div>
+						</div>
+						<!-- js -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Java Script</h3>
+								<span class="skills_percentage">70%</span>
+							</div>
+
+							<div class="skills_bar js"></div>
+						</div>
+						<!-- less-sass -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Less / SASS</h3>
+								<span class="skills_percentage">80%</span>
+							</div>
+
+							<div class="skills_bar less_sass"></div>
+						</div>
+						<!-- bootstrap -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Bootstrap</h3>
+								<span class="skills_percentage">75%</span>
+							</div>
+
+							<div class="skills_bar bootstrap"></div>
+						</div>
+						<!-- react -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">React</h3>
+								<span class="skills_percentage">65%</span>
+							</div>
+
+							<div class="skills_bar react"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 2nd skill -->
+				<div class="skills_content skills_close">
+					<div class="skills_header">
+						<i class="fa-solid fa-clapperboard skills_icon"></i>
+
+						<div>
+							<h1 class="skills_title">Movie maker</h1>
+							<span class="skills_subtitle">More than 4 years</span>
+						</div>
+
+						<i class="fa-solid fa-angle-down skills_arrow"></i>
+					</div>
+					
+					<div class="skills_list grid">
+						<!-- premiere pro -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Premiere Pro</h3>
+								<span class="skills_percentage">85%</span>
+							</div>
+							
+							<div class="skills_bar premiere_pro"></div>
+						</div>
+						<!-- after effects -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">After Effects</h3>
+								<span class="skills_percentage">70%</span>
+							</div>
+
+							<div class="skills_bar after_effects"></div>
+						</div>
+						<!-- imovie -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">iMovie</h3>
+								<span class="skills_percentage">80%</span>
+							</div>
+
+							<div class="skills_bar imovie"></div>
+						</div>
+						<!-- vn -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">VN</h3>
+								<span class="skills_percentage">100%</span>
+							</div>
+
+							<div class="skills_bar vn"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 3rd skill -->
+				<div class="skills_content skills_close">
+					<div class="skills_header">
+						<i class="fa-solid fa-object-group skills_icon"></i>
+
+						<div>
+							<h1 class="skills_title">Designer</h1>
+							<span class="skills_subtitle">More than 5 years</span>
+						</div>
+
+						<i class="fa-solid fa-angle-down skills_arrow"></i>
+					</div>
+					
+					<div class="skills_list grid">
+						<!-- adobe photoshop -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Adobe Photoshop</h3>
+								<span class="skills_percentage">95%</span>
+							</div>
+							
+							<div class="skills_bar adobe_photoshop"></div>
+						</div>
+						<!-- figma -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Figma</h3>
+								<span class="skills_percentage">85%</span>
+							</div>
+
+							<div class="skills_bar figma"></div>
+						</div>
+						<!-- fusion -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">Fusion 360*</h3>
+								<span class="skills_percentage">75%</span>
+							</div>
+
+							<div class="skills_bar fusion"></div>
+						</div>
+						<!-- coreldraw -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<h3 class="skills_name">CorelDRAW</h3>
+								<span class="skills_percentage">70%</span>
+							</div>
+
+							<div class="skills_bar coreldraw"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 4th skill -->
+				<div class="skills_content skills_close">
+					<div class="skills_header">
+						<i class="fa-solid fa-language skills_icon"></i>
+
+						<div>
+							<h1 class="skills_title">Languages</h1>
+							<span class="skills_subtitle">From birth</span>
+						</div>
+
+						<i class="fa-solid fa-angle-down skills_arrow"></i>
+					</div>
+					
+					<div class="skills_list grid">
+						<!-- english -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<a href="https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR" class="skills_name">English</a>
+								<span class="skills_percentage">Upper-Intermediate</span>
+							</div>
+							
+							<div class="skills_bar english"></div>
+						</div>
+						<!-- kazakh -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<a href="#" class="skills_name">Kazakh</a>
+								<span class="skills_percentage">Native</span>
+							</div>
+
+							<div class="skills_bar kazakh"></div>
+						</div>
+						<!-- russian -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<a href="#" class="skills_name">Russian</a>
+								<span class="skills_percentage">Fluent</span>
+							</div>
+
+							<div class="skills_bar russian"></div>
+						</div>
+						<!-- turkish -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<a href="#" class="skills_name">Turkish</a>
+								<span class="skills_percentage">Upper-Intermediate</span>
+							</div>
+
+							<div class="skills_bar turkish"></div>
+						</div>
+						<!-- chinese -->
+						<div class="skills_item">
+							<div class="skills_data">
+								<a href="https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL" class="skills_name">Chinese</a>
+								<span class="skills_percentage">Intermediate</span>
+							</div>
+
+							<div class="skills_bar chinese"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- projects -->
+		<section class="projects section" id="projects">
+			<h1 class="section_title">Projects</h1>
+			<span class="section_subtitle">My works</span>
+
+			<div class="projects_container container swiper">
+				<div class="swiper-wrapper">
+					<!-- 1st project -->
+					<div class="projects_content grid swiper-slide">
+						<img src="img/project_1.png" alt="Store Project" class="project_image">
+		
+						<div class="project_data">
+							<h2 class="project_title">Korean Clothes Store Website</h1>
+							<p class="project_instruments">Tech stack: HTML, CSS, JavaScript, Bootstrap</p>
+							<p class="project_description">Website for a shop that sells stylish Korean clothes. Here you can watch for the products, main information about co., make an order and also apply for a job. Adapted.</p>
+								
+							<a href="" class="project_button button button_flex">
+								Watch this project
+								<i class="fa-solid fa-angles-right button_icon"></i>
+							</a>
+						</div>
+					</div>
+		
+					<!-- 2nd project -->
+					<div class="projects_content grid swiper-slide">
+						<img src="img/project_2.png" alt="Portfolio Project" class="project_image">
+		
+						<div class="project_data">
+							<h2 class="project_title">Portfolio Website</h1>
+							<p class="project_instruments">Tech stack: HTML, CSS, JavaScript</p>
+							<p class="project_description">Personal adapted website, which introduces me. It made to show my abilities and information, such as education, skills and work experience. </p>
+							
+							<a href="" class="project_button button button_flex">
+								Watch this project
+								<i class="fa-solid fa-angles-right button_icon"></i>
+							</a>
+						</div>
+					</div>
+		
+					<!-- 3rd project -->
+					<div class="projects_content grid swiper-slide">
+						<img src="img/project_3.jpeg" alt="Posts Project" class="project_image">
+		
+						<div class="project_data">
+							<h2 class="project_title">Posts Website</h1>
+							<p class="project_instruments">Tech stack: React, CSS, JavaScript</p>
+							<p class="project_description">Website made by React framework. Here you can read posts and folowers comment for these comments. You can search and sort for your need.</p>
+								
+							<a href="" class="project_button button button_flex">
+								Watch this project
+								<i class="fa-solid fa-angles-right button_icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
+
+		<!-- recomendation -->
+		<section class="recomendation section" id="recomendation">
+			<h1 class="section_title">Recomendation</h1>
+			<span class="section_subtitle">My characteristics from my boss</span>
+
+			<div class="recomendation_container container">
+				<div class="stars">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				<a download="" href="files/Characteristics.pdf" class="recomendation_data">
+					<i class="fa-solid fa-file recomendation_icon"></i>
+					<div class="recomendation_line"></div>
+					<div class="recomentation_info">
+						<h4 class="recomendation_name">Mammadov Etibar Ali Oglu</h4>
+						<p class="recomendation_place">TOO "KasHIM" - August, 2021 / Atyrau</p>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- contacts -->
+		<section class="contacts section" id="contacts">
+			<h1 class="section_title">Contact me</h1>
+			<span class="section_subtitle">Get in touch</span>
+
+			<div class="contacts_container container grid">
+				<div>
+					<!-- Phone -->
+					<div class="contact_info">
+						<i class="fa-solid fa-phone contact_icon"></i>
+						<div>
+							<h3 class="contact_title">Phone</h3>
+							<span class="contact_subtitle">+7 (775) 976-41-65</span>
+						</div>
+					</div>
+					<!-- Email -->
+					<div class="contact_info">
+						<i class="fa-solid fa-envelope contact_icon"></i>
+						<div>
+							<h3 class="contact_title">Email</h3>
+							<span class="contact_subtitle">serikuly.zhassulan@gmail.com</span>
+						</div>
+					</div>
+					<!-- Location -->
+					<div class="contact_info">
+						<i class="fa-solid fa-location-dot contact_icon"></i>
+						<div>
+							<h3 class="contact_title">Location</h3>
+							<span class="contact_subtitle">Almaty, Kazakhstan</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Form -->
+				<form action="" class="contacts_form grid">
+					<!-- <div class="contact_inputs"> -->
+						<div class="contact_content">
+							<label for="" class="contact_label">Name - Surname</label>
+							<input type="text" placeholder="Name-Surname" required class="contact_input">
+						</div>
+						<div class="contact_content">
+							<label for="" class="contact_label">Email</label>
+							<input type="email" placeholder="Email" required class="contact_input">
+						</div>
+					<!-- </div> -->
+					<div class="contact_content">
+						<label for="" class="contact_label">Project</label>
+						<input type="text" placeholder="Project" required class="contact_input">
+					</div>
+					<div class="contact_content">
+						<label for="" class="contact_label">Message</label>
+						<textarea name="" id="" cols="0" rows="10" placeholder="Message..." required class="contact_input"></textarea>
+					</div>
+					<!-- button -->
+					<div class="contacts_button">
+						<button type="submit" class="button button_flex">
+							Send Message
+							<i class="fa-solid fa-paper-plane"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    	<div class="footer_container container grid">
+			<div>
+				<h2 class="footer_title">Serikuly Zhassulan</h1>
+				<span class="footer_subtitle">Frontend Developer</span>
+			</div>
+
+			<ul class="footer_list">
+				<li class="footer_item"> 
+					<a href="#experience" class="footer_link">Experience</a> 
+				</li>
+				<li class="footer_item"> 
+					<a href="#qualification" class="footer_link">Qualification</a> 
+				</li>
+				<li class="footer_item"> 
+					<a href="#projects" class="footer_link">Projects</a> 
+				</li>
+				<li class="footer_item"> 
+					<a href="#recomendation" class="footer_link">Recomendation</a> 
+				</li>
+			</ul>
+
+			<div>
+				<div class="footer_socials">
+					<a href="https://wa.me/77759764165" target="_blank" class="footer_social">
+						<i class="fa-brands fa-whatsapp footer_icon"></i>
+					</a>
+					<a href="https://www.facebook.com/young.flovver" target="_blank" class="footer_social">
+						<i class="fa-brands fa-facebook footer_icon"></i>
+					</a>
+					<a href="https://instagram.com/zhassulaan__?igshid=YmMyMTA2M2Y" target="_blank" class="footer_social">
+						<i class="fa-brands fa-instagram footer_icon"></i>
+					</a>
+					<a href="https://msng.link/o/?young_flovver=tg" target="_blank" class="footer_social">
+						<i class="fa-brands fa-telegram footer_icon"></i>
+					</a>
+					<a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJTCptGktzQtCcfJfZfGRwzKXScjBqCkrfHRBPblHzwkgdhFMbxvbsxgSzqnbBmMBqpB" target="_blank" class="footer_social">
+						<i class="fa-solid fa-at footer_icon"></i>
+					</a>
+				</div>
+			</div>
+		</div>      
+		<p class="footer_copy">&copy; Serikuly Zh. All right reserved.</p>
+	</footer>
+
+	<!-- Loader JS -->
+	<script src="js/loader.js"></script>
+	<!-- Progress bar JS -->
+	<script src="js/progress.js"></script>
+	<!-- Scroll-up button JS -->
+	<script src="js/scroll_up_button.js"></script>
+	<!-- Swiper JS -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
