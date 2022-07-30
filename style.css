@@ -39,7 +39,6 @@ img {
 }
 
 .container {
-	max-width: 768px;
 	margin-left: 24px;
 	margin-right: 24px;
 }
@@ -142,41 +141,41 @@ img {
 		border-radius: 24px 24px 0 0;
 		transition: 0.3s;
 	}
-	
-	.nav_list {
-		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
-	}
-	
-	.nav_link {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		color: #000;
-		font-size: 13px;
-		font-weight: 500;
-	}
-	
-	.nav_link:hover {
-		color: hsl(97, 67%, 61%);
-	}
-	
-	.nav_icon {
-		font-size: 20px;
-	}
-	
-	.nav_close {
-		position: absolute;
-		right: 25px;
-		bottom: 10px;
-		font-size: 25px;
-		cursor: pointer;
-		color: hsl(97, 67%, 61%);
-	}
-	
-	.nav_close:hover {
-		color: hsl(97, 40%, 35%);
-	}
+}
+
+.nav_list {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.nav_link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #000;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.nav_link:hover {
+	color: hsl(97, 67%, 61%);
+}
+
+.nav_icon {
+	font-size: 20px;
+}
+
+.nav_close {
+	position: absolute;
+	right: 25px;
+	bottom: 10px;
+	font-size: 25px;
+	cursor: pointer;
+	color: hsl(97, 67%, 61%);
+}
+
+.nav_close:hover {
+	color: hsl(97, 40%, 35%);
 }
 
 .show_menu {
@@ -905,6 +904,10 @@ label {
 		column-gap: 0;
 	}
 
+	.scroll_button {
+		display: none;
+	}
+
 	.about_image {
 		width: 150px;
 	}
@@ -1042,6 +1045,10 @@ label {
 		text-align: right;
 		height: 300px;
 	}
+
+	.scroll_button {
+		display: none;
+	}
 	
 	.about_container,
 	.skills_container,
@@ -1090,6 +1097,10 @@ label {
 		margin: 0 15px 0 40px;
 		width: 300px;
 		height: 205px;
+	}
+	
+	.projects_content {
+		align-items: center;
 	}
 
 	.project_data {
@@ -1110,85 +1121,318 @@ label {
 }
 
 @media screen and (min-width: 768px) {
-	.home_content {
-		width: 90%;
-		display: grid;
-		grid-template-columns: 1fr 2.5fr;
-		padding-top: 30px;
+	.container {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.home_items {
-		display: grid;
-		row-gap: 25px;
+	body {
+		margin: 0;
 	}
 
-	.home_data {
-		text-align: right;
-		height: 300px;
+	.section {
+		padding: 80px 0 40px;
+	}
+
+	.section_subtitle {
+		font-size: 13px;
+		margin-bottom: 64px;
+	}
+
+	.header {
+		top: 0;
+		bottom: initial;
+		background-color: #fff;
 	}
 	
-	.about_container,
-	.skills_container,
-	.projects_content,
-	.contacts_container,
+	.header,
+	.main,
 	.footer_container {
-		grid-template-columns: repeat(2, 1fr);
+		padding: 0 25px 5px;
+	}
+	
+	.nav {
+		column-gap: 25px;
+	}
+	
+	.nav_toggle,
+	.nav_close,
+	.nav_icon {
+		display: none !important;
+	}
+
+	.nav_list {
+		display: flex;
+		column-gap: 30px;
+	}
+
+	.nav_link {
+		font-size: 11px;
+		color:hsla(0, 1%, 14%, 1)
+	}
+
+	.nav_link:hover {
+		color:hsla(0, 1%, 14%, 0.6)
+	}
+
+	.scroll_button {
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
+
+	.about_container {
+		column-gap: 10px
+	}
+
+	.about_image {
+		width: 250px;
 	}
 
 	.about_description {
-		margin-bottom: 15px;
+		text-align: initial;
+	}
+
+	.about_info {
+		justify-content: space-between;
+	}
+
+	.about_button {
+		justify-content: initial;
+	}
+
+	.about_info_title {
+		font-size: 25px;
 	}
 	
-	.about_info {
-		margin-bottom: 20px;
+	.about_info_name {
+		font-size: 15px;
 	}
 
-	.experience_button {
-		margin-top: 20px;
+	.experience_container {
+		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.qualification {
-		display: grid;
-		grid-template-columns: 0.8fr;
+	.experience_icon {
+		font-size: 30px;
+	}
+
+	.experience_content {
+		padding: 90px 0 30px 20px;
+	}
+
+	.experience_data {
+		width: 500px;
+	}
+
+	.qualification_header {
 		justify-content: center;
+		margin-left: 30px;
 	}
 
 	.qualification_button {
-		font-size: 20px;
+		margin: 0 15px;
 	}
-	
+
 	.qualification_icon {
-		font-size: 23px;
+		font-size: 20px;
 	}
 	
 	.qualification_title {
-		font-size: 16px;
-		margin-bottom: 8px;
+		font-size: 17px;
 	}
 	
 	.qualification_subtitle {
-		font-size: 11px;
+		font-size: 12.5px;
+		margin-bottom: 6px;
+	}
+	
+	.qualification_period {
+		font-size: 10px;
 	}
 
+	.footer_container {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 50px 0 60px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.section_title {
+		font-size: 4vw;
+	}
+
+	.section_subtitle {
+		font-size: 1.3vw;
+	}
+
+	.button_icon {
+		font-size: 1.5vw;
+	}
+
+	.button {
+		font-size: 1.25vw;
+	}
+
+	.header,
+	.main,
+	.footer_container {
+		padding: 0;
+	}
+
+	.nav_link {
+		font-size: 1.2vw;
+		padding: 1.2vw 0;
+	}
+
+	.home_content {
+		height: 600px;
+		align-items: center;
+	}
+
+	.home_icon {
+		font-size: 3vw;
+	}
+
+	.p1 {
+		font-size: 1.8vw;
+		letter-spacing: 0.5em;
+		margin-bottom: 0.5vw;
+	}
+
+	.p2 {
+		font-size: 4.5vw;
+		margin-bottom: 2vw;
+	}
+	
+	.p3 {
+		font-size: 3vw;
+		margin-bottom: 4vw;
+		letter-spacing: 0.3em;
+	}
+
+	.scroll_name {
+		font-size: 1.5vw;
+	}
+
+	.scroll_arrow {
+		font-size: 2vw;
+	}
+	
+	.about_container {
+		align-items: center;
+	}
+
+	.about_image {
+		width: 50%;
+	}
+
+	.about_content {
+		margin-right: 4vw;
+	}
+
+	.about_description {
+		font-size: 1.33vw;
+	}
+
+	.about_info_title {
+		font-size: 3vw;
+	}
+
+	.about_info_name {
+		font-size: 1vw;
+		margin-bottom: 2vw;
+	}
+
+	.experience_container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.experience_content {
+		padding: 8vw 5vw 3vw 3vw;
+	}
+
+	.experience_data {
+		width: 60%;
+		height: 40%;
+	}
+
+	.experience_title,
+	.skills_title,
+	.project_description,
+	.recomendation_name,
+	.contact_title {
+		font-size: 1.5vw;
+	}
+	
+	.experience_period,
+	.skills_subtitle,
+	.project_instruments,
+	.recomendation_place,
+	.contact_subtitle {
+		font-size: 0.85vw;
+		margin-bottom: 2.5vw;
+	}
+
+	.company_logo {
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.company_title,
+	.experience_close,
+	.responsibility {
+		font-size: 0.95vw;
+		margin-bottom: 0.6vw;
+	}
+
+	.skills_container {
+		margin: 0 10vw;
+	}
+	
 	.project_image {
-		margin: 0 15px 0 40px;
-		width: 300px;
-		height: 205px;
+		width: 30vw;
+		height: 18vw;
+	}
+
+	.project_image:hover {
+		border: 2.5px solid hsl(97, 67%, 61%);
 	}
 
 	.project_data {
-		text-align: left;
+		margin-right: 2vw;
 	}
-	
+
 	.project_title {
-		font-size: 20px;
+		font-size: 2.2vw;
+	}
+
+	.contacts_container,
+	.recomendation_container {
+		width: 80%;
+	}
+
+	.stars { 
+		font-size: 1.5vw;
+		margin-bottom: 1.5vw;
+	}
+
+	.recomendation_name {
+		margin-top: 1.5vw;
 	}
 	
-	.project_instruments {
-		font-size: 10px;
+	.footer_container {
+		margin: 5vw 4vw;
+	}
+
+	.footer_title {
+		font-size: 2vw;
 	}
 	
-	.project_description {
-		font-size: 12px;
+	.footer_subtitle,
+	.footer_link,
+	.footer_icon {
+		font-size: 1.5vw;
 	}
 }

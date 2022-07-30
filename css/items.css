@@ -92,3 +92,12 @@
 	display: block;
 	opacity: 1;
 }
+
+@media screen and (min-width: 1024px) {
+	.scroll_up_button {
+		height: 3vw;
+		width: 3vw;
+		font-size: 1.6vw;
+		border: 0.3vw solid hsl(97, 67%, 61%);
+	}
+}
