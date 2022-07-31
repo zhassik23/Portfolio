@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$('html').css("scrollBehavior", "auto");
 	});
 
-	$('.nav_link').click(function(){
+	$('.nav_link, .scroll_button').click(function() {
 		 // applying again smooth scroll on menu items click
 		 $('html').css("scrollBehavior", "smooth");
 	});
