@@ -366,6 +366,7 @@ img {
 
 
 .borderless_button:hover {
+	background-color: transparent;
 	color: hsl(97, 40%, 35%);
 }
 
