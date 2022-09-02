@@ -365,8 +365,6 @@ img {
 }
 
 .borderless_button:hover {
-	font-size: 10px;
-	background-color: transparent;
 	color: hsl(97, 40%, 35%);
 }
 
