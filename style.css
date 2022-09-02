@@ -364,14 +364,6 @@ img {
 	color:hsl(97, 67%, 61%);
 }
 
-.borderless_button:hover {
-	color: hsl(97, 40%, 35%);
-}
-
-.experience_button:hover .button_icon {
-	transform: translateY(5px);
-}
-
 .experience_item {
 	position: fixed;
 	top: 0;
