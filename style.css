@@ -361,7 +361,6 @@ img {
 .borderless_button {
 	font-size: 10px;
 	background-color: transparent;
-	border: 1px solid red;
 	color:hsl(97, 67%, 61%);
 }
 
