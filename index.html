@@ -52,6 +52,13 @@
 	<!-- Typing -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	 <!-- Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+      (function() {
+      	emailjs.init("yVKttaYJiGixIKUis");
+      })();
+   </script>
 </head>
 <body>
 	<!-- Progress bar (in the right side) -->
@@ -1105,31 +1112,31 @@
 				</div>
 				
 				<!-- Form -->
-				<form action="" class="contacts_form grid">
+				<form action="mailto:serikuly.zhassulan@gmail.com" method="post" enctype="text/plain" class="contacts_form grid" id="form">
 					<!-- <div class="contact_inputs"> -->
 						<div class="contact_content">
 							<label for="" class="contact_label">Name - Surname</label>
-							<input type="text" placeholder="Name-Surname" required class="contact_input">
+							<input type="text" placeholder="Name-Surname" class="contact_input">
 						</div>
 						<div class="contact_content">
 							<label for="" class="contact_label">Email</label>
-							<input type="email" placeholder="Email" required class="contact_input">
+							<input type="email" placeholder="Email" class="contact_input">
 						</div>
 					<!-- </div> -->
 					<div class="contact_content">
 						<label for="" class="contact_label">Project</label>
-						<input type="text" placeholder="Project" required class="contact_input">
+						<input type="text" placeholder="Project" class="contact_input">
 					</div>
 					<div class="contact_content">
 						<label for="" class="contact_label">Message</label>
-						<textarea name="" id="" cols="0" rows="10" placeholder="Message..." required class="contact_input"></textarea>
+						<textarea name="" id="" cols="0" rows="10" placeholder="Message..." class="contact_input"></textarea>
 					</div>
 					<!-- button -->
 					<div class="contacts_button">
-						<button type="submit" class="button button_flex">
+						<div type="submit" class="button button_flex" id="button" onclick="validation()">
 							Send Message
 							<i class="fa-solid fa-paper-plane"></i>
-						</button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -1192,5 +1199,7 @@
 	<script src="js/swiper-bundle.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	<!-- Loader JS -->
+	<script src="js/mail.js"></script>
 </body>
 </html>
