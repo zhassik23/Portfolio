@@ -625,7 +625,7 @@ img {
 }
 
 .js::before {
-	width: 70%;
+	width: 80%;
 }
 
 .less_sass::before {
@@ -637,7 +637,7 @@ img {
 }
 
 .react::before {
-	width: 65%;
+	width: 75%;
 }
 
 .premiere_pro::before {
@@ -758,7 +758,8 @@ img {
 	justify-content: space-evenly;
 	align-items: center;
 	border: 2px solid #fff;
-	box-shadow: 0 -4px 10px hsl(0, 0%, 78%);;
+	box-shadow: 0 -4px 10px hsl(0, 0%, 78%);
+	margin-bottom: 20px;
 }
 
 .recomendation_icon {
