@@ -31,7 +31,7 @@ if (navC) {
 // home
 // typing script
 var typed = new Typed(".typing", {
-	strings: ["Frontend Developer", "UI/UX Designer", "React Developer"],
+	strings: ["Web Developer", "UI/UX Designer", "React / Vue / Django"],
 	typeSpeed: 75,
 	loop: true
 });

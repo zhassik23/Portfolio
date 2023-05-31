@@ -637,7 +637,15 @@ img {
 }
 
 .react::before {
-	width: 75%;
+	width: 85%;
+}
+
+.vuejs::before {
+	width: 85%;
+}
+
+.django::before {
+	width: 85%;
 }
 
 .premiere_pro::before {
@@ -1378,7 +1386,6 @@ label {
 
 	.company_logo {
 		width: 5vw;
-		height: 5vw;
 	}
 	
 	.company_title,
