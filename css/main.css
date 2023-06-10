@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.right_side {
+	text-align: right;
+}
+
+/* General */
+.main	{
+	background: url('../assets/images/background.jpeg') no-repeat center top / cover;
+}
+
+.container {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+.section {
+	padding: 64px 0;
+}
+
+.section_title {
+	font-size: 35px;
+	color: hsla(0, 0%, 100%, 0.85);
+	text-shadow: 0 5px 5px hsla(97, 67%, 61%);
+}
+
+.section_subtitle {
+	display: block;
+	font-size: 12px;
+	color:hsl(0, 0%, 78%);
+	margin-bottom: 45px;
+}
+
+.section_title, 
+.section_subtitle {
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	gap: 24px;
+}
+
+/* button */
+.button {
+	display: inline-block;
+	background-color: hsl(97, 67%, 61%);
+	color: #fff;
+	padding: 8px;
+	border-radius: 8px;
+	font-weight: 800;
+}
+
+.button_flex {
+	align-items: center;
+}
+
+.button:hover {
+	background-color: hsl(97, 40%, 35%);
+}
+
+.button_icon {
+	margin-left: 8px;
+	transition: 0.3s;
+}
+
+@media screen and (min-width: 568px) {
+	.about_container,
+	.skills_container,
+	.projects_content,
+	.contacts_container,
+	.footer_container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	.section {
+		padding: 80px 0 40px;
+	}
+
+	.section_subtitle {
+		font-size: 13px;
+		margin-bottom: 64px;
+	}
+
+	.header,
+	.main,
+	.footer_container {
+		padding: 0 25px 5px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.section_title {
+		font-size: 4vw;
+	}
+
+	.section_subtitle {
+		font-size: 1.3vw;
+	}
+
+	.button_icon {
+		font-size: 1.5vw;
+	}
+
+	.button {
+		font-size: 1.25vw;
+	}
+
+	.header,
+	.main,
+	.footer_container {
+		padding: 0;
+	}
+
+	.experience_title,
+	.skills_title,
+	.project_description,
+	.recomendation_name,
+	.contact_title {
+		font-size: 1.5vw;
+	}
+	
+	.experience_period,
+	.skills_subtitle,
+	.project_instruments,
+	.recomendation_place,
+	.contact_subtitle {
+		font-size: 0.85vw;
+		margin-bottom: 2.5vw;
+	}
+}

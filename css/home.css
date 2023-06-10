@@ -1,0 +1,168 @@
+.home_content {
+	padding-top: 20px;
+}
+
+.home_items {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 40px;
+}
+
+.home_icon {
+	font-size: 23px;
+	color: hsl(97, 67%, 61%);
+	text-shadow: 2.5px 2.5px #000;
+}
+
+.home_icon:hover {
+	color: hsl(97, 40%, 35%);
+}
+
+.home_data {
+	height: 350px;
+	text-align: center;
+}
+
+.p1 {
+	font-size: 14px;
+	color: hsl(97, 67%, 61%);
+	text-shadow: 1.2px 1.2px hsla(0, 0%, 100%, 0.15);
+	letter-spacing: 0.25em;
+	margin-bottom: 20px;
+}
+
+.p1:hover {
+	color: hsl(97, 40%, 35%);
+}
+
+.p2 {
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 1.5px 1.5px hsla(0, 0%, 100%, 0.15);
+	margin-bottom: 30px;
+	letter-spacing: 0.13em;
+}
+
+.p2:hover {
+	color: hsl(0, 0%, 78%);
+}
+
+.p3 {
+	font-size: 20px;
+	color: hsl(97, 67%, 61%);
+	text-shadow: 1px 1px hsla(0, 0%, 100%, 0.15);
+	margin-bottom: 20px;
+	letter-spacing: 0.1em;
+}
+
+.p3:hover {
+	color: hsl(97, 40%, 35%);
+}
+
+.scroll_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	color: #fff;
+	text-shadow: 1.8px 1.8px hsla(0, 0%, 100%, 0.15);
+	transition: 0.3s;
+	animation: ani 3s ease infinite;
+}
+
+.scroll_button:hover {
+	transform: translateY(5px);
+}
+
+.scroll_name {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.scroll_arrow {
+	margin: 4px;
+}
+
+@keyframes ani {
+	0%, 20%, 50%, 80%, 100% {
+		 transform: translateY(0);
+	}
+	40% {
+		 transform: translateY(-10px);
+	}
+	60% {
+		 transform: translateY(-7px);
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.scroll_button {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 568px) {
+	.home_content {
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1fr 2.5fr;
+		padding-top: 30px;
+	}
+
+	.home_items {
+		display: grid;
+		row-gap: 25px;
+	}
+
+	.home_data {
+		text-align: right;
+		height: 300px;
+	}
+
+	.scroll_button {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.scroll_button {
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.home_content {
+		height: 600px;
+		align-items: center;
+	}
+
+	.home_icon {
+		font-size: 3vw;
+	}
+	
+	.p1 {
+		font-size: 1.8vw;
+		letter-spacing: 0.5em;
+		margin-bottom: 0.5vw;
+	}
+
+	.p2 {
+		font-size: 4.5vw;
+		margin-bottom: 2vw;
+	}
+	
+	.p3 {
+		font-size: 3vw;
+		margin-bottom: 4vw;
+		letter-spacing: 0.3em;
+	}
+
+	.scroll_name {
+		font-size: 1.5vw;
+	}
+
+	.scroll_arrow {
+		font-size: 2vw;
+	}
+}

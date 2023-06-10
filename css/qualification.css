@@ -1,0 +1,150 @@
+.qualification_header {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 30px;
+}
+
+.qualification_button {
+	font-size: 17px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.qualification_button:hover {
+	color: hsl(97, 67%, 61%)
+}
+
+.qualification_button.qualification_active {
+	color:hsl(97, 67%, 61%);
+}
+
+.qualification_icon {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.qualification_item {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	column-gap: 25px;
+}
+
+.qualification_title {
+	font-size: 15px;
+	font-weight: 650;
+	color: #fff;
+}
+
+.qualification_subtitle {
+	display: inline-block;
+	font-size: 10px;
+	margin-bottom: 6px;
+}
+
+.qualification_period {
+	font-size: 8px;
+	color:hsl(0, 0%, 78%);
+}
+
+.qualification_rounder {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color:hsl(97, 67%, 61%);
+	border-radius: 50%;
+}
+
+.qualification_line {
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color:hsl(97, 67%, 61%);
+	transform: translate(6px, -7px);
+}
+
+.qualification_show {
+	display: block;
+}
+
+.qualification_hide {
+	display: none;
+}
+
+@media screen and (max-width: 375px) {
+	.qualification_header {
+		margin-bottom: 15px;
+	}
+	
+	.qualification_button {
+		font-size: 15px;
+	}
+	
+	.qualification_icon {
+		font-size: 17px;
+	}
+	
+	.qualification_title {
+		font-size: 13px;
+	}
+	
+	.qualification_subtitle {
+		font-size: 10px;
+	}
+	
+	.qualification_period {
+		font-size: 8px;
+	}
+}
+
+@media screen and (min-width: 568px) {
+	.qualification {
+		display: grid;
+		grid-template-columns: 0.8fr;
+		justify-content: center;
+	}
+
+	.qualification_button {
+		font-size: 20px;
+	}
+	
+	.qualification_icon {
+		font-size: 23px;
+	}
+	
+	.qualification_title {
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+	
+	.qualification_subtitle {
+		font-size: 11px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.qualification_header {
+		justify-content: center;
+		margin-left: 30px;
+	}
+
+	.qualification_button {
+		margin: 0 15px;
+	}
+
+	.qualification_icon {
+		font-size: 20px;
+	}
+	
+	.qualification_title {
+		font-size: 17px;
+	}
+	
+	.qualification_subtitle {
+		font-size: 12.5px;
+		margin-bottom: 6px;
+	}
+	
+	.qualification_period {
+		font-size: 10px;
+	}
+}
