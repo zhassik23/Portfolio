@@ -5,11 +5,11 @@
 
 .experience_content {
 	position: relative;
-	background-color: hsla(0, 0%, 45%, 0.5);
+	background-color: hsla(0, 0%, 45%, .5);
 	border-radius: 5px;
 	box-shadow: 0 2px 4px hsl(0, 4%, 84%);
 	padding: 30px 5px 20px 25px;
-	transition: 0.3s;
+	transition: .3s;
 }
 
 .experience_content:hover {
@@ -54,7 +54,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: hsla(0, 0%, 0%, 0.5);
+	background-color: hsla(0, 0%, 0%, .5);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,7 +62,7 @@
 	z-index: 15;
 	opacity: 0;
 	visibility: hidden;
-	transition: 0.3s;
+	transition: .3s;
 }
 
 .item_active {
@@ -101,10 +101,6 @@
 .company_title {
 	font-size: 12px;
 	margin-right: 10px;
-}
-
-.company_logo {
-	height: 30px;
 }
 
 .experience_close {
@@ -196,13 +192,13 @@
 	}
 
 	.company_logo {
-		width: 5vw;
+		height: 2.5vw;
 	}
 	
 	.company_title,
 	.experience_close,
 	.responsibility {
-		font-size: 0.95vw;
-		margin-bottom: 0.6vw;
+		font-size: .95vw;
+		margin-bottom: .6vw;
 	}
 }

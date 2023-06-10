@@ -26,8 +26,8 @@
 .p1 {
 	font-size: 14px;
 	color: hsl(97, 67%, 61%);
-	text-shadow: 1.2px 1.2px hsla(0, 0%, 100%, 0.15);
-	letter-spacing: 0.25em;
+	text-shadow: 1.2px 1.2px hsla(0, 0%, 100%, .15);
+	letter-spacing: .25em;
 	margin-bottom: 20px;
 }
 
@@ -38,9 +38,9 @@
 .p2 {
 	font-size: 40px;
 	color: #fff;
-	text-shadow: 1.5px 1.5px hsla(0, 0%, 100%, 0.15);
+	text-shadow: 1.5px 1.5px hsla(0, 0%, 100%, .15);
 	margin-bottom: 30px;
-	letter-spacing: 0.13em;
+	letter-spacing: .13em;
 }
 
 .p2:hover {
@@ -50,9 +50,9 @@
 .p3 {
 	font-size: 20px;
 	color: hsl(97, 67%, 61%);
-	text-shadow: 1px 1px hsla(0, 0%, 100%, 0.15);
+	text-shadow: 1px 1px hsla(0, 0%, 100%, .15);
 	margin-bottom: 20px;
-	letter-spacing: 0.1em;
+	letter-spacing: .1em;
 }
 
 .p3:hover {
@@ -64,8 +64,8 @@
 	justify-content: center;
 	align-items: center;	
 	color: #fff;
-	text-shadow: 1.8px 1.8px hsla(0, 0%, 100%, 0.15);
-	transition: 0.3s;
+	text-shadow: 1.8px 1.8px hsla(0, 0%, 100%, .15);
+	transition: .3s;
 	animation: ani 3s ease infinite;
 }
 
@@ -143,8 +143,8 @@
 	
 	.p1 {
 		font-size: 1.8vw;
-		letter-spacing: 0.5em;
-		margin-bottom: 0.5vw;
+		letter-spacing: .5em;
+		margin-bottom: .5vw;
 	}
 
 	.p2 {
@@ -155,7 +155,7 @@
 	.p3 {
 		font-size: 3vw;
 		margin-bottom: 4vw;
-		letter-spacing: 0.3em;
+		letter-spacing: .3em;
 	}
 
 	.scroll_name {

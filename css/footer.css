@@ -9,7 +9,7 @@
 
 .footer_subtitle {
 	font-size: 18px;
-	color:hsla(0, 0%, 78%, 0.5);
+	color:hsla(0, 0%, 78%, .5);
 }
 
 .footer_list {
@@ -48,7 +48,7 @@
 .footer_copy {
 	text-align: center;
 	font-size: 10px;
-	color:hsla(0, 0%, 100%, 0.75);
+	color:hsla(0, 0%, 100%, .75);
 }
 
 @media screen and (min-width: 768px) {

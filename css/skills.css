@@ -30,7 +30,7 @@
 }
 
 .skills_title:hover {
-	color: hsla(0, 0%, 100%, 0.4)
+	color: hsla(0, 0%, 100%, .4)
 }
 
 .skills_subtitle {
@@ -39,12 +39,12 @@
 }
 
 .skills_subtitle:hover {
-	color:hsla(0, 0%, 78%, 0.4);
+	color:hsla(0, 0%, 78%, .4);
 }
 
 .skills_arrow {
 	margin-left: auto;
-	transition: 0.3s;
+	transition: .3s;
 }
 
 .skills_list {
@@ -70,7 +70,7 @@
 	width: 100%;
 	border: 1px solid #000;
 	border-radius: 4px;
-	background: hsla(0, 0%, 78%, 0.4);
+	background: hsla(0, 0%, 78%, .4);
 	box-shadow: 0 2px 10px hsl(97, 67%, 61%);
 	position: relative;
 }
@@ -82,31 +82,19 @@
 	background: hsl(97, 40%, 35%);
 }
 
-.html::before {
-	width: 100%;
-}
-
-.css::before {
+.js::before {
 	width: 90%;
 }
 
-.js::before {
+.ts::before {
 	width: 80%;
-}
-
-.less_sass::before {
-	width: 80%;
-}
-
-.bootstrap::before {
-	width: 75%;
 }
 
 .react::before {
 	width: 85%;
 }
 
-.vuejs::before {
+.vue::before {
 	width: 85%;
 }
 
@@ -114,28 +102,44 @@
 	width: 85%;
 }
 
-.premiere_pro::before {
-	width: 85%;
+.css::before {
+	width: 90%;
 }
 
-.after_effects::before {
-	width: 70%;
+.sass::before {
+	width: 88%;
 }
 
-.imovie::before {
-	width: 80%;
+.less::before {
+	width: 78%;
 }
 
-.vn::before {
+.bootstrap::before {
+	width: 75%;
+}
+
+.html::before {
 	width: 100%;
 }
 
+.my_sql::before {
+	width: 80%;
+}
+
+.pl_sql::before {
+	width: 80%;
+}
+
+.sqlite::before {
+	width: 75%;
+}
+
 .adobe_photoshop::before {
-	width: 95%;
+	width: 85%;
 }
 
 .figma::before {
-	width: 85%;
+	width: 95%;
 }
 
 .fusion::before {

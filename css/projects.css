@@ -8,7 +8,7 @@
 	height: 205px;
 	border-radius: 15px;
 	justify-self: center;
-	border: 0.5px solid #fff;
+	border: .5px solid #fff;
 }
 
 .projects_content:hover .project_image {

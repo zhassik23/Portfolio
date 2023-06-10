@@ -47,7 +47,7 @@ img {
 
 .section_title {
 	font-size: 35px;
-	color: hsla(0, 0%, 100%, 0.85);
+	color: hsla(0, 0%, 100%, .85);
 	text-shadow: 0 5px 5px hsla(97, 67%, 61%);
 }
 
@@ -88,7 +88,7 @@ img {
 
 .button_icon {
 	margin-left: 8px;
-	transition: 0.3s;
+	transition: .3s;
 }
 
 @media screen and (min-width: 568px) {
@@ -163,7 +163,7 @@ img {
 	.project_instruments,
 	.recomendation_place,
 	.contact_subtitle {
-		font-size: 0.85vw;
+		font-size: .85vw;
 		margin-bottom: 2.5vw;
 	}
 }
