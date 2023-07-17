@@ -1,6 +1,8 @@
 .experience_container {
+	overflow-x: scroll;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 25px;
+	margin: 0 64px;
 }
 
 .experience_content {
@@ -103,6 +105,10 @@
 	margin-right: 10px;
 }
 
+.company_logo {
+	height: 4vh;
+}
+
 .experience_close {
 	position: absolute;
 	top: 20px;
@@ -126,7 +132,7 @@
 	margin: 5px 5px 0 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
 	.experience_container {
 		grid-template-columns: max-content;
 		justify-content: center;
@@ -153,6 +159,10 @@
 }
 
 @media screen and (min-width: 568px) {
+	.experience_container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
 	.experience_button {
 		margin-top: 20px;
 	}
@@ -163,6 +173,11 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 	
+	.experience_content {
+		max-width: auto;
+		min-width: auto;
+	}
+
 	.experience_icon {
 		font-size: 30px;
 	}
@@ -174,23 +189,31 @@
 	.experience_data {
 		width: 500px;
 	}
+
+	.company_logo {
+		height: 2.2vw;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	.experience_container {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: start;
 	}
-
+	
+	.experience_content {
+		max-width: 256px;
+		min-width: 256px;
+	}
+	
 	.experience_content {
 		padding: 8vw 5vw 3vw 3vw;
 	}
-
+	
 	.experience_data {
 		width: 60%;
-		height: 40%;
 	}
-
+	
 	.company_logo {
 		height: 2.5vw;
 	}
@@ -200,5 +223,11 @@
 	.responsibility {
 		font-size: .95vw;
 		margin-bottom: .6vw;
+	}
+}
+
+@media screen and (min-width: 1508px) {
+	.experience_container {
+		justify-content: space-evenly;
 	}
 }
