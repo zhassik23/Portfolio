@@ -130,6 +130,10 @@
 	width: 80%;
 }
 
+.postgres_sql::before {
+	width: 75%;
+}
+
 .sqlite::before {
 	width: 75%;
 }
