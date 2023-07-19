@@ -111,8 +111,8 @@
 
 .experience_close {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 8px;
+	right: 8px;
 	color:hsl(0, 0%, 78%);
 	cursor: pointer;
 }
