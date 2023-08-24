@@ -76,7 +76,7 @@
 }
 
 .skills_bar::before {
-	content: "";
+	content: '';
 	height: 100%;
 	position: absolute;
 	background: hsl(97, 40%, 35%);

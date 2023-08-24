@@ -30,8 +30,8 @@ if (navC) {
 
 // home
 // typing script
-var typed = new Typed(".typing", {
-	strings: ["Web Developer", "Nuxt.js / Vue.js", "React.js / Next.js", "Django.py"],
+var typed = new Typed('.typing', {
+	strings: ['Web Developer', 'Nuxt.js / Vue.js', 'React.js / Next.js', 'Django.py'],
 	typeSpeed: 75,
 	loop: true
 });
@@ -106,7 +106,7 @@ header.forEach(element => {
 
 
 // swiper
-var swiper = new Swiper(".projects_container", {
+var swiper = new Swiper('.projects_container', {
 	spaceBetween: 30,
 	centeredSlides: true,
 	autoplay: {
@@ -114,7 +114,7 @@ var swiper = new Swiper(".projects_container", {
 	  disableOnInteraction: false,
 	},
 	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
 	},
 });
