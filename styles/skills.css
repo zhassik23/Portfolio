@@ -83,39 +83,39 @@
 }
 
 .js::before {
-	width: 90%;
+	width: 96%;
 }
 
 .ts::before {
-	width: 80%;
-}
-
-.react::before {
-	width: 85%;
-}
-
-.vue::before {
-	width: 85%;
-}
-
-.django::before {
-	width: 85%;
-}
-
-.css::before {
-	width: 90%;
-}
-
-.sass::before {
 	width: 88%;
 }
 
+.react::before {
+	width: 92%;
+}
+
+.vue::before {
+	width: 98%;
+}
+
+.django::before {
+	width: 84%;
+}
+
+.css::before {
+	width: 100%;
+}
+
+.sass::before {
+	width: 100%;
+}
+
 .less::before {
-	width: 78%;
+	width: 85%;
 }
 
 .bootstrap::before {
-	width: 75%;
+	width: 77%;
 }
 
 .html::before {
@@ -131,15 +131,15 @@
 }
 
 .postgres_sql::before {
-	width: 75%;
+	width: 89%;
 }
 
 .sqlite::before {
-	width: 75%;
+	width: 77%;
 }
 
 .adobe_photoshop::before {
-	width: 85%;
+	width: 88%;
 }
 
 .figma::before {
@@ -147,11 +147,11 @@
 }
 
 .fusion::before {
-	width: 75%;
+	width: 76%;
 }
 
 .coreldraw::before {
-	width: 70%;
+	width: 76%;
 }
 
 .english::before {

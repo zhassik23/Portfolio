@@ -45,6 +45,7 @@ const closeButtons = document.querySelectorAll('.experience_close');
 
 var item = function(itemClick) {
 	items[itemClick].classList.add('item_active');
+	document.body.classList.add("freeze");
 }
 
 viewButtons.forEach((viewBtn, i) => {
@@ -55,6 +56,7 @@ viewButtons.forEach((viewBtn, i) => {
 
 closeButtons.forEach(closeBtn => {
 	closeBtn.addEventListener('click', () => {
+		document.body.classList.remove("freeze");
 		items.forEach(item => {
 			item.classList.remove('item_active');
 		});

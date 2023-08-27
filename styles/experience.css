@@ -198,7 +198,7 @@
 @media screen and (min-width: 1024px) {
 	.experience_container {
 		display: flex;
-		justify-content: start;
+		justify-content: space-between;
 	}
 	
 	.experience_content {
