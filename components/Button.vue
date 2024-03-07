@@ -28,6 +28,7 @@ const props = defineProps({
     border-radius: 8px;
 	background-color: hsl(97, 67%, 61%);
 	color: #FFF;
+	cursor: pointer;
 	transition: .3s;
 	&:hover {
 		background-color: hsl(97, 40%, 35%);

@@ -3,7 +3,7 @@
 		<div class="footer-wrap box">
 			<div class="footer-wrap__line">
 				<div class="footer-wrap__line__cell vertical">
-					<h3 class="title">Serikuly Zhassulan</h3>
+					<h2 class="title">Serikuly Zhassulan</h2>
 					<h4 class="subtitle">Middle Web Developer</h4>
 				</div>
 

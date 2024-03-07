@@ -1,8 +1,8 @@
 <template>
     <section :id="id" class="section">
         <div class="section-header">
-          <h3 class="title">{{ title }}</h3>
-          <h5 class="subtitle">{{ subtitle }}</h5>
+          <h1 class="title">{{ title }}</h1>
+          <h6 class="subtitle">{{ subtitle }}</h6>
         </div>
 
         <div class="section-content">

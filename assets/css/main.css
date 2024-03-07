@@ -24,6 +24,9 @@
 .header-menu__item:hover {
   opacity: 60%;
 }
+.header-menu__item .text {
+  color: #000;
+}
 
 .footer {
   background-color: #2D3E50;
@@ -51,7 +54,12 @@
 .footer-wrap__line__cell:last-child {
   gap: 40px;
 }
+.footer-wrap__line__cell .title {
+  line-height: 36px;
+}
 .footer-wrap__line__cell .subtitle {
+  font-weight: 500;
+  line-height: 28px;
   color: #808080;
 }
 .footer-wrap__line__cell .text:hover {
@@ -107,12 +115,15 @@
   text-shadow: 2.2px 2.2px hsla(0, 0%, 100%, 0.15);
 }
 .home-wrap .text:nth-child(2) {
+  font-size: 64px;
+  font-weight: 800;
   margin-bottom: 30px;
   letter-spacing: 0.15em;
   text-shadow: 2.5px 2.5px hsla(0, 0%, 100%, 0.15);
-  color: #FFF;
 }
 .home-wrap .text:nth-child(3) {
+  font-size: 42px;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-shadow: 2px 2px hsla(0, 0%, 100%, 0.15);
 }
@@ -138,6 +149,23 @@
 }
 .home #btn_home .button-icon {
   font-size: 24px;
+}
+
+#about .section-content {
+  display: grid;
+  align-items: center;
+  padding-top: 45px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+#about .section-content .image {
+  width: 240px;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+}
+#about .section-content .info {
+  gap: 36px;
 }
 
 * {
@@ -170,44 +198,48 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins", sans-serif;
+  color: #FFF;
+}
+
+h1, h2, h4 {
+  font-weight: 700;
+}
+
+h3, h5 {
+  font-weight: 600;
 }
 
 h1 {
-  font-weight: 800;
-  font-size: 64px;
-}
-
-h2, h3 {
-  font-weight: 600;
+  font-size: 44px;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 28px;
 }
 
 h3 {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 36px;
-}
-
-h4, h5 {
-  font-weight: 500;
+  font-size: 25px;
 }
 
 h4 {
   font-size: 20px;
-  line-height: 28px;
 }
 
 h5 {
-  font-size: 12px;
+  font-size: 16px;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 13px;
 }
 
 p {
+  font-weight: 400;
   font-size: 16px;
+  line-height: 23px;
 }
 
 .box {
@@ -241,7 +273,7 @@ p {
   padding-top: 56px;
 }
 .section-header {
-  margin: 24px 0;
+  margin: 24px 0 45px;
 }
 .section-header .title,
 .section-header .subtitle {
@@ -254,4 +286,7 @@ p {
 .section-header .subtitle {
   color: hsl(0, 0%, 78%);
   margin-top: 8px;
+}
+.section-content {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
