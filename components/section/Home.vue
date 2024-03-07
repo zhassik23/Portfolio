@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		
-		<a id="btn_home" href='#about'>
+		<a id="btn_home" href="#about">
 			<Button text="Scroll Down" icon="fa-solid fa-square-caret-down" :second="true" />
 		</a>
 	</section>

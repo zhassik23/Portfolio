@@ -27,7 +27,6 @@ const props = defineProps({
     padding: 8px;
     border-radius: 8px;
 	background-color: hsl(97, 67%, 61%);
-	color: #FFF;
 	cursor: pointer;
 	transition: .3s;
 	&:hover {
@@ -35,7 +34,11 @@ const props = defineProps({
 	}
 	&-text,
 	&-icon {
-		font-weight: 800;
+		font-weight: 700;
+	}
+	&-icon {
+		color: #FFF;
+		font-size: 16px;
 	}
 }
 </style>

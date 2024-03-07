@@ -3,17 +3,21 @@
 
 @import _layouts/header
 @import _layouts/footer
+@import _layouts/modal
 @import _sections/home
 @import _sections/about
 @import _sections/experience
 @import _sections/qualification
+@import _sections/skills
 @import _sections/projects
+@import _sections/recomendations
 @import _sections/contacts
 
 *
 	box-sizing: border-box
 	margin: 0
 	padding: 0
+	transition: all .3s ease-in-out
 html
 	scroll-behavior: smooth
 body
@@ -41,7 +45,7 @@ h1
 h2
 	font-size: 28px
 h3
-	font-size: 25px
+	font-size: 24px
 h4
 	font-size: 20px
 h5
@@ -67,7 +71,9 @@ p
 .space
 	justify-content: space-between
 .main
-	background: url('@/assets/images/background.jpeg') no-repeat center top / cover
+	background: url("@/assets/images/background.jpeg") no-repeat center top / cover
+.btn
+	cursor: pointer
 .section
 	padding: 56px 0
 	&-header
