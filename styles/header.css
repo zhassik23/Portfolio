@@ -1,20 +1,6 @@
 .header {
-	width: 100%;
-	position: fixed;
 	bottom: 0;
-	left: 0;
 	z-index: 12;
-}
-
-.nav {
-	max-width: 986px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.nav_logo {
-	height: 32px;
 }
 
 .nav_buttons {
@@ -63,10 +49,6 @@
 	color: hsl(97, 67%, 61%);
 }
 
-.nav_icon {
-	font-size: 20px;
-}
-
 .nav_close {
 	position: absolute;
 	right: 25px;
@@ -88,41 +70,24 @@
 	.nav_menu {
 		padding: 32px 4px 50px;
 	}
-
 	.nav_list {
 		column-gap: 0;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.header {
-		top: 0;
-		bottom: initial;
-		background-color: #FFF;
-	}
-	
-	.nav {
-		column-gap: 25px;
-	}
-	
 	.nav_toggle,
 	.nav_close,
 	.nav_icon {
-		display: none !important;
+		display: none;
 	}
-
 	.nav_list {
 		display: flex;
 		column-gap: 30px;
 	}
-
 	.nav_link {
 		font-size: 11px;
 		color:hsla(0, 1%, 14%, 1)
-	}
-
-	.nav_link:hover {
-		color:hsla(0, 1%, 14%, .6)
 	}
 }
 
