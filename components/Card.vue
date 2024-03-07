@@ -21,7 +21,7 @@ const props = defineProps({
     company: String,
     position: String,
     icon: String,
-    logo: String,
+    logo: Object,
     date: String,
     responsibilities: Array
 });

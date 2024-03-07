@@ -5,9 +5,7 @@
           <h6 class="subtitle">{{ subtitle }}</h6>
         </div>
 
-        <div class="section-content">
-          <slot></slot>
-        </div>
+        <slot></slot>
       </section>
 </template>
 

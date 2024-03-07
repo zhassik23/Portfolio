@@ -3,20 +3,17 @@
         <div class="modal-background btn" @click="$emit('close')"></div>
         <div class="modal-wrap">
             <div class="modal-header horizontal">
-                <div>
-                    <h4 class="modal-title">{{ position }}</h4>
-                    <p class="modal-period">{{ date }}</p>
+                <div class="modal-header__left">
+                    <h4>{{ position }}</h4>
+                    <h6 class="period">{{ date }}</h6>
                 </div>
-                <div class="company">
-                    <h4 class="company_title">{{ company }}</h4>
-                    <img :src="logo" :alt="company" class="company_logo" />
-                </div>
+                <img :src="logo" :alt="company" class="logo" />
             </div>
             <i class="fa-solid fa-xmark modal-close btn" @click="$emit('close')"></i>
 
-            <ul class="responsibility_list">
-                <li :key="id" v-for="(responsibility, id) in responsibilities" class="responsibility">
-                    <i class="fa-solid fa-circle responsibility_icon"></i>
+            <ul class="modal-responsibility vertical">
+                <li :key="id" v-for="(responsibility, id) in responsibilities" class="horizontal">
+                    <i class="fa-solid fa-circle icon"></i>
                     <p>{{ responsibility }}</p>
                 </li>
             </ul>
@@ -29,7 +26,7 @@ const props = defineProps({
     isOpen: Boolean,
     company: String,
     position: String,
-    logo: String,
+    logo: Object,
     date: String,
     responsibilities: Array
 });
