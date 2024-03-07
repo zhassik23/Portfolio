@@ -24,6 +24,7 @@
 .header-menu__item:hover {
   opacity: 60%;
 }
+.header-menu__item .icon,
 .header-menu__item .text {
   color: #000;
 }
@@ -136,7 +137,6 @@
   margin-top: 8px;
   margin-right: 8px;
   font-size: 5px;
-  color: #FFF;
 }
 
 @keyframes ani {
@@ -363,6 +363,10 @@ p {
 
 .btn {
   cursor: pointer;
+}
+
+.icon {
+  color: #FFF;
 }
 
 .section {
