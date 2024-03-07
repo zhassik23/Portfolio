@@ -31,8 +31,8 @@
 			</div>
 		</div>
 		
-		<nuxt-link id="btn_home" to='#about'>
+		<a id="btn_home" href='#about'>
 			<Button text="Scroll Down" icon="fa-solid fa-square-caret-down" :second="true" />
-		</nuxt-link>
+		</a>
 	</section>
 </template>
