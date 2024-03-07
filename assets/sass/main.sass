@@ -24,20 +24,26 @@ ul
 	list-style: none
 a
 	text-decoration: none
-h1, h2, h3, h4, p
-	font-family: 'Poppins', sans-serif
+h1, h2, h3, h4, h5, p
+	font-family: $font
 h1
+	font-weight: 800
 	font-size: 64px
+h2, h3
+	font-weight: 600
 h2
 	font-size: 42px
 h3
 	font-weight: 600
 	font-size: 28px
 	line-height: 36px
-h4
+h4, h5
 	font-weight: 500
+h4
 	font-size: 20px
 	line-height: 28px
+h5
+	font-size: 12px
 p
 	font-size: 16px
 
@@ -57,5 +63,15 @@ p
 	background: url('@/assets/images/background.jpeg') no-repeat center top / cover
 .section
 	height: 100vh
-	.title
-		color: $white
+	padding-top: 56px
+	&-header
+		margin: 24px 0
+		.title,
+		.subtitle
+			text-align: center
+		.title
+			text-shadow: 0 5px 5px $accent
+			color: hsla(0, 0%, 100%, .85)
+		.subtitle
+			color: hsl(0, 0%, 78%)
+			margin-top: 8px

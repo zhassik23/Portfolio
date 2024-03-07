@@ -8,18 +8,18 @@
 				</div>
 
 				<ul class="footer-wrap__line__cell vertical">
-					<li><nuxt-link to="#experience">
+					<li><a href="#experience">
 						<p class="text">Experience</p>
-					</nuxt-link></li>
-					<li><nuxt-link to="#qualification">
+					</a></li>
+					<li><a href="#qualification">
 						<p class="text">Qualification</p>
-					</nuxt-link></li>
-					<li><nuxt-link to="#projects">
+					</a></li>
+					<li><a href="#projects">
 						<p class="text">Projects</p>
-					</nuxt-link></li>
-					<li><nuxt-link to="#recomendation">
+					</a></li>
+					<li><a href="#recomendation">
 						<p class="text">Recomendation</p>
-					</nuxt-link></li>
+					</a></li>
 				</ul>
 
 				<ul class="footer-wrap__line__cell horizontal">

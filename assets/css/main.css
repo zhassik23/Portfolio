@@ -104,17 +104,17 @@
 }
 .home-wrap .text:first-child {
   letter-spacing: 0.25em;
-  text-shadow: 1.2px 1.2px hsla(0, 0%, 100%, 0.15);
+  text-shadow: 2.2px 2.2px hsla(0, 0%, 100%, 0.15);
 }
 .home-wrap .text:nth-child(2) {
   margin-bottom: 30px;
   letter-spacing: 0.15em;
-  text-shadow: 1.5px 1.5px hsla(0, 0%, 100%, 0.15);
+  text-shadow: 2.5px 2.5px hsla(0, 0%, 100%, 0.15);
   color: #FFF;
 }
 .home-wrap .text:nth-child(3) {
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px hsla(0, 0%, 100%, 0.15);
+  text-shadow: 2px 2px hsla(0, 0%, 100%, 0.15);
 }
 .home-icons {
   gap: 40px;
@@ -170,12 +170,17 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
   font-family: "Poppins", sans-serif;
 }
 
 h1 {
+  font-weight: 800;
   font-size: 64px;
+}
+
+h2, h3 {
+  font-weight: 600;
 }
 
 h2 {
@@ -188,8 +193,11 @@ h3 {
   line-height: 36px;
 }
 
-h4 {
+h4, h5 {
   font-weight: 500;
+}
+
+h4 {
   font-size: 20px;
   line-height: 28px;
 }
@@ -232,15 +240,18 @@ p {
   height: 100vh;
   padding-top: 56px;
 }
-.section .title,
-.section .subtitle {
+.section-header {
+  margin: 24px 0;
+}
+.section-header .title,
+.section-header .subtitle {
   text-align: center;
 }
-.section .title {
+.section-header .title {
   text-shadow: 0 5px 5px hsl(97, 67%, 61%);
   color: hsla(0, 0%, 100%, 0.85);
 }
-.section .subtitle {
+.section-header .subtitle {
   color: hsl(0, 0%, 78%);
-  margin-bottom: 45px;
+  margin-top: 8px;
 }/*# sourceMappingURL=main.css.map */
