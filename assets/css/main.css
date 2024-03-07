@@ -154,7 +154,6 @@
 #about .section-content {
   display: grid;
   align-items: center;
-  padding-top: 45px;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
@@ -269,11 +268,10 @@ p {
 }
 
 .section {
-  height: 100vh;
-  padding-top: 56px;
+  padding: 56px 0;
 }
 .section-header {
-  margin: 24px 0 45px;
+  margin: 24px 0 56px;
 }
 .section-header .title,
 .section-header .subtitle {
