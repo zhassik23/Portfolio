@@ -221,8 +221,8 @@
 #about .section-content .image {
   width: 240px;
   border-radius: 20px;
-  justify-self: center;
   align-self: center;
+  justify-self: center;
 }
 #about .section-content .info {
   gap: 36px;
@@ -478,6 +478,57 @@
 }
 .skills-box__list .skill .chinese::before {
   width: 50%;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-item {
+  min-width: 80%;
+  margin: 0 10%;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+}
+.carousel-button#prev {
+  left: 0;
+}
+.carousel-button#next {
+  right: 0;
+}
+.carousel .project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+.carousel .project-image {
+  align-self: center;
+  justify-self: center;
+  height: 256px;
+}
+.carousel .project-image .image {
+  width: 300px;
+  height: 100%;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+}
+.carousel .project-image .image:hover {
+  border: 2px solid #8CDE59;
+}
+.carousel .project-data {
+  gap: 8px;
+}
+.carousel .project-data .description {
+  font-size: 13px;
+  color: hsla(0, 0%, 78%, 0.4);
+}
+.carousel .project-data .text {
+  padding: 16px 0;
 }
 
 * {
