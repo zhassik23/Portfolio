@@ -61,14 +61,14 @@
 .footer-wrap__line__cell .subtitle {
   font-weight: 500;
   line-height: 28px;
-  color: #808080;
+  color: hsl(0, 0%, 78%);
 }
 .footer-wrap__line__cell .text:hover {
   text-decoration: underline;
 }
 .footer-wrap__line__cell .text:hover,
 .footer-wrap__line__cell .icon:hover {
-  color: hsl(97, 67%, 61%);
+  color: #8CDE59;
 }
 .footer-wrap__line__cell .icon {
   font-size: 20px;
@@ -125,7 +125,7 @@
 }
 .modal-header__left .period {
   margin-top: 5px;
-  color: #808080;
+  color: hsl(0, 0%, 78%);
 }
 .modal-header .logo {
   height: 40px;
@@ -169,7 +169,7 @@
 }
 .home-wrap .text:first-child, .home-wrap .text:nth-child(3) {
   margin-bottom: 20px;
-  color: hsl(97, 67%, 61%);
+  color: #8CDE59;
 }
 .home-wrap .text:first-child {
   letter-spacing: 0.25em;
@@ -193,10 +193,10 @@
 }
 .home-icons .icon {
   font-size: 36px;
-  color: hsl(97, 67%, 61%);
+  color: #8CDE59;
 }
 .home-icons .icon:hover {
-  color: hsl(97, 40%, 35%);
+  color: #517D36;
 }
 .home #btn_home {
   position: absolute;
@@ -243,7 +243,7 @@
   box-shadow: 0 2px 4px hsl(0, 4%, 4%);
 }
 #experience .section-content .card-icon {
-  color: hsl(97, 67%, 61%);
+  color: #8CDE59;
   font-size: 40px;
 }
 #experience .section-content .card-text {
@@ -254,7 +254,7 @@
   background-color: transparent;
 }
 #experience .section-content .card .button-text, #experience .section-content .card .button-icon {
-  color: hsl(97, 67%, 61%);
+  color: #8CDE59;
 }
 #experience .section-content .card .button:hover .button-icon {
   transform: translateY(5px);
@@ -277,7 +277,7 @@
 .qualification-header__button:hover .icon,
 .qualification-header__button:hover .text, .qualification-header__button.active .icon,
 .qualification-header__button.active .text {
-  color: hsl(97, 67%, 61%);
+  color: #8CDE59;
 }
 .qualification-header__button .icon {
   font-size: 16px;
@@ -303,13 +303,13 @@
 .qualification-list__item .shape-circle {
   width: 13px;
   height: 13px;
-  background-color: hsl(97, 67%, 61%);
+  background-color: #8CDE59;
   border-radius: 50%;
 }
 .qualification-list__item .shape-line {
   width: 1px;
   height: 100%;
-  background-color: hsl(97, 67%, 61%);
+  background-color: #8CDE59;
   transform: translate(6px, -7px);
 }
 .qualification-list__item .center {
@@ -327,7 +327,7 @@
 }
 .qualification-list__item .center .date-icon, .qualification-list__item .center .date-text {
   font-size: 11px;
-  color: #808080;
+  color: hsl(0, 0%, 78%);
 }
 .qualification-list__item.left .l {
   display: none;
@@ -341,6 +341,143 @@
 }
 .qualification-list__item.right .r {
   display: none;
+}
+
+.skills {
+  flex-wrap: wrap;
+  gap: 42px 24px;
+}
+.skills-box {
+  width: calc(50% - 21px);
+}
+.skills-box.active .skills-box__header .icon:last-child {
+  transform: rotate(-180deg);
+}
+.skills-box.active .skills-box__list {
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: max-content;
+}
+.skills-box__header {
+  margin-bottom: 24px;
+}
+.skills-box__header .icon {
+  font-size: 24px;
+  color: #8CDE59;
+}
+.skills-box__header .icon:hover {
+  color: #517D36;
+}
+.skills-box__header .icon:first-child {
+  margin-right: 16px;
+}
+.skills-box__header .icon:last-child {
+  margin-left: auto;
+}
+.skills-box__header .subtitle {
+  margin-top: 4px;
+  color: hsl(0, 0%, 78%);
+}
+.skills-box__list {
+  gap: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  padding-left: 44px;
+  height: 0;
+}
+.skills-box__list .skill-data {
+  margin-bottom: 6px;
+}
+.skills-box__list .skill-data .name {
+  text-decoration: underline;
+}
+.skills-box__list .skill-data .percentage {
+  font-size: 14px;
+}
+.skills-box__list .skill-bar {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px #8CDE59;
+  background-color: hsla(0, 0%, 78%, 0.4);
+}
+.skills-box__list .skill-bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #517D36;
+}
+.skills-box__list .skill .js::before {
+  width: 96%;
+}
+.skills-box__list .skill .ts::before {
+  width: 88%;
+}
+.skills-box__list .skill .react::before {
+  width: 92%;
+}
+.skills-box__list .skill .vue::before {
+  width: 98%;
+}
+.skills-box__list .skill .django::before {
+  width: 84%;
+}
+.skills-box__list .skill .css::before {
+  width: 100%;
+}
+.skills-box__list .skill .sass::before {
+  width: 100%;
+}
+.skills-box__list .skill .less::before {
+  width: 85%;
+}
+.skills-box__list .skill .bootstrap::before {
+  width: 77%;
+}
+.skills-box__list .skill .html::before {
+  width: 100%;
+}
+.skills-box__list .skill .my_sql::before {
+  width: 80%;
+}
+.skills-box__list .skill .pl_sql::before {
+  width: 80%;
+}
+.skills-box__list .skill .postgres_sql::before {
+  width: 89%;
+}
+.skills-box__list .skill .sqlite::before {
+  width: 77%;
+}
+.skills-box__list .skill .adobe_photoshop::before {
+  width: 88%;
+}
+.skills-box__list .skill .figma::before {
+  width: 95%;
+}
+.skills-box__list .skill .fusion::before {
+  width: 76%;
+}
+.skills-box__list .skill .coreldraw::before {
+  width: 76%;
+}
+.skills-box__list .skill .english::before {
+  width: 80%;
+}
+.skills-box__list .skill .kazakh::before {
+  width: 100%;
+}
+.skills-box__list .skill .russian::before {
+  width: 90%;
+}
+.skills-box__list .skill .turkish::before {
+  width: 70%;
+}
+.skills-box__list .skill .chinese::before {
+  width: 50%;
 }
 
 * {
@@ -463,7 +600,7 @@ p {
   text-align: center;
 }
 .section-header .title {
-  text-shadow: 0 5px 5px hsl(97, 67%, 61%);
+  text-shadow: 0 5px 5px #8CDE59;
   color: hsla(0, 0%, 100%, 0.85);
 }
 .section-header .subtitle {
