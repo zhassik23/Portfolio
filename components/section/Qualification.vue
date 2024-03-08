@@ -2,18 +2,18 @@
 	<Section id="qualification" title="Qualification" subtitle="My knowledge and certificates">
 		<div class="qualification section-content vertical">
 			<div class="qualification-header horizontal">
-				<div class="qualification-header__button horizontal inline btn" :class="active === 'e' ? 'active' : ''" @click="active = 'e'">
+				<div class="qualification-header__button horizontal inline btn" :class="{ 'active': (active === 'e') }" @click="active = 'e'">
 					<i class="fa-solid fa-graduation-cap icon"></i>
 					<h4 class="text">Education</h4>
 				</div>
-				<div class="qualification-header__button horizontal inline btn" :class="active === 'a' ? 'active' : ''" @click="active = 'a'">
+				<div class="qualification-header__button horizontal inline btn" :class="{ 'active': (active === 'a') }" @click="active = 'a'">
 					<i class="fa-solid fa-briefcase icon"></i>
 					<h4 class="text">Achievements</h4>
 				</div>
 			</div>
 
 			<!-- Education -->
-			<div class='qualification-list' :class="active === 'e' ? 'show' : ''" id='education'>
+			<div class="qualification-list" :class="{ 'show': (active === 'e') }" id="education">
 				<div
 					:key="id"
 					v-for="(item, id) in education"
@@ -28,10 +28,10 @@
 					</div>
 					
 					<div class="center vertical">
-						<h5 class='title'>{{ item.title }}</h5>
-						<h6 class='subtitle'>{{ item.description }}</h6>
-						<div class='date horizontal inline'>
-							<i class='fa-solid fa-calendar-days date-icon'></i>
+						<h5 class="title">{{ item.title }}</h5>
+						<h6 class="subtitle">{{ item.description }}</h6>
+						<div class="date horizontal inline">
+							<i class="fa-solid fa-calendar-days date-icon"></i>
 							<p class="date-text">{{ item.date }}</p>
 						</div>
 					</div>
@@ -46,7 +46,7 @@
 			</div>
 
 			<!-- Achievements -->
-			<div class='qualification-list' :class="active === 'a' ? 'show' : ''" id='achievements'>
+			<div class="qualification-list" :class="{ 'show': (active === 'a') }" id="achievements">
 				<div
 					:key="id"
 					v-for="(item, id) in achievement"
@@ -62,11 +62,11 @@
 					
 					<div class="center vertical">
 						<nuxt-link to="item.link">
-							<h5 class='title'>{{ item.title }}</h5>
+							<h5 class="title">{{ item.title }}</h5>
 						</nuxt-link>
-						<h6 class='subtitle'>{{ item.description }}</h6>
-						<div class='date horizontal inline'>
-							<i class='fa-solid fa-calendar-days date-icon'></i>
+						<h6 class="subtitle">{{ item.description }}</h6>
+						<div class="date horizontal inline">
+							<i class="fa-solid fa-calendar-days date-icon"></i>
 							<p class="date-text">{{ item.date }}</p>
 						</div>
 					</div>
