@@ -531,6 +531,42 @@
   padding: 16px 0;
 }
 
+#recomendations .section-content .stars {
+  gap: 8px;
+  margin-bottom: 26px;
+}
+#recomendations .section-content .stars .icon {
+  color: #8CDE59;
+  text-shadow: 0.8px 0.8px hsla(0, 0%, 100%, 0.8);
+}
+#recomendations .section-content .recomendation {
+  justify-content: space-evenly;
+  width: 100%;
+  height: 108px;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 -4px 10px hsl(0, 0%, 78%);
+}
+#recomendations .section-content .recomendation .icon {
+  font-size: 40px;
+  color: #8CDE59;
+}
+#recomendations .section-content .recomendation-line {
+  border-left: 3px solid #FFF;
+  height: 60px;
+}
+#recomendations .section-content .recomendation-line:hover {
+  color: hsl(0, 0%, 78%);
+}
+#recomendations .section-content .recomendation-place {
+  margin-top: 8px;
+  font-size: 13px;
+  color: hsla(0, 0%, 78%, 0.4);
+}
+#recomendations .section-content .recomendation-place:hover {
+  color: hsl(90, 1%, 37%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
