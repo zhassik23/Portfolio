@@ -567,6 +567,53 @@
   color: hsl(90, 1%, 37%);
 }
 
+#contacts .contact {
+  margin-bottom: 36px;
+}
+#contacts .contact .icon {
+  margin: 10px 15px 0 0;
+  font-size: 25px;
+  color: #8CDE59;
+}
+#contacts .contact .subtitle {
+  margin-top: 8px;
+  font-size: 11px;
+  color: hsl(0, 0%, 78%);
+}
+#contacts .form {
+  gap: 24px;
+  width: 44%;
+}
+#contacts .form-line {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: hsla(97, 40%, 35%, 0.3);
+}
+#contacts .form-line .label {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#contacts .form-line .input,
+#contacts .form-line .textarea {
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: hsla(97, 40%, 35%, 0.3);
+  color: hsl(0, 0%, 78%);
+}
+#contacts .form-line .input::placeholder,
+#contacts .form-line .textarea::placeholder {
+  color: hsl(0, 0%, 78%);
+}
+#contacts .form-line .input {
+  height: 40px;
+}
+#contacts .form-line .textarea {
+  height: max-content;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -598,7 +645,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, label {
   font-family: "Poppins", sans-serif;
   color: #FFF;
 }

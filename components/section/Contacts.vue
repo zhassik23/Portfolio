@@ -1,5 +1,63 @@
 <template>
 	<Section id="contacts" title="Contact me" subtitle="Get in touch">
-		<div></div>
+		<div class="horizontal space">
+			<div class="vertical">
+				<!-- Phone -->
+				<div class="contact horizontal">
+					<nuxt-link to="tel:+77759764165">
+						<i class="fa-solid fa-phone icon"></i>
+					</nuxt-link>
+					<nuxt-link to="tel:+77759764165">
+						<h4>Phone</h4>
+						<h6 class="subtitle">+7 (775) 976-41-65</h6>
+					</nuxt-link>
+				</div>
+
+				<!-- Email -->
+				<div class="contact horizontal">
+					<nuxt-link to="mailto:serikuly.zhassulan@gmail.com">
+						<i class="fa-solid fa-envelope icon"></i>
+					</nuxt-link>
+					<nuxt-link to="mailto:serikuly.zhassulan@gmail.com">
+						<h4>Email</h4>
+						<h6 class="subtitle">serikuly.zhassulan@gmail.com</h6>
+					</nuxt-link>
+				</div>
+
+				<!-- Location -->
+				<div class="contact horizontal">
+					<i class="fa-solid fa-location-dot icon"></i>
+					<div>
+						<h4>Location</h4>
+						<h6 class="subtitle">Almaty, Kazakhstan</h6>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Form -->
+			<form id="form" action="mailto:serikuly.zhassulan@gmail.com" method="post" enctype="text/plain" class="form vertical">
+				<div class="form-line vertical">
+					<label class="label">Name - Surname</label>
+					<input class="input" type="text" placeholder="Name - Surname" />
+				</div>
+				<div class="form-line vertical">
+					<label class="label">Contacts</label>
+					<input class="input" type="email" placeholder="Phone number / Email" />
+				</div>
+
+				<div class='form-line vertical'>
+					<label class='label'>Message</label>
+					<textarea class='textarea' cols='1' rows='16' placeholder='Message...'></textarea>
+				</div>
+
+				<Button
+					id='btn_form'
+					text="Send Message"
+					icon="fa-solid fa-paper-plane" 
+					type='submit'
+					onclick='validation()'
+				/>
+			</form>
+		</div>
 	</Section>
 </template>
