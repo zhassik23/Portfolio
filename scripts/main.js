@@ -1,5 +1,4 @@
-// navbar
-// variables
+// Navbar - variables
 const navM = document.getElementById('nav_menu');
 const navT = document.getElementById('nav_toggle');
 const navC = document.getElementById('nav_close');
@@ -26,16 +25,14 @@ if (navC) {
 	});
 }
 
-// home
-// typing script
+// Home - typing
 var typed = new Typed('.typing', {
 	strings: ['Web Developer', 'Nuxt.js / Vue.js', 'React.js / Next.js', 'Django.py'],
 	typeSpeed: 75,
 	loop: true
 });
 
-// experience
-// variables
+// Experience - variables
 const items = document.querySelectorAll('.experience_item');
 const viewButtons = document.querySelectorAll('.experience_button');
 const closeButtons = document.querySelectorAll('.experience_close');
