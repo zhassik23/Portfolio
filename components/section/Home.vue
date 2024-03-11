@@ -2,30 +2,30 @@
 	<section id="home" class="home section">
 		<div class="home-wrap horizontal inline space">
 			<ul class="home-icons vertical">
-				<li><nuxt-link to="https://github.com/zhassulaan">
+				<li><nuxt-link :to="info.links.github">
 					<i class="fa-brands fa-github icon"></i>
 				</nuxt-link></li>
-				<li><nuxt-link to="https://www.linkedin.com/in/serikulyzhassulan">
+				<li><nuxt-link :to="info.links.linkedin">
 					<i class="fa-brands fa-linkedin icon"></i>
 				</nuxt-link></li>
-				<li><nuxt-link to="mailto:serikuly.zhassulan@gmail.com">
+				<li><nuxt-link :to="info.links.gmail">
 					<i class="fa-solid fa-envelope icon"></i>
 				</nuxt-link></li>
-				<li><nuxt-link to="https://msng.link/o/?young_flovver=tg">
+				<li><nuxt-link :to="info.links.telegram">
 					<i class="fa-brands fa-telegram icon"></i>
 				</nuxt-link></li>
-				<li><nuxt-link to="tel:+77759764165">
+				<li><nuxt-link :to="info.links.phone">
 					<i class="fa-solid fa-phone icon"></i>
 				</nuxt-link></li>
 			</ul>
 
 			<div class="vertical">
 				<p class="text">Hello, my name is</p>
-				<h1 class="text">Zhassulan Serikuly</h1>
+				<h1 class="text">{{ info.name }}</h1>
 				<h2 class="text">
-				 	<TypedText />
+				 	<TypedText :position="info.position" />
 				</h2>
-				<nuxt-link to="https://hh.kz/applicant/resumes/5d166231ff0ae9aa040039ed1f4d6772377352">
+				<nuxt-link :to="info.links.hh">
 					<Button text="Head Hunter" icon="fa-brands fa-instagram" />
 				</nuxt-link>
 			</div>
@@ -36,3 +36,7 @@
 		</a>
 	</section>
 </template>
+
+<script setup>
+import info from "@/assets/data.js";
+</script>

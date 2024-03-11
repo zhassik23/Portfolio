@@ -18,7 +18,7 @@ const formattedNumber = computed(() => {
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .stat {
     width: 30%;
     &-value,

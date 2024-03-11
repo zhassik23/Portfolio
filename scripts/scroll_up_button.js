@@ -2,9 +2,9 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		// scroll-up button show / hide script
 		if (this.scrollY > 500)
-			  $('.scroll_up_button').addClass('show');
+			$('.scroll_up_button').addClass('show');
 		else
-			  $('.scroll_up_button').removeClass('show');
+			$('.scroll_up_button').removeClass('show');
 	});
 
 	// slide-up script

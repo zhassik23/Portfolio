@@ -25,13 +25,6 @@ if (navC) {
 	});
 }
 
-// Home - typing
-var typed = new Typed('.typing', {
-	strings: ['Web Developer', 'Nuxt.js / Vue.js', 'React.js / Next.js', 'Django.py'],
-	typeSpeed: 75,
-	loop: true
-});
-
 // Experience - variables
 const items = document.querySelectorAll('.experience_item');
 const viewButtons = document.querySelectorAll('.experience_button');
