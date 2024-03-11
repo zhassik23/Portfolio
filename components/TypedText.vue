@@ -8,7 +8,7 @@
 const props = defineProps({
   position: Array
 });
-const typeValue = ref('');
+const typeValue = ref("");
 const typeStatus = ref(false);
 const typingSpeed = 100;
 const erasingSpeed = 100;

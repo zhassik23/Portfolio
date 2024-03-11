@@ -2,17 +2,17 @@
     <div class="modal">
         <div class="modal-background btn" @click="$emit('close')"></div>
         <div class="modal-wrap">
+            <i class="fa-solid fa-xmark modal-close btn" @click="$emit('close')"></i>
             <div class="modal-header horizontal">
                 <div class="modal-header__left">
                     <h4>{{ position }}</h4>
                     <h6 class="period">{{ date }}</h6>
                 </div>
-                <img :src="logo" :alt="company" class="logo" />
+                <img :src="logo" :alt="name" class="logo" />
             </div>
-            <i class="fa-solid fa-xmark modal-close btn" @click="$emit('close')"></i>
 
             <ul class="modal-responsibility vertical">
-                <li :key="id" v-for="(responsibility, id) in responsibilities" class="horizontal">
+                <li :key="index" v-for="(responsibility, index) in responsibilities" class="horizontal">
                     <i class="fa-solid fa-circle icon"></i>
                     <p>{{ responsibility }}</p>
                 </li>
@@ -23,11 +23,8 @@
 
 <script setup>
 const props = defineProps({
-    isOpen: Boolean,
-    company: String,
-    position: String,
-    logo: Object,
-    date: String,
-    responsibilities: Array
+    company: Object,
 });
+
+const { name, position, logo, date, responsibilities } = props.company;
 </script>

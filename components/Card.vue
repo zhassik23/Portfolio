@@ -1,16 +1,12 @@
 <template>
     <div class="card">
-        <i :class="`${icon} card-icon`"></i>
-        <h3 class="card-text">{{ company }}</h3>
+        <i :class="`${company.icon} card-icon`"></i>
+        <h3 class="card-text">{{ company.name }}</h3>
         <Button text="View More" icon="fa-solid fa-angle-down button_icon" @click="toggleModal(id)" />
     </div>
     <Modal
         :id="`modal${id}`"
         :company="company"
-        :position="position"
-        :logo="logo"
-        :date="date"
-        :responsibilities="responsibilities"
         @close="toggleModal(id)"
     />
 </template>
@@ -18,12 +14,7 @@
 <script setup>
 const props = defineProps({
     id: Number,
-    company: String,
-    position: String,
-    icon: String,
-    logo: String,
-    date: String,
-    responsibilities: Array
+    company: Object,
 });
 const isOpen = ref(false);
 

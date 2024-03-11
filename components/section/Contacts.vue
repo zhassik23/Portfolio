@@ -4,23 +4,23 @@
 			<div class="vertical">
 				<!-- Phone -->
 				<div class="contact horizontal">
-					<nuxt-link to="tel:+77759764165">
+					<nuxt-link :to="info.links.phone">
 						<i class="fa-solid fa-phone icon"></i>
 					</nuxt-link>
-					<nuxt-link to="tel:+77759764165">
+					<nuxt-link :to="info.links.phone">
 						<h4>Phone</h4>
-						<h6 class="subtitle">+7 (775) 976-41-65</h6>
+						<h6 class="subtitle">{{ info.phone }}</h6>
 					</nuxt-link>
 				</div>
 
 				<!-- Email -->
 				<div class="contact horizontal">
-					<nuxt-link to="mailto:serikuly.zhassulan@gmail.com">
+					<nuxt-link :to="info.links.gmail">
 						<i class="fa-solid fa-envelope icon"></i>
 					</nuxt-link>
-					<nuxt-link to="mailto:serikuly.zhassulan@gmail.com">
+					<nuxt-link :to="info.links.gmail">
 						<h4>Email</h4>
-						<h6 class="subtitle">serikuly.zhassulan@gmail.com</h6>
+						<h6 class="subtitle">{{ info.gmail }}</h6>
 					</nuxt-link>
 				</div>
 
@@ -29,7 +29,7 @@
 					<i class="fa-solid fa-location-dot icon"></i>
 					<div>
 						<h4>Location</h4>
-						<h6 class="subtitle">Almaty, Kazakhstan</h6>
+						<h6 class="subtitle">{{ info.location }}</h6>
 					</div>
 				</div>
 			</div>
@@ -45,19 +45,22 @@
 					<input class="input" type="email" placeholder="Phone number / Email" />
 				</div>
 
-				<div class='form-line vertical'>
-					<label class='label'>Message</label>
-					<textarea class='textarea' cols='1' rows='16' placeholder='Message...'></textarea>
+				<div class="form-line vertical">
+					<label class="label">Message</label>
+					<textarea class="textarea" cols="1" rows="16" placeholder="Message..."></textarea>
 				</div>
 
 				<Button
-					id='btn_form'
+					id="btn_form"
 					text="Send Message"
 					icon="fa-solid fa-paper-plane" 
-					type='submit'
-					onclick='validation()'
+					type="submit"
 				/>
 			</form>
 		</div>
 	</Section>
 </template>
+
+<script setup>
+import info from "@/assets/data.js";
+</script>

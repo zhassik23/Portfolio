@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<div class="header-wrap box horizontal inline space">
-			<img src="assets/logos/logo.png" alt="Logo" class="header-logo" />
+			<img :src="info.logo" alt="Logo" class="header-logo" />
 
 			<ul class="header-menu horizontal">
 				<li><a href="#home" class="header-menu__item horizontal inline">
@@ -40,3 +40,7 @@
 		</div>
 	</header>
 </template>
+
+<script setup>
+import info from "@/assets/data.js";
+</script>

@@ -1,13 +1,7 @@
 <template>
 	<Section id="recomendations" title="Recomendations" subtitle="Characteristics from my cheifs">
 		<div class="section-content vertical inline">
-			<div class="stars">
-				<i class="fa-solid fa-star icon"></i>
-				<i class="fa-solid fa-star icon"></i>
-				<i class="fa-solid fa-star icon"></i>
-				<i class="fa-solid fa-star icon"></i>
-				<i class="fa-solid fa-star icon"></i>
-			</div>
+			<Stars />
 
 			<a
 				v-for="(recomendation, index) in recomendations"

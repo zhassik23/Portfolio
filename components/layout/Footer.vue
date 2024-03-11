@@ -4,7 +4,7 @@
 			<div class="footer-wrap__line">
 				<div class="footer-wrap__line__cell vertical">
 					<h2 class="title">{{ info.name }}</h2>
-					<h4 class="subtitle">Middle Web Developer</h4>
+					<h4 class="subtitle">Middle {{ info.position[0] }}</h4>
 				</div>
 
 				<ul class="footer-wrap__line__cell vertical">
@@ -23,13 +23,13 @@
 				</ul>
 
 				<ul class="footer-wrap__line__cell horizontal">
-					<li><nuxt-link to="https://wa.me/77759764165">
+					<li><nuxt-link :to="info.links.whatsapp">
 						<i class="fa-brands fa-whatsapp icon"></i>
 					</nuxt-link></li>
-					<li><nuxt-link to="https://www.facebook.com/young.flovver">
+					<li><nuxt-link :to="info.links.facebook">
 						<i class="fa-brands fa-facebook icon"></i>
 					</nuxt-link></li>
-					<li><nuxt-link to="https://instagram.com/zhassulaan__?igshid=YmMyMTA2M2Y">
+					<li><nuxt-link :to="info.links.instagram">
 						<i class="fa-brands fa-instagram icon"></i>
 					</nuxt-link></li>
 					<li><nuxt-link :to="info.links.telegram">
