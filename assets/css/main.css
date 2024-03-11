@@ -584,34 +584,11 @@
   gap: 24px;
   width: 44%;
 }
-#contacts .form-line {
+#contacts .form .input,
+#contacts .form .textarea {
   padding: 10px 15px;
   border-radius: 10px;
   background-color: hsla(97, 40%, 35%, 0.3);
-}
-#contacts .form-line .label {
-  margin-bottom: 4px;
-  font-weight: 600;
-  font-size: 14px;
-}
-#contacts .form-line .input,
-#contacts .form-line .textarea {
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 13px;
-  background-color: hsla(97, 40%, 35%, 0.3);
-  color: hsl(0, 0%, 78%);
-}
-#contacts .form-line .input::placeholder,
-#contacts .form-line .textarea::placeholder {
-  color: hsl(0, 0%, 78%);
-}
-#contacts .form-line .input {
-  height: 40px;
-}
-#contacts .form-line .textarea {
-  height: max-content;
 }
 
 * {
@@ -631,10 +608,39 @@ body {
   font-style: normal;
 }
 
-input,
 button {
   border: none;
   outline: none;
+}
+
+input,
+textarea {
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 13px;
+  background-color: hsla(97, 40%, 35%, 0.3);
+  color: hsl(0, 0%, 78%);
+}
+input::placeholder,
+textarea::placeholder {
+  color: hsl(0, 0%, 78%);
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: max-content;
+}
+
+label {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 ul {

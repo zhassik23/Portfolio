@@ -1,7 +1,7 @@
 <template>
-    <div class="input vertical">
+    <div class="textarea vertical">
         <label :for="id">{{ label }}</label>
-        <input :id="id" :type="type" :placeholder="placeholder" />
+        <textarea :id="id" cols="1" rows="16" :placeholder="placeholder" />
     </div>
 </template>
 

@@ -36,13 +36,9 @@
 			
 			<!-- Form -->
 			<form id="form" action="mailto:serikuly.zhassulan@gmail.com" method="post" enctype="text/plain" class="form vertical">
-				<Input label="Name - Surname" type="text" placeholder="Name - Surname" />
-				<Input label="Contacts" type="email" placeholder="Phone number / Email" />
-
-				<div class="form-line vertical">
-					<label class="label">Message</label>
-					<textarea class="textarea" cols="1" rows="16" placeholder="Message..."></textarea>
-				</div>
+				<Input id="name" label="Name - Surname" type="text" placeholder="Name - Surname" />
+				<Input id="contact" label="Contacts" type="email" placeholder="Phone number / Email" />
+				<Textarea id="message" label="Message" placeholder="Message..." />
 
 				<Button
 					id="btn_form"
