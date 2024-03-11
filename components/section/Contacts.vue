@@ -36,14 +36,8 @@
 			
 			<!-- Form -->
 			<form id="form" action="mailto:serikuly.zhassulan@gmail.com" method="post" enctype="text/plain" class="form vertical">
-				<div class="form-line vertical">
-					<label class="label">Name - Surname</label>
-					<input class="input" type="text" placeholder="Name - Surname" />
-				</div>
-				<div class="form-line vertical">
-					<label class="label">Contacts</label>
-					<input class="input" type="email" placeholder="Phone number / Email" />
-				</div>
+				<Input label="Name - Surname" type="text" placeholder="Name - Surname" />
+				<Input label="Contacts" type="email" placeholder="Phone number / Email" />
 
 				<div class="form-line vertical">
 					<label class="label">Message</label>
