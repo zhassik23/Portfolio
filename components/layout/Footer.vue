@@ -3,7 +3,7 @@
 		<div class="footer-wrap box">
 			<div class="footer-wrap__line">
 				<div class="footer-wrap__line__cell vertical">
-					<h2 class="title">Serikuly Zhassulan</h2>
+					<h2 class="title">{{ info.name }}</h2>
 					<h4 class="subtitle">Middle Web Developer</h4>
 				</div>
 
@@ -32,10 +32,10 @@
 					<li><nuxt-link to="https://instagram.com/zhassulaan__?igshid=YmMyMTA2M2Y">
 						<i class="fa-brands fa-instagram icon"></i>
 					</nuxt-link></li>
-					<li><nuxt-link to="https://msng.link/o/?young_flovver=tg">
+					<li><nuxt-link :to="info.links.telegram">
 						<i class="fa-brands fa-telegram icon"></i>
 					</nuxt-link></li>
-					<li><nuxt-link to="mailto:serikuly.zhassulan@gmail.com">
+					<li><nuxt-link :to="info.links.gmail">
 						<i class="fa-solid fa-at icon"></i>
 					</nuxt-link></li>
 				</ul>
@@ -45,3 +45,7 @@
 		</div>
 	</footer>
 </template>
+
+<script setup>
+import info from "@/assets/data.js";
+</script>
