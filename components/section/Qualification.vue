@@ -2,14 +2,18 @@
 	<Section id="qualification" title="Qualification" subtitle="My knowledge and certificates">
 		<div class="qualification section-content vertical">
 			<div class="qualification-header horizontal">
-				<div class="qualification-header__button horizontal inline btn" :class="{ 'active': (active === 'e') }" @click="active = 'e'">
-					<i class="fa-solid fa-graduation-cap icon"></i>
-					<h4 class="text">Education</h4>
-				</div>
-				<div class="qualification-header__button horizontal inline btn" :class="{ 'active': (active === 'a') }" @click="active = 'a'">
-					<i class="fa-solid fa-briefcase icon"></i>
-					<h4 class="text">Achievements</h4>
-				</div>
+				<Toggler
+					text="Education"
+					icon="fa-solid fa-graduation-cap"
+					:class="{ 'active': (active === 'e') }"
+					@click="active = 'e'"
+				/>
+				<Toggler
+					text="Achievements"
+					icon="fa-solid fa-briefcase"
+					:class="{ 'active': (active === 'a') }"
+					@click="active = 'a'"
+				/>
 			</div>
 
 			<!-- Education -->

@@ -267,17 +267,6 @@
   gap: 32px;
   margin: 0 auto 30px;
 }
-.qualification-header__button {
-  gap: 8px;
-}
-.qualification-header__button:hover .icon,
-.qualification-header__button:hover .text, .qualification-header__button.active .icon,
-.qualification-header__button.active .text {
-  color: #8CDE59;
-}
-.qualification-header__button .icon {
-  font-size: 16px;
-}
 .qualification-list {
   position: absolute;
   top: 56px;
@@ -381,99 +370,6 @@
   transition: all 0.2s ease-in-out;
   padding-left: 44px;
   height: 0;
-}
-.skills-box__list .skill-data {
-  margin-bottom: 6px;
-}
-.skills-box__list .skill-data .name {
-  text-decoration: underline;
-}
-.skills-box__list .skill-data .percentage {
-  font-size: 14px;
-}
-.skills-box__list .skill-bar {
-  position: relative;
-  width: 100%;
-  height: 5px;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-shadow: 0 2px 10px #8CDE59;
-  background-color: hsla(0, 0%, 78%, 0.4);
-}
-.skills-box__list .skill-bar::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  background-color: #517D36;
-}
-.skills-box__list .skill .js::before {
-  width: 96%;
-}
-.skills-box__list .skill .ts::before {
-  width: 88%;
-}
-.skills-box__list .skill .react::before {
-  width: 92%;
-}
-.skills-box__list .skill .vue::before {
-  width: 98%;
-}
-.skills-box__list .skill .django::before {
-  width: 84%;
-}
-.skills-box__list .skill .css::before {
-  width: 100%;
-}
-.skills-box__list .skill .sass::before {
-  width: 100%;
-}
-.skills-box__list .skill .less::before {
-  width: 85%;
-}
-.skills-box__list .skill .bootstrap::before {
-  width: 77%;
-}
-.skills-box__list .skill .html::before {
-  width: 100%;
-}
-.skills-box__list .skill .my_sql::before {
-  width: 80%;
-}
-.skills-box__list .skill .pl_sql::before {
-  width: 80%;
-}
-.skills-box__list .skill .postgres_sql::before {
-  width: 89%;
-}
-.skills-box__list .skill .sqlite::before {
-  width: 77%;
-}
-.skills-box__list .skill .adobe_photoshop::before {
-  width: 88%;
-}
-.skills-box__list .skill .figma::before {
-  width: 95%;
-}
-.skills-box__list .skill .fusion::before {
-  width: 76%;
-}
-.skills-box__list .skill .coreldraw::before {
-  width: 76%;
-}
-.skills-box__list .skill .english::before {
-  width: 80%;
-}
-.skills-box__list .skill .kazakh::before {
-  width: 100%;
-}
-.skills-box__list .skill .russian::before {
-  width: 90%;
-}
-.skills-box__list .skill .turkish::before {
-  width: 70%;
-}
-.skills-box__list .skill .chinese::before {
-  width: 50%;
 }
 
 .carousel {
