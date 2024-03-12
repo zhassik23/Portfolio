@@ -746,4 +746,11 @@ p {
 .section-header .subtitle {
   color: hsl(0, 0%, 78%);
   margin-top: 8px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+  .box {
+    width: 1026px;
+  }
 }/*# sourceMappingURL=main.css.map */

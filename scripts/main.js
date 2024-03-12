@@ -24,28 +24,3 @@ if (navC) {
 		});
 	});
 }
-
-// Experience - variables
-const items = document.querySelectorAll('.experience_item');
-const viewButtons = document.querySelectorAll('.experience_button');
-const closeButtons = document.querySelectorAll('.experience_close');
-
-var item = function(itemClick) {
-	items[itemClick].classList.add('item_active');
-	document.body.classList.add("freeze");
-}
-
-viewButtons.forEach((viewBtn, i) => {
-	viewBtn.addEventListener('click', () => {
-		item(i);
-	});
-});
-
-closeButtons.forEach(closeBtn => {
-	closeBtn.addEventListener('click', () => {
-		document.body.classList.remove("freeze");
-		items.forEach(item => {
-			item.classList.remove('item_active');
-		});
-	});
-});

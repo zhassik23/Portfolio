@@ -15,11 +15,12 @@
 			</div>
 			
 			<!-- Form -->
-			<form id="form" action="mailto:serikuly.zhassulan@gmail.com" method="post" enctype="text/plain" class="form vertical">
-				<Input id="name" label="Name - Surname" type="text" placeholder="Name - Surname" />
-				<Input id="contact" label="Contacts" type="email" placeholder="Phone number / Email" />
-				<Textarea id="message" label="Message" placeholder="Message..." />
+			<form id="form" @submit="validation($event)" method="post" enctype="text/plain" class="form vertical">
+				<Input id="name" label="Name - Surname" type="text" placeholder="Name - Surname" v-model="user" />
+				<Input id="contact" label="Contacts" type="text" placeholder="Phone number / Email" v-model="contact" />
+				<Textarea id="message" label="Message" placeholder="Message..." v-model="message" />
 				<Button text="Send Message" icon="fa-solid fa-paper-plane" type="submit" />
+				<p>{{ error }}</p>
 			</form>
 		</div>
 	</Section>
@@ -27,6 +28,11 @@
 
 <script setup>
 import info from "@/assets/data.js";
+const user = ref("");
+const contact = ref("");
+const message = ref("");
+const error = ref("");
+const sended = ref(false);
 
 const data = [
 	{
@@ -46,4 +52,30 @@ const data = [
 		icon: "fa-location-dot"
 	}
 ];
+
+function validation(event) {
+	event.preventDefault();
+	console.log(user.value);
+	if (user.value === "") {
+		error.value = "Write your name-surename.";
+		return false;
+	} else if (contact.value === "") {
+		error.value = "Leave your contact information.";
+		return false;
+	} else if (message.value === "") {
+		error.value = "Leave a message.";
+		return false;
+	} else {
+		send();
+		return true;
+	}
+}
+function send() {
+	var params = { from_name: user.value, from_email: contact.value, from_message: message.value }
+	emailjs.send('service_ellnze8', 'template_vg1m6jx', params)
+	.then(function(res) {
+		console.log('success', res.status);
+	})
+	sended.value = true;
+}
 </script>

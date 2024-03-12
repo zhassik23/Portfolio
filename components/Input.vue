@@ -1,7 +1,7 @@
 <template>
     <div class="input vertical">
         <label :for="id">{{ label }}</label>
-        <input :id="id" :type="type" :placeholder="placeholder" />
+        <input :id="id" :type="type" :placeholder="placeholder" @input="e => $emit('input', e)" />
     </div>
 </template>
 
@@ -12,4 +12,5 @@ const props = defineProps({
     type: String,
     placeholder: String
 });
+const value = ref("");
 </script>
