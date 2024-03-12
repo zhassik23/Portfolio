@@ -4,7 +4,7 @@
             <img :src="project.image" :alt="project.name" class="image" />
         </a>
 
-        <div class="project-data vertical">
+        <div class="project-data">
             <h3>{{ project.name }}</h3>
             <h6 class="description">Tech stack: {{ project.stack }}</h6>
             <p class="text">{{ project.description }}</p>

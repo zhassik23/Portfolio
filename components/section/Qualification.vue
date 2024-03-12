@@ -1,7 +1,7 @@
 <template>
 	<Section id="qualification" title="Qualification" subtitle="My knowledge and certificates">
-		<div class="qualification section-content vertical">
-			<div class="qualification-header horizontal">
+		<div class="qualification section-content">
+			<div class="qualification-header">
 				<Toggler
 					text="Education"
 					icon="fa-solid fa-graduation-cap"
@@ -31,10 +31,10 @@
 						<span class="shape-line"></span>
 					</div>
 					
-					<div class="center vertical">
+					<div class="center">
 						<h5 class="title">{{ item.title }}</h5>
 						<h6 class="subtitle">{{ item.description }}</h6>
-						<div class="date horizontal inline">
+						<div class="date">
 							<i class="fa-solid fa-calendar-days date-icon"></i>
 							<p class="date-text">{{ item.date }}</p>
 						</div>
@@ -64,12 +64,12 @@
 						<span class="shape-line"></span>
 					</div>
 					
-					<div class="center vertical">
+					<div class="center">
 						<nuxt-link to="item.link">
 							<h5 class="title">{{ item.title }}</h5>
 						</nuxt-link>
 						<h6 class="subtitle">{{ item.description }}</h6>
-						<div class="date horizontal inline">
+						<div class="date">
 							<i class="fa-solid fa-calendar-days date-icon"></i>
 							<p class="date-text">{{ item.date }}</p>
 						</div>

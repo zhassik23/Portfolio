@@ -8,6 +8,14 @@
 @mixin center
 	left: 50%
 	transform: translateX(-50%)
+@mixin horizontal
+	display: flex
+@mixin vertical
+	@include horizontal
+	flex-direction: column
+@mixin aic
+	@include horizontal
+	align-items: center
 @mixin image-center
 	align-self: center
 	justify-self: center

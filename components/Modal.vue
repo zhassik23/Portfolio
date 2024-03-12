@@ -3,7 +3,7 @@
         <div class="modal-background btn" @click="$emit('close')"></div>
         <div class="modal-wrap">
             <i class="fa-solid fa-xmark modal-close btn" @click="$emit('close')"></i>
-            <div class="modal-header horizontal">
+            <div class="modal-header">
                 <div class="modal-header__left">
                     <h4>{{ position }}</h4>
                     <h6 class="period">{{ date }}</h6>
@@ -11,7 +11,7 @@
                 <img :src="logo" :alt="name" class="logo" />
             </div>
 
-            <ul class="modal-responsibility vertical">
+            <ul class="modal-responsibility">
                 <li :key="index" v-for="(responsibility, index) in responsibilities" class="horizontal">
                     <i class="fa-solid fa-circle icon"></i>
                     <p>{{ responsibility }}</p>

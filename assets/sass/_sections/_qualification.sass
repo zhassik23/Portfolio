@@ -2,7 +2,9 @@
     height: 100vh
 .qualification
     position: relative
+    @include vertical
     &-header
+        @include horizontal
         gap: 32px
         margin: 0 auto 30px
     &-list
@@ -30,6 +32,7 @@
                     background-color: $accent
                     transform: translate(6px, -7px)
             .center
+                @include vertical
                 gap: 5px
                 .title,
                 .subtitle
@@ -37,6 +40,7 @@
                 .title
                     text-decoration: underline
                 .date
+                    @include aic
                     gap: 6px
                     &-icon,
                     &-text

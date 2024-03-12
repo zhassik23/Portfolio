@@ -2,12 +2,12 @@
 	<footer class="footer">
 		<div class="footer-wrap box">
 			<div class="footer-wrap__line">
-				<div class="footer-wrap__line__cell vertical">
+				<div class="footer-wrap__line-cell">
 					<h2 class="title">{{ info.name }}</h2>
 					<h4 class="subtitle">Middle {{ info.position[0] }}</h4>
 				</div>
 
-				<ul class="footer-wrap__line__cell vertical">
+				<ul class="footer-wrap__line-cell">
 					<li><a href="#experience">
 						<p class="text">Experience</p>
 					</a></li>

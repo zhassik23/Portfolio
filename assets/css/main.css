@@ -46,31 +46,33 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 50px 0 60px;
 }
-.footer-wrap__line__cell {
+.footer-wrap__line-cell {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
-.footer-wrap__line__cell:first-child {
+.footer-wrap__line-cell:first-child {
   gap: 5px;
 }
-.footer-wrap__line__cell:last-child {
+.footer-wrap__line-cell:last-child {
   gap: 40px;
 }
-.footer-wrap__line__cell .title {
+.footer-wrap__line-cell .title {
   line-height: 36px;
 }
-.footer-wrap__line__cell .subtitle {
+.footer-wrap__line-cell .subtitle {
   font-weight: 500;
   line-height: 28px;
   color: hsl(0, 0%, 78%);
 }
-.footer-wrap__line__cell .text:hover {
+.footer-wrap__line-cell .text:hover {
   text-decoration: underline;
 }
-.footer-wrap__line__cell .text:hover,
-.footer-wrap__line__cell .icon:hover {
+.footer-wrap__line-cell .text:hover,
+.footer-wrap__line-cell .icon:hover {
   color: #8CDE59;
 }
-.footer-wrap__line__cell .icon {
+.footer-wrap__line-cell .icon {
   font-size: 20px;
 }
 .footer-copy {
@@ -117,6 +119,7 @@
   color: #FFF;
 }
 .modal-header {
+  display: flex;
   gap: 30px;
   margin-bottom: 32px;
 }
@@ -131,6 +134,8 @@
   height: 40px;
 }
 .modal-responsibility {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 .modal-responsibility .icon {
@@ -150,40 +155,19 @@
     transform: translateY(-7px);
   }
 }
-.home {
+#home.section {
   position: relative;
   height: 100vh;
 }
-.home-wrap {
+
+.home {
+  display: flex;
+  align-items: center;
   height: 100%;
 }
-.home-wrap .text,
-.home-wrap .button {
-  margin-left: auto;
-}
-.home-wrap .text:hover {
-  opacity: 0.45;
-}
-.home-wrap .text:first-child, .home-wrap .text:nth-child(3) {
-  margin-bottom: 20px;
-  color: #8CDE59;
-}
-.home-wrap .text:first-child {
-  letter-spacing: 0.25em;
-  text-shadow: 2.2px 2.2px hsla(0, 0%, 100%, 0.15);
-}
-.home-wrap .text:nth-child(2) {
-  font-size: 64px;
-  font-weight: 800;
-  margin-bottom: 30px;
-  letter-spacing: 0.15em;
-  text-shadow: 2.5px 2.5px hsla(0, 0%, 100%, 0.15);
-}
-.home-wrap .text:nth-child(3) {
-  font-size: 42px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-shadow: 2px 2px hsla(0, 0%, 100%, 0.15);
+.home-icons, .home-info {
+  display: flex;
+  flex-direction: column;
 }
 .home-icons {
   gap: 40px;
@@ -194,6 +178,35 @@
 }
 .home-icons .icon:hover {
   color: #517D36;
+}
+.home-info .text,
+.home-info .button {
+  margin-left: auto;
+}
+.home-info .text:hover {
+  opacity: 0.45;
+}
+.home-info .text:first-child, .home-info .text:nth-child(3) {
+  margin-bottom: 20px;
+  color: #8CDE59;
+}
+.home-info .text:first-child {
+  letter-spacing: 0.25em;
+  text-shadow: 2.2px 2.2px hsla(0, 0%, 100%, 0.15);
+}
+.home-info .text:nth-child(2), .home-info .text:nth-child(3) {
+  font-weight: 800;
+}
+.home-info .text:nth-child(2) {
+  margin-bottom: 30px;
+  font-size: 64px;
+  letter-spacing: 0.15em;
+  text-shadow: 2.5px 2.5px hsla(0, 0%, 100%, 0.15);
+}
+.home-info .text:nth-child(3) {
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px hsla(0, 0%, 100%, 0.15);
 }
 .home #btn_home {
   position: absolute;
@@ -219,11 +232,13 @@
   justify-self: center;
 }
 .about-info {
+  display: flex;
+  flex-direction: column;
   gap: 36px;
 }
 
 .experience {
-  justify-content: space-between;
+  display: flex;
 }
 .experience .card {
   position: relative;
@@ -249,7 +264,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.experience .card .button-text, .experience .card .button-icon {
+.experience .card .button-text,
+.experience .card .button .icon {
   color: #8CDE59;
 }
 .experience .card .button:hover .button-icon {
@@ -262,8 +278,11 @@
 
 .qualification {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .qualification-header {
+  display: flex;
   gap: 32px;
   margin: 0 auto 30px;
 }
@@ -298,6 +317,8 @@
   transform: translate(6px, -7px);
 }
 .qualification-list__item .center {
+  display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 .qualification-list__item .center .title,
@@ -308,6 +329,8 @@
   text-decoration: underline;
 }
 .qualification-list__item .center .date {
+  display: flex;
+  align-items: center;
   gap: 6px;
 }
 .qualification-list__item .center .date-icon, .qualification-list__item .center .date-text {
@@ -329,6 +352,7 @@
 }
 
 .skills {
+  display: flex;
   flex-wrap: wrap;
   gap: 42px 24px;
 }
@@ -344,6 +368,8 @@
   height: max-content;
 }
 .skills-box__header {
+  display: flex;
+  align-items: center;
   margin-bottom: 24px;
 }
 .skills-box__header .icon {
@@ -364,17 +390,22 @@
   color: hsl(0, 0%, 78%);
 }
 .skills-box__list {
-  gap: 12px;
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  padding-left: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   height: 0;
+  padding-left: 44px;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
 }
 .carousel-item {
   min-width: 80%;
@@ -413,6 +444,8 @@
   border: 2px solid #8CDE59;
 }
 .carousel .project-data {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 .carousel .project-data .description {
@@ -423,6 +456,10 @@
   padding: 16px 0;
 }
 
+.recomendations {
+  display: flex;
+  flex-direction: column;
+}
 .recomendations .stars {
   gap: 8px;
   margin-bottom: 26px;
@@ -432,6 +469,8 @@
   text-shadow: 0.8px 0.8px hsla(0, 0%, 100%, 0.8);
 }
 .recomendations .recomendation {
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 100%;
   height: 108px;
@@ -459,25 +498,35 @@
   color: hsl(90, 1%, 37%);
 }
 
-#contacts .contact {
+.contacts {
+  display: flex;
+}
+.contacts-info, .contacts-form {
+  display: flex;
+  flex-direction: column;
+}
+.contacts .contact {
+  display: flex;
   margin-bottom: 36px;
 }
-#contacts .contact .icon {
+.contacts .contact .icon {
   margin: 10px 15px 0 0;
   font-size: 25px;
   color: #8CDE59;
 }
-#contacts .contact .subtitle {
+.contacts .contact .subtitle {
   margin-top: 8px;
   font-size: 11px;
   color: hsl(0, 0%, 78%);
 }
-#contacts .form {
+.contacts-form {
   gap: 24px;
   width: 44%;
 }
-#contacts .form .input,
-#contacts .form .textarea {
+.contacts-form .input,
+.contacts-form .textarea {
+  display: flex;
+  flex-direction: column;
   padding: 10px 15px;
   border-radius: 10px;
   background-color: hsla(97, 40%, 35%, 0.3);
@@ -501,6 +550,8 @@ body {
 }
 
 button {
+  display: flex;
+  align-items: center;
   border: none;
   outline: none;
   background-color: transparent;

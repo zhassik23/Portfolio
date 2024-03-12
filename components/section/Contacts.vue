@@ -1,9 +1,8 @@
 <template>
 	<Section id="contacts" title="Contact me" subtitle="Get in touch">
-		<div class="horizontal space">
-			<div class="vertical">
-				<!-- Phone -->
-				<div :key="item.key" v-for="item in data" class="contact horizontal">
+		<div class="contacts space">
+			<div class="contacts-info">
+				<div :key="item.key" v-for="item in data" class="contact">
 					<nuxt-link :to="item.link">
 						<i :class="`fa-solid ${item.icon} icon`"></i>
 					</nuxt-link>
@@ -15,7 +14,7 @@
 			</div>
 			
 			<!-- Form -->
-			<form id="form" @submit="validation($event)" method="post" enctype="text/plain" class="form vertical">
+			<form id="form" @submit="validation($event)" method="post" enctype="text/plain" class="contacts-form">
 				<Input id="name" label="Name - Surname" type="text" placeholder="Name - Surname" v-model="user" />
 				<Input id="contact" label="Contacts" type="text" placeholder="Phone number / Email" v-model="contact" />
 				<Textarea id="message" label="Message" placeholder="Message..." v-model="message" />

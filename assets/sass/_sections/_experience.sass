@@ -1,5 +1,5 @@
 .experience
-    justify-content: space-between
+    @include horizontal
     .card
         position: relative
         width: 22%
@@ -19,7 +19,7 @@
             bottom: 20px
             @include center
             &-text,
-            &-icon
+            .icon
                 color: $accent
             &:hover .button-icon
                 transform: translateY(5px)

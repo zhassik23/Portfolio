@@ -2,7 +2,7 @@
 	<Section id="about" title="About me" subtitle="My introduction">
 		<div class="about section-content">
 			<img :src="info.image" :alt="info.name" class="about-image" />
-			<div class="about-info vertical">
+			<div class="about-info">
 				<p>{{ info.description }}</p>
 
 				<div class="horizontal space">

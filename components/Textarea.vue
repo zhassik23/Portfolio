@@ -1,5 +1,5 @@
 <template>
-    <div class="textarea vertical">
+    <div class="textarea">
         <label :for="id">{{ label }}</label>
         <textarea :id="id" cols="1" rows="16" :placeholder="placeholder" />
     </div>

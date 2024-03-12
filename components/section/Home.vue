@@ -1,7 +1,7 @@
 <template>
-	<section id="home" class="home section">
-		<div class="home-wrap horizontal inline space">
-			<ul class="home-icons vertical">
+	<section id="home" class="section">
+		<div class="home space">
+			<ul class="home-icons">
 				<li :key="index" v-for="(item, index) in list">
 					<nuxt-link :to="item.link">
 						<i :class="`${item.icon} icon`"></i>
@@ -9,7 +9,7 @@
 				</li>
 			</ul>
 
-			<div class="vertical">
+			<div class="home-info">
 				<p class="text">Hello, my name is</p>
 				<h1 class="text">{{ info.name }}</h1>
 				<h2 class="text">
@@ -19,11 +19,16 @@
 					<Button text="Head Hunter" icon="fa-brands fa-instagram" />
 				</nuxt-link>
 			</div>
-		</div>
 		
-		<a id="btn_home" href="#about">
-			<Button text="Scroll Down" icon="fa-solid fa-square-caret-down" :transparent="true" :second="true" />
-		</a>
+			<a id="btn_home" href="#about">
+				<Button
+					text="Scroll Down"
+					icon="fa-solid fa-square-caret-down"
+					:transparent="true"
+					:second="true"
+				/>
+			</a>
+		</div>
 	</section>
 </template>
 

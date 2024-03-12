@@ -1,7 +1,7 @@
 <template>
 	<Section id="projects" title="Projects" subtitle="My works">
 		<div class="carousel">
-			<div class="carousel-inner horizontal">
+			<div class="carousel-inner">
 				<Project
 					:key="index"
 					v-for="(project, index) in info.projects"

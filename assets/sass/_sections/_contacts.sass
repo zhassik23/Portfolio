@@ -1,5 +1,10 @@
-#contacts
+.contacts
+    @include horizontal
+    &-info,
+    &-form
+        @include vertical
     .contact
+        @include horizontal
         margin-bottom: 36px
         .icon
             margin: 10px 15px 0 0
@@ -9,11 +14,12 @@
             margin-top: 8px
             font-size: 11px
             color: $gray
-    .form
+    &-form
         gap: 24px
         width: 44%
         .input,
         .textarea
+            @include vertical
             padding: 10px 15px
             border-radius: 10px
             background-color: hsla(97, 40%, 35%, .3)

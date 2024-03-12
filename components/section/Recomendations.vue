@@ -1,6 +1,6 @@
 <template>
 	<Section id="recomendations" title="Recomendations" subtitle="Characteristics from my cheifs">
-		<div class="recomendations section-content vertical inline">
+		<div class="recomendations section-content inline">
 			<Stars />
 
 			<a
@@ -8,7 +8,7 @@
 				:key="index"
 				download
 				:href="recomendation.file"
-				class="recomendation horizontal inline"
+				class="recomendation"
 			>
 				<i class="fa-solid fa-file icon"></i>
 				<div class="recomendation-line"></div>
