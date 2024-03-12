@@ -1,8 +1,8 @@
 <template>
 	<Section id="about" title="About me" subtitle="My introduction">
-		<div class="section-content">
-			<img :src="info.image" :alt="info.name" class="image" />
-			<div class="info vertical">
+		<div class="about section-content">
+			<img :src="info.image" :alt="info.name" class="about-image" />
+			<div class="about-info vertical">
 				<p>{{ info.description }}</p>
 
 				<div class="horizontal space">

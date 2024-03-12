@@ -1,6 +1,6 @@
 <template>
 	<Section id="recomendations" title="Recomendations" subtitle="Characteristics from my cheifs">
-		<div class="section-content vertical inline">
+		<div class="recomendations section-content vertical inline">
 			<Stars />
 
 			<a

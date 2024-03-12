@@ -1,5 +1,5 @@
 <template>
-	<button class="button">
+	<button class="button" :class="{ 'green': !transparent }">
 		<i v-if="second" :class="`${icon} button-icon`"></i>
 		<p class="button-text">{{ text }}</p>
 		<i :class="`${icon} button-icon`"></i>
@@ -10,6 +10,10 @@
 const props = defineProps({
 	text: String,
 	icon: String,
+	transparent: {
+		type: Boolean,
+		default: false
+	},
 	second: {
 		type: Boolean,
 		default: false
@@ -26,19 +30,24 @@ const props = defineProps({
 	width: fit-content;
     padding: 8px;
     border-radius: 8px;
-	background-color: hsl(97, 67%, 61%);
 	cursor: pointer;
 	transition: .3s;
-	&:hover {
-		background-color: hsl(97, 40%, 35%);
+	&.green {
+		background-color: hsl(97, 67%, 61%);
+		&:hover {
+			background-color: hsl(97, 40%, 35%);
+		}
 	}
 	&-text,
 	&-icon {
 		font-weight: 700;
 	}
+	&-text {
+		text-wrap: nowrap;
+	}
 	&-icon {
-		color: #FFF;
 		font-size: 16px;
+		color: #FFF;
 	}
 }
 </style>

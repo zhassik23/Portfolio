@@ -1,6 +1,6 @@
 <template>
 	<Section id="experience" title="Experience" subtitle="My profesional journey">
-		<div class="section-content horizontal">
+		<div class="experience section-content horizontal">
 			<Card
 				v-for="(item, index) in info.experience"
 				:key="index"

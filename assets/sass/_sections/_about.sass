@@ -1,12 +1,11 @@
-#about
-	.section-content
-		display: grid
-		align-items: center
-		grid-template-columns: repeat(2, 1fr)
-		gap: 24px
-		.image
-			width: 240px
-			border-radius: 20px
-			@include image-center
-		.info
-			gap: 36px
+.about
+	display: grid
+	align-items: center
+	grid-template-columns: repeat(2, 1fr)
+	gap: 24px
+	&-image
+		width: 240px
+		border-radius: 20px
+		@include image-center
+	&-info
+		gap: 36px

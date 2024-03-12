@@ -2,21 +2,11 @@
 	<section id="home" class="home section">
 		<div class="home-wrap horizontal inline space">
 			<ul class="home-icons vertical">
-				<li><nuxt-link :to="info.links.github">
-					<i class="fa-brands fa-github icon"></i>
-				</nuxt-link></li>
-				<li><nuxt-link :to="info.links.linkedin">
-					<i class="fa-brands fa-linkedin icon"></i>
-				</nuxt-link></li>
-				<li><nuxt-link :to="info.links.gmail">
-					<i class="fa-solid fa-envelope icon"></i>
-				</nuxt-link></li>
-				<li><nuxt-link :to="info.links.telegram">
-					<i class="fa-brands fa-telegram icon"></i>
-				</nuxt-link></li>
-				<li><nuxt-link :to="info.links.phone">
-					<i class="fa-solid fa-phone icon"></i>
-				</nuxt-link></li>
+				<li :key="index" v-for="(item, index) in list">
+					<nuxt-link :to="item.link">
+						<i :class="`${item.icon} icon`"></i>
+					</nuxt-link>
+				</li>
 			</ul>
 
 			<div class="vertical">
@@ -32,11 +22,30 @@
 		</div>
 		
 		<a id="btn_home" href="#about">
-			<Button text="Scroll Down" icon="fa-solid fa-square-caret-down" :second="true" />
+			<Button text="Scroll Down" icon="fa-solid fa-square-caret-down" :transparent="true" :second="true" />
 		</a>
 	</section>
 </template>
 
 <script setup>
 import info from "@/assets/data.js";
+
+const list = [
+	{
+		link: info.links.github,
+		icon: "fa-brands fa-github"
+	}, {
+		link: info.links.linkedin,
+		icon: "fa-brands fa-linkedin"
+	}, {
+		link: info.links.gmail,
+		icon: "fa-solid fa-envelope"
+	}, {
+		link: info.links.telegram,
+		icon: "fa-brands fa-telegram"
+	}, {
+		link: info.links.phone,
+		icon: "fa-solid fa-phone"
+	}
+];
 </script>

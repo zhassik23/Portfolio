@@ -29,4 +29,9 @@ const formattedNumber = computed(() => {
         margin-top: 6px;
     }
 }
+@media only screen and (max-width : 1440px) {
+    .stat {
+        width: 21%;
+    }
+}
 </style>

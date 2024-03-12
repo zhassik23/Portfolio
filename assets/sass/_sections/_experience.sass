@@ -1,26 +1,26 @@
-#experience
-    .section-content
-        justify-content: space-between
-        .card
-            position: relative
-            width: 240px
-            padding: 90px 30px 20px
-            border-radius: 5px
-            box-shadow: 0 2px 4px hsl(0, 1%, 31%)
-            background-color: $gray-background
-            &:hover
-                box-shadow: 0 2px 4px hsl(0, 4%, 4%)
+.experience
+    justify-content: space-between
+    .card
+        position: relative
+        width: 22%
+        padding: 72px 30px 90px
+        border-radius: 5px
+        box-shadow: 0 2px 4px hsl(0, 1%, 31%)
+        background-color: $gray-background
+        &:hover
+            box-shadow: 0 2px 4px hsl(0, 4%, 4%)
+        &-icon
+            color: $accent
+            font-size: 40px
+        &-text
+            margin-top: 20px
+        .button
+            position: absolute
+            bottom: 20px
+            @include center
+            &-text,
             &-icon
                 color: $accent
-                font-size: 40px
-            &-text
-                margin: 20px 0 32px
-            .button
-                margin: 0 auto
-                background-color: transparent
-                &-text,
-                &-icon
-                    color: $accent
-                &:hover .button-icon
-                    transform: translateY(5px)
+            &:hover .button-icon
+                transform: translateY(5px)
         
