@@ -16,7 +16,7 @@
 			<div class="qualification-list" :class="{ 'show': (active === 'e') }" id="education">
 				<div
 					:key="id"
-					v-for="(item, id) in education"
+					v-for="(item, id) in info.education"
 					class="qualification-list__item"
 					:class="((id + 1) % 2 === 0) ? 'right' : 'left'"
 				>
@@ -49,7 +49,7 @@
 			<div class="qualification-list" :class="{ 'show': (active === 'a') }" id="achievements">
 				<div
 					:key="id"
-					v-for="(item, id) in achievement"
+					v-for="(item, id) in info.achievement"
 					class="qualification-list__item"
 					:class="((id + 1) % 2 === 1) ? 'right' : 'left'"
 				>
@@ -84,61 +84,6 @@
 </template>
 
 <script setup>
-const education = [
-	{
-		title: "National School-Gymnasium No. 13",
-		description: "Primary School - Atyrau",
-		date: "2008-2014"
-	}, {
-		title: "Kazakh-Turkish Lyceum",
-		description: "High School - Atyrau",
-		date: "2014-2019"
-	}, {
-		title: "Suleyman Demirel University",
-		description: "Bachelor of 'Engineering and Natural Sciences' - Almaty",
-		date: "2019-2023"
-	}, {
-		title: "HTML, CSS, and JS for Web Developers",
-		description: "Coursera",
-		date: "May-2021"
-	}, {
-		title: "Front-End Web Development with React",
-		description: "Coursera",
-		date: "April-2022"
-	}
-];
-const achievement = [
-	{
-		title: "Olympiad in Mathematics",
-		link: "https://drive.google.com/file/d/1QIK14gniw9aCTPQyj2P6_G8WOHAo9bGT",
-		description: "2nd place",
-		date: "2013"
-	}, {
-		title: "Regional Olympiad in Informatics",
-		link: "https://drive.google.com/drive/folders/16WG-8UdOVlIGvyUVuViux6dRmsN0kBWw",
-		description: "1st place",
-		date: "2017"
-	}, {
-		title: "International Competition “Infomatrix”",
-		link: "https://drive.google.com/file/d/1L4cqfLH6yWzUn6alOxFx8yH-sK-Ce3AY",
-		description: "Silver medal",
-		date: "2018"
-	}, {
-		title: "Euler Olympiad in Mathematics",
-		link: "https://drive.google.com/drive/folders/16WG-8UdOVlIGvyUVuViux6dRmsN0kBWw",
-		description: "Participation",
-		date: "2018"
-	}, {
-		title: "Secondary Education",
-		link: "https://drive.google.com/file/d/1YrOGC99EDwAo4mqZ3f9pPenBv4t5BrEu",
-		description: "Red diploma",
-		date: "2019"
-	}, {
-		title: "Film fest",
-		link: "https://drive.google.com/file/d/1Rjn0puqVeO6YfC44Hpw0-zjWefFTztlj",
-		description: "3rd place",
-		date: "2022"
-	}
-];
+import info from "assets/data.js";
 const active = ref("e");
 </script>

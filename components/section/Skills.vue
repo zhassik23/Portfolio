@@ -2,7 +2,7 @@
 	<Section id="skills" title="Skills" subtitle="My abilities">
 		<div class="skills section-content horizontal">
 			<!-- skills -->
-			<div v-for="(skill, index) in info.skills" :key="index" class="skills-box" :class="{ 'active': active === index }">
+			<div :key="index" v-for="(skill, index) in info.skills" class="skills-box" :class="{ 'active': active === index }">
 				<div class="skills-box__header horizontal inline btn">
 					<i :class="`${skill.icon} icon`"></i>
 					<div>
@@ -13,13 +13,7 @@
 				</div>
 
 				<div class="skills-box__list vertical">
-					<div v-for="item in skill.list" :key="item.key" class="skill">
-						<div class="skill-data horizontal inline space">
-							<h5>{{ item.name }}</h5>
-							<p class="percentage">{{ item.percentage }}%</p>
-						</div>
-						<div :class="`skill-bar ${item.key}`"></div>
-					</div>
+					<Skill :key="item.key" v-for="item in skill.list" :skill="item" />
 				</div>
 			</div>
 		</div>

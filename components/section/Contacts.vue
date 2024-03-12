@@ -3,34 +3,14 @@
 		<div class="horizontal space">
 			<div class="vertical">
 				<!-- Phone -->
-				<div class="contact horizontal">
-					<nuxt-link :to="info.links.phone">
-						<i class="fa-solid fa-phone icon"></i>
+				<div :key="item.key" v-for="item in data" class="contact horizontal">
+					<nuxt-link :to="item.link">
+						<i :class="`fa-solid ${item.icon} icon`"></i>
 					</nuxt-link>
-					<nuxt-link :to="info.links.phone">
-						<h4>Phone</h4>
-						<h6 class="subtitle">{{ info.phone }}</h6>
+					<nuxt-link :to="item.link">
+						<h4>{{ item.key }}</h4>
+						<h6 class="subtitle">{{ item.value }}</h6>
 					</nuxt-link>
-				</div>
-
-				<!-- Email -->
-				<div class="contact horizontal">
-					<nuxt-link :to="info.links.gmail">
-						<i class="fa-solid fa-envelope icon"></i>
-					</nuxt-link>
-					<nuxt-link :to="info.links.gmail">
-						<h4>Email</h4>
-						<h6 class="subtitle">{{ info.gmail }}</h6>
-					</nuxt-link>
-				</div>
-
-				<!-- Location -->
-				<div class="contact horizontal">
-					<i class="fa-solid fa-location-dot icon"></i>
-					<div>
-						<h4>Location</h4>
-						<h6 class="subtitle">{{ info.location }}</h6>
-					</div>
 				</div>
 			</div>
 			
@@ -39,13 +19,7 @@
 				<Input id="name" label="Name - Surname" type="text" placeholder="Name - Surname" />
 				<Input id="contact" label="Contacts" type="email" placeholder="Phone number / Email" />
 				<Textarea id="message" label="Message" placeholder="Message..." />
-
-				<Button
-					id="btn_form"
-					text="Send Message"
-					icon="fa-solid fa-paper-plane" 
-					type="submit"
-				/>
+				<Button text="Send Message" icon="fa-solid fa-paper-plane" type="submit" />
 			</form>
 		</div>
 	</Section>
@@ -53,4 +27,23 @@
 
 <script setup>
 import info from "@/assets/data.js";
+
+const data = [
+	{
+		key: "Phone",
+		value: info.phone,
+		link: info.links.phone,
+		icon: "fa-phone"
+	}, {
+		key: "Email",
+		value: info.gmail,
+		link: info.links.gmail,
+		icon: "fa-envelope"
+	}, {
+		key: "Location",
+		value: info.location,
+		link: "#",
+		icon: "fa-location-dot"
+	}
+];
 </script>

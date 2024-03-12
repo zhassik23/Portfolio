@@ -2,23 +2,15 @@
 	<Section id="projects" title="Projects" subtitle="My works">
 		<div class="carousel">
 			<div class="carousel-inner horizontal">
-				<div :key="index" v-for="(project, index) in info.projects" class="project carousel-item">
-					<a :href="project.link" class="project-image">
-						<img :src="project.image" :alt="project.name" class="image" />
-					</a>
-
-					<div class="project-data vertical">
-						<h3>{{ project.name }}</h3>
-						<h6 class="description">Tech stack: {{ project.stack }}</h6>
-						<p class="text">{{ project.description }}</p>
-						<a :href="project.link">
-							<Button text="Watch this project" icon="fa-solid fa-angles-right" />
-						</a>
-					</div>
-				</div>
+				<Project
+					:key="index"
+					v-for="(project, index) in info.projects"
+					:project="project"
+					class="carousel-item"
+				/>
 			</div>
-			<i id="prev"  class="fa-regular fa-circle-left icon carousel-button" @click="slider().prevSlide"></i>
-			<i id="next"  class="fa-regular fa-circle-right icon carousel-button" @click="slider().nextSlide"></i>
+			<i id="prev" class="fa-regular fa-circle-left icon carousel-button" @click="slider().prevSlide"></i>
+			<i id="next" class="fa-regular fa-circle-right icon carousel-button" @click="slider().nextSlide"></i>
 		</div>
 	</Section>
 </template>
