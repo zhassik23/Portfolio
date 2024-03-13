@@ -5,7 +5,7 @@
 			<div class="about-info">
 				<p>{{ info.description }}</p>
 
-				<div class="horizontal space">
+				<div class="about-info__stats">
 					<Stat
 						v-for="stat in info.stats"
 						:key="stat.key"

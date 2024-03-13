@@ -22,17 +22,24 @@ const props = defineProps({
 </script>
 
 <style lang="sass" scoped>
+@import "@/assets/sass/_vars.sass"
+@import "@/assets/sass/_mixins.sass"
+
 .button
+	@include aic
 	gap: 8px
 	width: fit-content
 	padding: 8px
+	border: none
 	border-radius: 8px
+	outline: none
+	background-color: transparent
 	cursor: pointer
 	transition: .3s
 	&.green
-		background-color: hsl(97, 67%, 61%)
+		background-color: $accent
 		&:hover
-			background-color: hsl(97, 40%, 35%)
+			background-color: $accent-active
 	&-text,
 	.icon
 		font-weight: 700

@@ -18,20 +18,15 @@ const formattedNumber = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped>
-.stat {
-    width: 30%;
+<style lang="sass" scoped>
+.stat
+    width: 30%
     &-value,
-    &-key {
-        text-align: center;
-    }
-    &-key {
-        margin-top: 6px;
-    }
-}
-@media only screen and (max-width : 1440px) {
-    .stat {
-        width: 21%;
-    }
-}
+    &-key
+        text-align: center
+    &-key
+        margin-top: 6px
+@media only screen and (max-width : 1440px)
+    .stat
+        width: 21%
 </style>

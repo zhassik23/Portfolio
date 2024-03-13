@@ -6,13 +6,16 @@
 	background-color: $white
 	box-shadow: $shadow
 	&-wrap
+		@include aic_jcsb
 		height: 56px
 		padding: 12px 24px
 	&-logo
 		height: 100%
 	&-menu
+		@include horizontal
 		gap: 22px
 		&__item
+			@include aic
 			gap: 6px
 			color: hsla(0, 1%, 14%)
 			&:hover

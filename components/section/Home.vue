@@ -1,6 +1,6 @@
 <template>
 	<section id="home" class="section">
-		<div class="home space">
+		<div class="home">
 			<ul class="home-icons">
 				<li :key="index" v-for="(item, index) in list">
 					<nuxt-link :to="item.link">

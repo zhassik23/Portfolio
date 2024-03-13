@@ -23,16 +23,15 @@
 				line-height: 28px
 				color: $gray
 			.text:hover
+				color: $accent
 				text-decoration: underline
-			.text,
-			.icon
-				&:hover
-					color: $accent
-			.icon
-				font-size: 20px
 	&-icons
 		@include horizontal
 		gap: 20px
+		.icon
+			font-size: 20px
+			&:hover
+				color: $accent
 	&-copy
 		text-align: center
 		font-size: 12px

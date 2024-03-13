@@ -5,9 +5,17 @@
 @mixin show
 	visibility: visible !important
 	opacity: 1 !important
+@mixin o
+	top: 0
+	left: 0
 @mixin center
 	left: 50%
 	transform: translateX(-50%)
+@mixin image-center
+	align-self: center
+	justify-self: center
+
+// allignment
 @mixin horizontal
 	display: flex
 @mixin vertical
@@ -16,6 +24,10 @@
 @mixin aic
 	@include horizontal
 	align-items: center
-@mixin image-center
-	align-self: center
-	justify-self: center
+@mixin jcsb
+	@include horizontal
+	justify-content: space-between
+@mixin aic_jcsb
+	@include horizontal
+	align-items: center
+	justify-content: space-between

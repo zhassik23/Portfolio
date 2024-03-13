@@ -8,6 +8,9 @@
   box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
 }
 .header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 56px;
   padding: 12px 24px;
 }
@@ -15,9 +18,12 @@
   height: 100%;
 }
 .header-menu {
+  display: flex;
   gap: 22px;
 }
 .header-menu__item {
+  display: flex;
+  align-items: center;
   gap: 6px;
   color: hsl(0, 1%, 14%);
 }
@@ -63,18 +69,18 @@
   color: hsl(0, 0%, 78%);
 }
 .footer-wrap__cell .text:hover {
-  text-decoration: underline;
-}
-.footer-wrap__cell .text:hover,
-.footer-wrap__cell .icon:hover {
   color: #8CDE59;
-}
-.footer-wrap__cell .icon {
-  font-size: 20px;
+  text-decoration: underline;
 }
 .footer-icons {
   display: flex;
   gap: 20px;
+}
+.footer-icons .icon {
+  font-size: 20px;
+}
+.footer-icons .icon:hover {
+  color: #8CDE59;
 }
 .footer-copy {
   text-align: center;
@@ -94,9 +100,9 @@
 }
 .modal-background, .modal-wrap {
   position: fixed;
+  z-index: 6;
 }
 .modal-background {
-  z-index: 6;
   top: 0;
   left: 0;
   width: 100%;
@@ -104,7 +110,6 @@
   background-color: rgba(26, 26, 28, 0.5019607843);
 }
 .modal-wrap {
-  z-index: 6;
   top: 50%;
   left: 50%;
   padding: 24px;
@@ -117,7 +122,6 @@
   top: 20px;
   right: 20px;
   font-size: 16px;
-  color: #FFF;
 }
 .modal-header {
   display: flex;
@@ -127,7 +131,7 @@
 .modal-header__left {
   width: 60%;
 }
-.modal-header__left .period {
+.modal-header__left .text {
   margin-top: 5px;
   color: hsl(0, 0%, 78%);
 }
@@ -164,6 +168,7 @@
 .home {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
 .home-icons, .home-info {
@@ -216,7 +221,7 @@
   transform: translateX(-50%);
   animation: ani 3s ease infinite;
 }
-.home #btn_home .button-icon {
+.home #btn_home .icon {
   font-size: 24px;
 }
 
@@ -237,9 +242,14 @@
   flex-direction: column;
   gap: 36px;
 }
+.about-info__stats {
+  display: flex;
+  justify-content: space-between;
+}
 
 .experience {
   display: flex;
+  justify-content: space-between;
 }
 .experience .card {
   position: relative;
@@ -462,6 +472,7 @@
   flex-direction: column;
 }
 .recomendations .stars {
+  display: flex;
   gap: 8px;
   margin-bottom: 26px;
 }
@@ -548,14 +559,6 @@ body {
   display: block;
   width: 100%;
   font-style: normal;
-}
-
-button {
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  background-color: transparent;
 }
 
 input,
@@ -645,13 +648,8 @@ p {
   margin: auto;
 }
 
-.horizontal,
-.vertical {
+.horizontal {
   display: flex;
-}
-
-.vertical {
-  flex-direction: column;
 }
 
 .inline {

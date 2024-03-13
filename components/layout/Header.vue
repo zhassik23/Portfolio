@@ -1,11 +1,11 @@
 <template>
 	<header class="header">
-		<div class="header-wrap box horizontal inline space">
+		<div class="header-wrap box">
 			<img :src="info.logo" alt="Logo" class="header-logo" />
 
-			<ul class="header-menu horizontal">
+			<ul class="header-menu">
 				<li :key="item.id" v-for="item in list">
-					<a :href="`#${item.id}`" class="header-menu__item horizontal inline">
+					<a :href="`#${item.id}`" class="header-menu__item">
 						<i :class="`fa-solid ${item.icon} icon`"></i>
 						<p class="text">{{ item.text }}</p>
 					</a>

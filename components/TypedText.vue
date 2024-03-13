@@ -50,58 +50,41 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss" scoped>
-.blinking-cursor {
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-@keyframes blink {
+<style lang="sass" scoped>
+.blinking-cursor
+  -webkit-animation: 1s blink step-end infinite
+  -moz-animation: 1s blink step-end infinite
+  -ms-animation: 1s blink step-end infinite
+  -o-animation: 1s blink step-end infinite
+  animation: 1s blink step-end infinite
+@keyframes blink
   from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #8CDE59;
-  }
-}
-@-moz-keyframes blink {
+  to
+    color: transparent
+  50%
+    color: #8CDE59
+@-moz-keyframes blink
   from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #8CDE59;
-  }
-}
-@-webkit-keyframes blink {
+  to
+    color: transparent
+  50%
+    color: #8CDE59
+@-webkit-keyframes blink
   from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #8CDE59;
-  }
-}
-@-ms-keyframes blink {
+  to
+    color: transparent
+  50%
+    color: #8CDE59
+@-ms-keyframes blink
   from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #8CDE59;
-  }
-}
-@-o-keyframes blink {
+  to
+    color: transparent
+  50%
+    color: #8CDE59
+@-o-keyframes blink
   from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #8CDE59;
-  }
-}
-// Cursor blinking CSS Ends...
+  to
+    color: transparent
+  50%
+    color: #8CDE59
 </style>
