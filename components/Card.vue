@@ -1,7 +1,7 @@
 <template>
     <div class="card">
-        <i :class="`${company.icon} card-icon`"></i>
-        <h3 class="card-text">{{ company.name }}</h3>
+        <i :class="`${icon} card-icon`"></i>
+        <h3 class="card-text">{{ name }}</h3>
         <Button
             text="View More"
             icon="fa-solid fa-angle-down"
@@ -22,6 +22,7 @@ const props = defineProps({
     id: Number,
     company: Object,
 });
+const { name, icon } = props.company;
 const isOpen = ref(false);
 
 function toggleModal(id) {

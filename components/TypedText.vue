@@ -51,6 +51,8 @@ onMounted(() => {
 </script>
 
 <style lang="sass" scoped>
+@import "@/assets/sass/_vars.sass"
+
 .blinking-cursor
   -webkit-animation: 1s blink step-end infinite
   -moz-animation: 1s blink step-end infinite
@@ -62,29 +64,29 @@ onMounted(() => {
   to
     color: transparent
   50%
-    color: #8CDE59
+    color: $accent
 @-moz-keyframes blink
   from,
   to
     color: transparent
   50%
-    color: #8CDE59
+    color: $accent
 @-webkit-keyframes blink
   from,
   to
     color: transparent
   50%
-    color: #8CDE59
+    color: $accent
 @-ms-keyframes blink
   from,
   to
     color: transparent
   50%
-    color: #8CDE59
+    color: $accent
 @-o-keyframes blink
   from,
   to
     color: transparent
   50%
-    color: #8CDE59
+    color: $accent
 </style>

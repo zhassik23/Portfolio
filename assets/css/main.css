@@ -386,16 +386,11 @@
   border-left: 3px solid #FFF;
   height: 60px;
 }
-.recomendations .rec-line:hover {
-  color: hsl(0, 0%, 78%);
-}
 .recomendations .rec-place {
   margin-top: 8px;
   font-size: 13px;
-  color: hsla(0, 0%, 78%, 0.4);
-}
-.recomendations .rec-place:hover {
-  color: hsl(90, 1%, 37%);
+  color: hsl(0, 0%, 78%);
+  opacity: 0.4;
 }
 
 .contacts {
@@ -572,7 +567,8 @@ p {
 }
 .section-header .title {
   text-shadow: 0 5px 5px #8CDE59;
-  color: hsla(0, 0%, 100%, 0.85);
+  color: #FFF;
+  opacity: 0.85;
 }
 .section-header .subtitle {
   color: hsl(0, 0%, 78%);

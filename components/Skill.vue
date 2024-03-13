@@ -1,12 +1,12 @@
 <template>
     <div class="skill">
         <div class="skill-data">
-            <h5>{{ skill.name }}</h5>
-            <p class="percentage">{{ skill.percentage }}%</p>
+            <h5>{{ name }}</h5>
+            <p class="percentage">{{ percentage }}%</p>
         </div>
 
         <div class="skill-bar">
-            <div class="skill-bar__inner" :style="{ width: skill.percentage + '%' }"></div>
+            <div class="skill-bar__inner" :style="{ width: percentage + '%' }"></div>
         </div>
     </div>
 </template>
@@ -15,6 +15,7 @@
 const props = defineProps({
     skill: Object
 });
+const { name, percentage } = props.skill;
 </script>
 
 <style lang="sass" scoped>
