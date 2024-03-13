@@ -7,8 +7,8 @@
 
 				<div class="about-info__stats">
 					<Stat
-						v-for="stat in info.stats"
 						:key="stat.key"
+						v-for="stat in info.stats"
 						:number="stat.value"
 						:text="stat.key"
 					/>
