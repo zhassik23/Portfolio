@@ -4,7 +4,7 @@
         <h3 class="card-text">{{ company.name }}</h3>
         <Button
             text="View More"
-            icon="fa-solid fa-angle-down button_icon"
+            icon="fa-solid fa-angle-down"
             :transparent="true"
             @click="toggleModal(id)"
         />
@@ -37,3 +37,23 @@ function toggleModal(id) {
     }
 };
 </script>
+
+<style lang="sass" scoped>
+@import "@/assets/sass/_vars.sass"
+@import "@/assets/sass/_mixins.sass"
+
+.card
+    position: relative
+    width: 22%
+    padding: 72px 30px 90px
+    border-radius: 5px
+    box-shadow: 0 2px 4px hsl(0, 1%, 31%)
+    background-color: $gray-background
+    &:hover
+        box-shadow: 0 2px 4px hsl(0, 4%, 4%)
+    &-icon
+        color: $accent
+        font-size: 40px
+    &-text
+        margin-top: 20px
+</style>

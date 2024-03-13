@@ -1,5 +1,5 @@
 <template>
-    <div class="toggler horizontal inline btn">
+    <div class="toggler btn" :class="{ 'active': (active === id) }">
         <i :class="`${icon} icon`"></i>
         <h4 class="text">{{ text }}</h4>
     </div>
@@ -7,23 +7,25 @@
 
 <script setup>
 const props = defineProps({
+    id: String,
     text: String,
-    icon: String
+    icon: String,
+    active: String
 });
 </script>
 
-<style lang="scss" scoped>
-.toggler {
-    gap: 8px;
+<style lang="sass" scoped>
+@import "@/assets/sass/_vars.sass"
+@import "@/assets/sass/_mixins.sass"
+
+.toggler
+    @include aic
+    gap: 8px
     &:hover,
-    &.active {
+    &.active
         .icon,
-        .text {
-            color: hsl(97, 67%, 61%);
-        }
-    }
-    .icon {
-        font-size: 16px;
-    }
-}
+        .text
+            color: $accent
+    .icon
+        font-size: 16px
 </style>

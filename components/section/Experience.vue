@@ -2,8 +2,8 @@
 	<Section id="experience" title="Experience" subtitle="My profesional journey">
 		<div class="experience section-content">
 			<Card
-				v-for="(item, index) in info.experience"
 				:key="index"
+				v-for="(item, index) in info.experience"
 				:id="index"
 				:company="item"
 			/>

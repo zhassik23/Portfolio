@@ -1,26 +1,11 @@
 .experience
     @include jcsb
-    .card
-        position: relative
-        width: 22%
-        padding: 72px 30px 90px
-        border-radius: 5px
-        box-shadow: 0 2px 4px hsl(0, 1%, 31%)
-        background-color: $gray-background
-        &:hover
-            box-shadow: 0 2px 4px hsl(0, 4%, 4%)
-        &-icon
+    .card .button
+        position: absolute
+        bottom: 20px
+        @include center
+        &-text,
+        .icon
             color: $accent
-            font-size: 40px
-        &-text
-            margin-top: 20px
-        .button
-            position: absolute
-            bottom: 20px
-            @include center
-            &-text,
-            .icon
-                color: $accent
-            &:hover .button-icon
-                transform: translateY(5px)
-        
+        &:hover .icon
+            transform: translateY(5px)

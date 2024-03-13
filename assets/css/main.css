@@ -160,7 +160,7 @@
     transform: translateY(-7px);
   }
 }
-#home.section {
+.section#home {
   position: relative;
   height: 100vh;
 }
@@ -251,24 +251,6 @@
   display: flex;
   justify-content: space-between;
 }
-.experience .card {
-  position: relative;
-  width: 22%;
-  padding: 72px 30px 90px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px hsl(0, 1%, 31%);
-  background-color: #313030;
-}
-.experience .card:hover {
-  box-shadow: 0 2px 4px hsl(0, 4%, 4%);
-}
-.experience .card-icon {
-  color: #8CDE59;
-  font-size: 40px;
-}
-.experience .card-text {
-  margin-top: 20px;
-}
 .experience .card .button {
   position: absolute;
   bottom: 20px;
@@ -279,11 +261,11 @@
 .experience .card .button .icon {
   color: #8CDE59;
 }
-.experience .card .button:hover .button-icon {
+.experience .card .button:hover .icon {
   transform: translateY(5px);
 }
 
-#qualification {
+.section#qualification {
   height: 100vh;
 }
 
@@ -296,70 +278,6 @@
   display: flex;
   gap: 32px;
   margin: 0 auto 30px;
-}
-.qualification-list {
-  position: absolute;
-  top: 56px;
-  left: 50%;
-  transform: translateX(-50%);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-.qualification-list__item {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 25px;
-}
-.qualification-list__item .shape-circle, .qualification-list__item .shape-line {
-  display: block;
-}
-.qualification-list__item .shape-circle {
-  width: 13px;
-  height: 13px;
-  background-color: #8CDE59;
-  border-radius: 50%;
-}
-.qualification-list__item .shape-line {
-  width: 1px;
-  height: 100%;
-  background-color: #8CDE59;
-  transform: translate(6px, -7px);
-}
-.qualification-list__item .center {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.qualification-list__item .center .title,
-.qualification-list__item .center .subtitle {
-  text-wrap: nowrap;
-}
-.qualification-list__item .center .title {
-  text-decoration: underline;
-}
-.qualification-list__item .center .date {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.qualification-list__item .center .date-icon, .qualification-list__item .center .date-text {
-  font-size: 11px;
-  color: hsl(0, 0%, 78%);
-}
-.qualification-list__item.left .l {
-  display: none;
-}
-.qualification-list__item.left .title,
-.qualification-list__item.left .subtitle {
-  text-align: right;
-}
-.qualification-list__item.left .date {
-  justify-content: end;
-}
-.qualification-list__item.right .r {
-  display: none;
 }
 
 .skills {
