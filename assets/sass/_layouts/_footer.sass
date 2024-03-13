@@ -1,37 +1,38 @@
 .footer
+	padding: 30px 0
 	background-color: #2D3E50
 	&-wrap
-		padding: 30px 0
+		display: grid
+		grid-gap: 30px
+		grid-template-columns: repeat(3, 1fr)
+		padding: 50px 0 60px
 		.title,
-		.text,
-		.icon
+		.text
 			color: $white
-		&__line
-			display: grid
-			grid-gap: 30px
-			grid-template-columns: repeat(3, 1fr)
-			padding: 50px 0 60px
-			&-cell
-				@include vertical
-				gap: 16px
-				&:first-child
-					gap: 5px
-				&:last-child
-					gap: 40px
-				.title
-					line-height: 36px
-				.subtitle
-					font-weight: 500
-					line-height: 28px
-					color: $gray
-				.text:hover
-					text-decoration: underline
-				.text,
-				.icon
-					&:hover
-						color: $accent
-				.icon
-					font-size: 20px
+		&__cell
+			@include vertical
+			gap: 16px
+			&:first-child
+				gap: 5px
+			&:last-child
+				gap: 40px
+			.title
+				line-height: 36px
+			.subtitle
+				font-weight: 500
+				line-height: 28px
+				color: $gray
+			.text:hover
+				text-decoration: underline
+			.text,
+			.icon
+				&:hover
+					color: $accent
+			.icon
+				font-size: 20px
+	&-icons
+		@include horizontal
+		gap: 20px
 	&-copy
 		text-align: center
 		font-size: 12px
