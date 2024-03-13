@@ -1,40 +1,24 @@
-.carousel
-    position: relative
-    overflow: hidden
-    &-inner
-        @include horizontal
-    &-item
-        min-width: 80%
-        margin: 0 10%
-    &-button
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-        font-size: 28px
-        &#prev
-            left: 0
-        &#next
-            right: 0
-    .project
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
-        gap: 24px
-        align-items: center
-        &-image
-            @include image-center
-            height: 256px
-            .image
-                width: 300px
-                height: 100%
-                border: 2px solid $white
-                border-radius: 15px
-                &:hover
-                    border: 2px solid $accent
-        &-data
-            @include vertical
-            gap: 8px
-            .description
-                font-size: 13px
-                color: hsla(0, 0%, 78%, .4)
-            .text
-                padding: 16px 0
+.project
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    align-items: center
+    gap: 24px
+    &-image
+        @include image-center
+        height: 256px
+        .image
+            width: 300px
+            height: 100%
+            border: 2px solid $white
+            border-radius: 15px
+            &:hover
+                border: 2px solid $accent
+    &-data
+        @include vertical
+        gap: 8px
+        .description
+            font-size: 13px
+            color: $gray
+            opacity: .65
+        .text
+            padding: 16px 0
