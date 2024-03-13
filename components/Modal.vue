@@ -17,7 +17,7 @@
                 <li
                     :key="index"
                     v-for="(responsibility, index) in responsibilities"
-                    class="horizontal"
+                    class="modal-responsibility__item"
                 >
                     <i class="fa-solid fa-circle icon"></i>
                     <p>{{ responsibility }}</p>

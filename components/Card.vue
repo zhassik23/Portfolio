@@ -48,10 +48,10 @@ function toggleModal(id) {
     width: 22%
     padding: 72px 30px 90px
     border-radius: 5px
-    box-shadow: 0 2px 4px hsl(0, 1%, 31%)
+    box-shadow: 0 2px 4px $gray-dark
     background-color: $gray-background
     &:hover
-        box-shadow: 0 2px 4px hsl(0, 4%, 4%)
+        box-shadow: 0 2px 4px $gray
     &-icon
         color: $accent
         font-size: 40px

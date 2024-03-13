@@ -13,3 +13,8 @@ const props = defineProps({
     placeholder: String
 });
 </script>
+
+<style lang="sass" scoped>
+textarea
+	height: max-content
+</style>

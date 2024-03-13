@@ -33,14 +33,10 @@ textarea
 	border-radius: 6px
 	outline: none
 	font-size: 13px
-	background-color: hsla(97, 40%, 35%, .3)
+	background-color: $accent-background
 	color: $gray
 	&::placeholder
 		color: $gray
-input
-	height: 40px
-textarea
-	height: max-content
 label
 	margin-bottom: 4px
 	font-weight: 600
@@ -77,31 +73,11 @@ p
 .box
 	width: 1140px
 	margin: auto
-.horizontal
-	display: flex
-.inline
-	align-items: center
-.space
-	justify-content: space-between
 .main
 	background: url("@/assets/images/background.jpeg") no-repeat center top / cover
 .btn
 	cursor: pointer
 .icon
 	color: $white
-.section
-	padding: 56px 0
-	&-header
-		margin: 24px 0 56px
-		.title,
-		.subtitle
-			text-align: center
-		.title
-			text-shadow: 0 5px 5px $accent
-			color: $white
-			opacity: .85
-		.subtitle
-			color: $gray
-			margin-top: 8px
 
 @import media

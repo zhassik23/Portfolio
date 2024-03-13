@@ -14,3 +14,8 @@ const props = defineProps({
 });
 const value = ref("");
 </script>
+
+<style lang="sass" scoped>
+input
+	height: 40px
+</style>

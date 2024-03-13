@@ -1,6 +1,6 @@
 <template>
 	<Section id="contacts" title="Contact me" subtitle="Get in touch">
-		<div class="contacts space">
+		<div class="contacts">
 			<div class="contacts-info">
 				<div :key="item.key" v-for="item in data" class="contact">
 					<nuxt-link :to="item.link">
