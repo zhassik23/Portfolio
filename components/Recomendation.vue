@@ -41,4 +41,15 @@ const { file, cheif, description } = props.recomendation;
       font-size: 13px
       color: $gray
       opacity: .4
+
+@media only screen and (max-width : 480px)
+  .recomendation
+    height: 96px
+    .icon
+        font-size: 32px
+    &-line
+        height: 56px
+    &-place
+        margin-top: 4px
+        font-size: 11px
 </style>

@@ -1,7 +1,7 @@
-.show
-    @include show
 .modal
     @include hide
+    &.active
+        @include show
     &-background,
     &-wrap
         position: fixed
@@ -44,3 +44,23 @@
             margin-top: 8px
             margin-right: 8px
             font-size: 5px
+
+@media only screen and (max-width : 480px)
+.modal
+    &-wrap
+        width: 90%
+        padding: 20px
+    &-close
+        top: 12px
+        right: 12px
+    &-header
+        @include horizontal
+        gap: 30px
+        margin-bottom: 24px
+        &__left
+            width: 60%
+            .text
+                margin-top: 5px
+                color: $gray
+        .logo
+            height: 30px

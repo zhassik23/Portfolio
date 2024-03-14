@@ -1,10 +1,13 @@
 <template>
-	<header class="header">
-		<div class="header-wrap box">
+	<header class="header box" :class="{ 'active': active }">
+		<div class="header-wrap">
 			<img :src="info.logo" alt="Logo" class="header-logo" />
+			<div class="header-toggle" @click="active = !active">
+				<span></span>
+			</div>
 
 			<ul class="header-menu">
-				<li :key="item.id" v-for="item in list">
+				<li :key="item.id" v-for="item in list" @click="active = !active">
 					<a :href="`#${item.id}`" class="header-menu__item">
 						<i :class="`fa-solid ${item.icon} icon`"></i>
 						<p class="text">{{ item.text }}</p>
@@ -18,6 +21,7 @@
 <script setup>
 import info from "@/assets/data.js";
 
+const active = ref(false);
 const list = [
 	{
 		id: "home",

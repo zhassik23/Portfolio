@@ -23,3 +23,15 @@
             padding: 10px 15px
             border-radius: 10px
             background-color: $accent-background
+
+@media only screen and (max-width : 480px)
+    .contacts
+        @include vertical
+        .contact
+            margin-bottom: 24px
+            .icon
+                font-size: 21px
+            .subtitle
+                margin-top: 4px
+        &-form
+            width: 100%

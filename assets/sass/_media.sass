@@ -2,12 +2,16 @@
 @media only screen and (max-width : 1440px)
     .box
         width: 912px
-    .header-menu
-        gap: 16px
-        &__item
-            .icon,
-            .text
-                font-size: 14px
+    .header
+        &-wrap
+            padding-left: 20px
+            padding-right: 20px
+        &-menu
+            gap: 12px
+            &__item
+                .icon,
+                .text
+                    font-size: 14px
     .home
         &-wrap .text
             &:nth-child(2)
@@ -16,3 +20,108 @@
                 font-size: 34px
         &-icons .icon
             font-size: 32px
+
+@media only screen and (max-width : 480px)
+    h1
+        font-size: 35px
+    h2
+        font-size: 24px
+    h3
+        font-size: 20px
+    h4
+        font-size: 18px
+    h5
+        font-size: 15px
+    h6
+        font-size: 12px
+    p
+        line-height: 20px
+        font-size: 13px
+    .box
+        width: 90%
+    .mobile
+        display: block
+    .header
+        left: 0
+        width: 100vw
+        background-color: transparent
+        box-shadow: none
+        transform: none
+        &.active .header
+            &-toggle
+                &:before,
+                &:after
+                    top: 50%
+                &:before
+                    transform: rotate(45deg)
+                &:after
+                    transform: rotate(-45deg)
+                span
+                    opacity: 0
+            &-menu
+                bottom: 0
+        &-wrap
+            padding-left: 5vw
+            padding-right: 5vw
+            .icon.mobile
+                font-size: 22px
+        &-toggle
+            position: relative
+            display: block
+            width: 20px
+            height: 20px
+            &:before,
+            &:after
+                content: ''
+            &:before,
+            &:after,
+            span
+                position: absolute
+                width: 100%
+                height: 2px
+                background-color: $white
+                transition: all ease-out 0.3s
+            &:before
+                top: 0
+            &:after
+                bottom: 0
+            span
+                @include center-vertical
+        &-menu
+            position: fixed
+            bottom: -100%
+            left: 0
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            gap: 30px
+            width: 100%
+            padding: 32px 24px 56px
+            border-radius: 24px 24px 0 0
+            box-shadow: 0 -10px 14px hsla(0, 0%, 100%, .15)
+            background-color: $white
+            &__item
+                flex-direction: column
+    .footer
+        &-wrap__cell:first-child,
+        &-icons
+            gap: 0
+        &-wrap
+            display: flex
+            flex-direction: column
+            padding: 20px 0
+            &__cell
+                gap: 12px
+        &-icons
+            justify-content: space-evenly
+            .icon
+                font-size: 20px
+                &:hover
+                    color: $accent
+        &-copy
+            text-align: center
+            font-size: 12px
+            opacity: .75
+    .home,
+    .about,
+    .experience
+        flex-direction: column

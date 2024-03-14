@@ -30,10 +30,10 @@ function toggleModal(id) {
     let modal = document.querySelector(`#modal${id}`);
 
     if (isOpen.value) {
-        modal.classList.add("show");
+        modal.classList.add("active");
         document.body.style.overflow = "hidden";
     } else {
-        modal.classList.remove("show");
+        modal.classList.remove("active");
         document.body.style.overflow = "auto";
     }
 };
@@ -57,4 +57,16 @@ function toggleModal(id) {
         font-size: 40px
     &-text
         margin-top: 20px
+
+@media only screen and (max-width : 480px)
+.card
+    @include vertical
+    align-items: center
+    width: 200px
+    padding: 15px
+    &-icon
+        font-size: 20px
+    &-text
+        margin: 8px 0
+        text-align: center
 </style>

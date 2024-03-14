@@ -1,5 +1,5 @@
 <template>
-    <div class="tree" :class="{ 'show': (active === id) }">
+    <div class="tree" :class="{ 'active': (active === id) }">
         <div
             :key="index"
             v-for="(item, index) in list"
@@ -50,11 +50,10 @@ const props = defineProps({
 @import "@/assets/sass/_mixins.sass"
 
 .tree
-    position: absolute
-    top: 56px
-    @include center
-    @include hide
     width: 100%
+    @include hide-height
+    &.active
+        @include show-height
     &-row
         display: grid
         grid-template-columns: 1fr max-content 1fr
@@ -100,4 +99,10 @@ const props = defineProps({
             &:nth-child(4),
             &:nth-child(5)
                 display: none
+
+@media only screen and (max-width : 480px)
+    .tree-row__cell
+        .title,
+        .subtitle
+            text-wrap: wrap
 </style>

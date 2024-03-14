@@ -121,7 +121,7 @@ const info = {
             position: "Full-stack Developer (Vue.js, Django.py, PostgresSQL)",
             icon: "fa-solid fa-server",
             logo: key_horse,
-            date: "June, 2022 - November, 2023 / Almaty",
+            date: "June, 2022 - February, 2024 / Almaty",
             responsibilities: [
                 'Working with microservices and libraries to enhance the scalability and modularity of the service architecture.',
                 'Played a pivotal role in the end-to-end development of multiple internal projects and company tools.',
@@ -359,8 +359,12 @@ const info = {
                     name: "CSS",
                     percentage: 100
                 }, {
-                    key: "sass",
+                    key: "scss",
                     name: "SCSS",
+                    percentage: 100
+                }, {
+                    key: "sass",
+                    name: "SASS",
                     percentage: 100
                 }, {
                     key: "less",

@@ -84,8 +84,7 @@ onUnmounted(() => {
         margin: 0 10%
     .icon
         position: absolute
-        top: 50%
-        transform: translateY(-50%)
+        @include center-vertical
         font-size: 28px
         &#prev
             left: 0

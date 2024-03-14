@@ -12,3 +12,16 @@
 		gap: 36px
 		&__stats
 			@include jcsb
+
+@media only screen and (max-width : 480px)
+	.about
+		display: flex
+		&-image
+			width: 200px
+		&-info
+			.text
+				text-align: center
+			&__stats
+				justify-content: space-evenly
+			.button
+				margin: 0 auto

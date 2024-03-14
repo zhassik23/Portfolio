@@ -5,7 +5,7 @@
         </a>
 
         <div class="project-data">
-            <h3>{{ name }}</h3>
+            <h3 class="title">{{ name }}</h3>
             <h6 class="description">Tech stack: {{ stack }}</h6>
             <p class="text">{{ description }}</p>
             <a :href="link">

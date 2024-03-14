@@ -47,4 +47,10 @@ const props = defineProps({
 		text-wrap: nowrap
 	.icon
 		font-size: 16px
+
+@media only screen and (max-width : 480px)
+	.button
+		&-text,
+		.icon
+			font-size: 13px
 </style>

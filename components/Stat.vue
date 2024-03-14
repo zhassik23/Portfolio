@@ -1,7 +1,7 @@
 <template>
     <div class="stat">
         <h3 class="stat-value">{{ formattedNumber }}</h3>
-        <p class="stat-key">{{ text }}</p>
+        <h6 class="stat-key">{{ text }}</h6>
     </div>
 </template>
 
@@ -26,6 +26,7 @@ const formattedNumber = computed(() => {
         text-align: center
     &-key
         margin-top: 6px
+
 @media only screen and (max-width : 1440px)
     .stat
         width: 21%
