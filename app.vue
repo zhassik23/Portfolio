@@ -13,4 +13,5 @@
     </div>
   </div>
   <layout-footer />
+  <Scroller />
 </template>
