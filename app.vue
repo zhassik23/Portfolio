@@ -1,4 +1,6 @@
 <template>
+  <Progressbar />
+  <Scroller />
   <layout-header />
   <div class="main">
     <div class="box">
@@ -13,5 +15,4 @@
     </div>
   </div>
   <layout-footer />
-  <Scroller />
 </template>

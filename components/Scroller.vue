@@ -41,8 +41,8 @@ onUnmounted(() => {
     @include aic
     justify-content: center
     @include hide
-    height: 25px
     width: 25px
+    height: 25px
     border: 2px solid $accent
     border-radius: 35%
     &.active
