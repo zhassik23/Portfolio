@@ -2,6 +2,7 @@
 	<header class="header box" :class="{ 'active': active }">
 		<div class="header-wrap">
 			<img :src="info.logo" alt="Logo" class="header-logo" />
+
 			<div class="header-toggle" @click="active = !active">
 				<span></span>
 			</div>

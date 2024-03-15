@@ -12,7 +12,7 @@
 
 <script setup>
 const props = defineProps({
-  recomendation: Array
+  recomendation: Object
 });
 
 const { file, cheif, description } = props.recomendation;
