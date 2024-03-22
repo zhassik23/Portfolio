@@ -1,23 +1,25 @@
 <template>
 	<section id="home" class="section">
 		<div class="home">
-			<ul class="home-icons">
-				<li :key="index" v-for="(item, index) in list">
-					<nuxt-link :to="item.link">
-						<i :class="`${item.icon} icon`"></i>
+			<div class="home-wrap">
+				<ul class="home-icons">
+					<li :key="index" v-for="(item, index) in list">
+						<nuxt-link :to="item.link">
+							<i :class="`${item.icon} icon`"></i>
+						</nuxt-link>
+					</li>
+				</ul>
+				
+				<div class="home-info">
+					<p class="text">Hello, my name is</p>
+					<h1 class="text">{{ info.name }}</h1>
+					<h2 class="text">
+						<TypedText :position="info.position" />
+					</h2>
+					<nuxt-link :to="info.links.hh">
+						<Button text="Head Hunter" icon="fa-brands fa-instagram" />
 					</nuxt-link>
-				</li>
-			</ul>
-
-			<div class="home-info">
-				<p class="text">Hello, my name is</p>
-				<h1 class="text">{{ info.name }}</h1>
-				<h2 class="text">
-				 	<TypedText :position="info.position" />
-				</h2>
-				<nuxt-link :to="info.links.hh">
-					<Button text="Head Hunter" icon="fa-brands fa-instagram" />
-				</nuxt-link>
+				</div>
 			</div>
 		
 			<a id="btn_home" href="#about">

@@ -74,9 +74,6 @@ const props = defineProps({
                 width: 1px
                 height: 100%
                 transform: translate(6px, -7px)
-            .title,
-            .subtitle
-                text-wrap: nowrap
             .title
                 text-decoration: underline
             .date
@@ -99,10 +96,4 @@ const props = defineProps({
             &:nth-child(4),
             &:nth-child(5)
                 display: none
-
-@media only screen and (max-width : 480px)
-    .tree-row__cell
-        .title,
-        .subtitle
-            text-wrap: wrap
 </style>

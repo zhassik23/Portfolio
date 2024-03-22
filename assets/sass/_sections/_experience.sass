@@ -1,5 +1,6 @@
 .experience
     @include jcsb
+    flex-wrap: wrap
     .card .button
         position: absolute
         bottom: 20px
@@ -10,10 +11,17 @@
         &:hover .icon
             transform: translateY(5px)
 
-@media only screen and (max-width : 480px)
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
     .experience
         align-items: center
-        gap: 12px
+        justify-content: center
+        gap: 24px
+
+/* Small Devices, Tablets, Phones */
+@media only screen and (max-width : 768px)
+    .experience
+        gap: 16px
         .card .button
             position: static
             transform: none

@@ -43,7 +43,7 @@ const info = {
     stats: [
         {
             key: "Project works",
-            value: 23
+            value: 26
         }, {
             key: "Language profiency",
             value: 5
@@ -158,13 +158,13 @@ const info = {
             image: rakhat
         }, {
             name: "Tahit",
-            link: "https://tahit.netlify.app",
+            link: "https://tahit.kz",
             description: "Multi page project in two languages with authorization and authentication for Profile account. In the catalog its comfortable filter for finding some items.",
             stack: "Vue.js, JavaScript, SCSS",
             image: tahit
         }, {
             name: "YAQ - Альпинист Товаров",
-            link: "https://alpenist-tovarov.netlify.app",
+            link: "https://yaq.kz",
             description: "The Alpinist-Products online store, known as yaq, is a network of multi-brand sports stores offering equipment for outdoor activities, hiking, trekking, skyrunning, running and other sports and outdoor activities. The React framework was used to implement this site. This project has a rather complex filtering point where the user can search for goods by category, by color, by gender, by size, by type, and sort the goods as they wish.",
             stack: "React.js",
             image: yaq
@@ -276,23 +276,23 @@ const info = {
         {
             title: "National School-Gymnasium No. 13",
             description: "Primary School - Atyrau",
-            date: "2008-2014"
+            date: "2008 - 2014"
         }, {
             title: "Kazakh-Turkish Lyceum",
             description: "High School - Atyrau",
-            date: "2014-2019"
+            date: "2014 - 2019"
         }, {
             title: "Suleyman Demirel University",
             description: "Bachelor of 'Engineering and Natural Sciences' - Almaty",
-            date: "2019-2023"
+            date: "2019 - 2023"
         }, {
             title: "HTML, CSS, and JS for Web Developers",
             description: "Coursera",
-            date: "May-2021"
+            date: "May - 2021"
         }, {
             title: "Front-End Web Development with React",
             description: "Coursera",
-            date: "April-2022"
+            date: "April - 2022"
         }
     ],
     achievement: [
@@ -434,24 +434,24 @@ const info = {
                 {
                     key: "english",
                     name: "English",
-                    percentage: "Upper-Intermediate",
+                    level: "Upper-Intermediate",
                     link: "https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR"
                 }, {
                     key: "kazakh",
                     name: "Kazakh",
-                    percentage: "Native"
+                    level: "Native"
                 }, {
                     key: "russian",
                     name: "Russian",
-                    percentage: "Fluent"
+                    level: "Fluent"
                 }, {
                     key: "turkish",
                     name: "Turkish",
-                    percentage: "Upper-Intermediate"
+                    level: "Upper-Intermediate"
                 }, {
                     key: "chinese",
                     name: "Chinese",
-                    percentage: "Intermediate",
+                    level: "Intermediate",
                     link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL"
                 }
             ]

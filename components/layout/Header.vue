@@ -3,7 +3,7 @@
 		<div class="header-wrap">
 			<img :src="info.logo" alt="Logo" class="header-logo" />
 
-			<div class="header-toggle" @click="active = !active">
+			<div class="header-toggle btn" @click="active = !active">
 				<span></span>
 			</div>
 

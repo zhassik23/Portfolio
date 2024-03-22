@@ -2,7 +2,8 @@
     <div class="skill">
         <div class="skill-data">
             <h5>{{ name }}</h5>
-            <p class="percentage">{{ percentage }}%</p>
+            <p v-if="percentage" class="percentage">{{ percentage }}%</p>
+            <p v-if="level" class="level">{{ level }}</p>
         </div>
 
         <div class="skill-bar">
@@ -15,7 +16,7 @@
 const props = defineProps({
     skill: Object
 });
-const { name, percentage } = props.skill;
+const { name, percentage, level } = props.skill;
 </script>
 
 <style lang="sass" scoped>
@@ -26,7 +27,8 @@ const { name, percentage } = props.skill;
     &-data
         @include aic_jcsb
         margin-bottom: 6px
-        .percentage
+        .percentage,
+        .level
             font-size: 14px
     &-bar
         position: relative

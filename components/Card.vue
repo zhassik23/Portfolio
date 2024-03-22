@@ -8,13 +8,13 @@
             :transparent="true"
             @click="toggleModal(id)"
         />
+        
+        <Modal
+            :id="`modal${id}`"
+            :company="company"
+            @close="toggleModal(id)"
+        />
     </div>
-
-    <Modal
-        :id="`modal${id}`"
-        :company="company"
-        @close="toggleModal(id)"
-    />
 </template>
 
 <script setup>
@@ -45,8 +45,8 @@ function toggleModal(id) {
 
 .card
     position: relative
-    width: 22%
-    padding: 72px 30px 90px
+    width: 240px
+    padding: 64px 30px 90px
     border-radius: 5px
     box-shadow: 0 2px 4px $gray-dark
     background-color: $gray-background
@@ -58,15 +58,22 @@ function toggleModal(id) {
     &-text
         margin-top: 20px
 
-@media only screen and (max-width : 480px)
-.card
-    @include vertical
-    align-items: center
-    width: 200px
-    padding: 15px
-    &-icon
-        font-size: 20px
-    &-text
-        margin: 8px 0
-        text-align: center
+@media only screen and (max-width : 1440px)
+    .card
+        width: 210px
+        
+@media only screen and (max-width : 992px)
+    .card
+        width: 236px
+
+@media only screen and (max-width : 768px)
+    .card
+        @include vertical
+        align-items: center
+        padding: 32px 15px
+        &-icon
+            font-size: 32px
+        &-text
+            margin: 12px 0
+            text-align: center
 </style>

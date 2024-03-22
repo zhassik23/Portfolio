@@ -15,8 +15,4 @@
     .icon
         color: $accent
         text-shadow: .8px .8px $shadow-dark
-
-@media only screen and (max-width : 480px)
-    .stars
-        margin-bottom: 16px
 </style>

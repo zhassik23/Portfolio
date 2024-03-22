@@ -2,14 +2,6 @@
 @media only screen and (max-width : 1440px)
     .box
         width: 912px
-    .home
-        &-wrap .text
-            &:nth-child(2)
-                font-size: 56px
-            &:nth-child(3)
-                font-size: 34px
-        &-icons .icon
-            font-size: 32px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -20,6 +12,9 @@
 @media only screen and (max-width : 768px)
     .box
         width: 90%
+    .home-wrap,
+    .about
+        flex-direction: column
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -38,9 +33,3 @@
     p
         line-height: 20px
         font-size: 13px
-    .box
-        width: 90%
-    .home,
-    .about,
-    .experience
-        flex-direction: column
