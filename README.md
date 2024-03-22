@@ -1,37 +1,75 @@
-## Welcome to GitHub Pages
+# Nuxt 3 Minimal Starter
 
-You can use the [editor on GitHub](https://github.com/zhassik23/Portfolio/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Setup
 
-### Markdown
+Make sure to install the dependencies:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```bash
+# npm
+npm install
 
-```markdown
-Syntax highlighted code block
+# pnpm
+pnpm install
 
-# Header 1
-## Header 2
-### Header 3
+# yarn
+yarn install
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# bun
+bun install
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Development Server
 
-### Jekyll Themes
+Start the development server on `http://localhost:3000`:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhassik23/Portfolio/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+# npm
+npm run dev
 
-### Support or Contact
+# pnpm
+pnpm run dev
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
