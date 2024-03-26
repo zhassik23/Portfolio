@@ -21,7 +21,7 @@ import ikeruen from "assets/images/projects/ikeruen.png";
 import kazmed from "assets/images/projects/kazmed.png";
 import kostyum from "assets/images/projects/kostyum.png";
 import m1_service from "assets/images/projects/m1-service.png";
-import md_stadt from "assets/images/projects/md_stadt.png";
+import md_stadt from "assets/images/projects/md-stadt.png";
 import melissa from "assets/images/projects/melissa.png";
 import midas_event from "assets/images/projects/midas-event.png";
 import new_navat from "assets/images/projects/new-navat.png";
@@ -40,7 +40,7 @@ import tez_zhet from "assets/images/projects/tez-zhet.png";
 import torgsoft from "assets/images/projects/torgsoft.png";
 import unistory from "assets/images/projects/unistory.png";
 import yaq from "assets/images/projects/yaq.png";
-import youngs_store from "assets/images/projects/youngs_store.png";
+import youngs_store from "assets/images/projects/youngs-store.png";
 
 const info = {
     name: "Serikuly Zhassulan",
