@@ -9,6 +9,7 @@ import recommendation1 from "assets/files/Characteristics.pdf";
 import recommendation2 from "assets/files/Recommendations.pdf";
 import abi_construction from "assets/images/projects/abi-construction.png";
 import age_counter from "assets/images/projects/age-counter.png";
+import art_galery from "assets/images/projects/art-galery.png";
 import asiacreditbank from "assets/images/projects/asiacreditbank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
 import calculator from "assets/images/projects/calculator.png";
@@ -20,6 +21,7 @@ import ikeruen from "assets/images/projects/ikeruen.png";
 import kazmed from "assets/images/projects/kazmed.png";
 import kostyum from "assets/images/projects/kostyum.png";
 import m1_service from "assets/images/projects/m1-service.png";
+import md_stadt from "assets/images/projects/md_stadt.png";
 import melissa from "assets/images/projects/melissa.png";
 import midas_event from "assets/images/projects/midas-event.png";
 import new_navat from "assets/images/projects/new-navat.png";
@@ -32,15 +34,13 @@ import geonomix from "assets/images/projects/geonomix.png";
 import qonys_toi from "assets/images/projects/qonys-toi.png";
 import rakhat from "assets/images/projects/rakhat.png";
 import rento from "assets/images/projects/rento.png";
+import sxodim from "assets/images/projects/sxodim.png";
 import tahit from "assets/images/projects/tahit.png";
 import tez_zhet from "assets/images/projects/tez-zhet.png";
 import torgsoft from "assets/images/projects/torgsoft.png";
+import unistory from "assets/images/projects/unistory.png";
 import yaq from "assets/images/projects/yaq.png";
-import sxodim from "assets/images/sxodim.png";
-import art_galery from "assets/images/art-galery.png";
-import unistory from "assets/images/unistory.png";
-import youngs_store from "assets/images/youngs_store.png";
-import md_stadt from "assets/images/md_stadt.png";
+import youngs_store from "assets/images/projects/youngs_store.png";
 
 const info = {
     name: "Serikuly Zhassulan",
@@ -54,7 +54,7 @@ const info = {
     stats: [
         {
             key: "Project works",
-            value: 26
+            value: 34
         }, {
             key: "Language profiency",
             value: 5
@@ -234,6 +234,12 @@ const info = {
             stack: "HTML, JavaScript, CSS, jQuery",
             image: midas_event
         }, {
+            name: "Qonys Toi",
+            link: "https://qonys-toi.netlify.app",
+            description: "Invitation website for event prepared with React.",
+            stack: "React.js",
+            image: qonys_toi
+        }, {
             name: "Tez Zhet",
             link: "https://apps.apple.com/sk/app/tezzhet/id6473077229",
             description: "Приложение для доставки продуктов предоставляет удобный способ заказа еды и товаров из различных магазинов и ресторанов, прямо к вам домой. Откройте приложение, выберите из разнообразных предложений, оформите заказ, и наши курьеры быстро доставят ваш заказ в удобное для вас место. С широким ассортиментом и удобным интерфейсом, мы делаем процесс покупок легким и приятным",
@@ -245,6 +251,18 @@ const info = {
             description: "Navat — это лэндинг, предназначенный для того, чтобы донести аутентичный вкус среднеазиатской кухни до вашего порога. Специализируясь на блюдах в стиле «чайхана», Navat предлагает разнообразные вкусные блюда, вдохновленные богатыми кулинарными традициями Узбекистана, Таджикистана, Кыргызстана, Казахстана и других стран.",
             stack: "HTML, JavaScript, CSS, jQuery",
             image: new_navat
+        }, {
+            name: "Kagis > Geonomix",
+            link: "https://alauzo.kz",
+            description: "Государственный архитектурно-строительный контроль. Казахстанское агентство географических информационных систем и дистанционного зондирования.",
+            stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
+            image: geonomix
+        }, {
+            name: "Unistory",
+            link: "https://unistory.netlify.app",
+            description: "Application on React, with connecting a crypto wallet and displaying information from the backend.",
+            stack: "React.ts, CSS, Typescript",
+            image: unistory
         }, {
             name: "M1 Service",
             link: "https://m1-service.netlify.app",
@@ -258,58 +276,26 @@ const info = {
             stack: "1C Bitrix, PHP (HTML, JS, SASS, CSS), Bootstrap",
             image: azm_trade
         }, {
+            name: "Portfolio Website",
+            link: "https://zhassulan.netlify.app",
+            description: "Portfolio web - page that introduces me. This project is made to show my abilities and information, such as education, skills and work experience. Thanks to this page, you don't have to download a PDF file and read boring text on one text file.",
+            stack: "HTML, CSS, JavaScript, jQuery",
+            image: portfolio
+        }, {
+            name: "Art - Galery",
+            link: "https://art-galery.netlify.app",
+            description: "Website with products that can be searched. You can add product to favourites.",
+            stack: "React.js, SCSS",
+            image: art_galery
+        }, {
             name: "Torg Soft",
             link: "https://torgsoft.netlify.app",
             description: "ТОРГСОФТ — это программное обеспечение, созданное с целью автоматизировать бизнес на самом высоком уровне. Благодаря простому интерфейсу и логичной структуре ТОРГСОФТА, Вы сможете наладить контроль своего бизнеса уже сегодня!",
             stack: "HTML, JavaScript, CSS",
             image: torgsoft
         }, {
-            name: "ЧЕК МАРКЕТ",
-            link: "https://github.com/zhassulaan/check-market",
-            description: "Компания «ЧЕК МАРКЕТ» создана с целью помогать. Помогать вам в решении ваших задач и проблем. Основной принцип работы компании – подбор оптимальных решений по безопасности предприятий торговли и оказание профессиональных услуг по автоматизации производства, установке и обслуживанию оборудования, а также предоставление качественного расходного материала!",
-            stack: "Next.js",
-            image: check_market
-        }, {
-
-            name: "Kagis > Geonomix",
-            link: "https://alauzo.kz",
-            description: "Государственный архитектурно-строительный контроль. Казахстанское агентство географических информационных систем и дистанционного зондирования.",
-            stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
-            image: geonomix
-        }, {
-            name: "Qonys Toi",
-            link: "https://qonys-toi.netlify.app",
-            description: "Invitation website for event prepared with React.",
-            stack: "React.js",
-            image: qonys_toi
-        }, {
-            name: "Rento",
-            link: "https://rentokz.netlify.app",
-            description: "Онлайн сервис для бронирования и автоматизация для сферы спорта.",
-            stack: "React.js, Redux, Firebase",
-            image: rento
-        }, {
-
-            name: "Sxodim.kz",
-            link: "https://github.com/zhassulaan/sxodim",
-            description: "My first full-stack project written in django framework of python and react framework of javascript.",
-            stack: "React.js, Django.py",
-            image: sxodim
-        }, {
-            name: "Art - Galery",
-            link: "https://art-galery.netlify.app",
-            description: "Website with products that can be searched. You can add product to favourites.",
-            stack: "Reacct.js, SCSS",
-            image: art_galery
-        }, {
-            name: "Unistory",
-            link: "https://unistory.netlify.app",
-            description: "Application on React, with connecting a crypto wallet and displaying information from the backend.",
-            stack: "React.ts, CSS, Typescript",
-            image: unistory
-        }, {
             name: "Korean Clothes Store",
-            link: "https://youngsstore.netlify.app",
+            link: "https://youngs-store.netlify.app",
             description: "Personal website for a shop that sells stylish Korean clothes. Here you can view products, place an order and apply for a job. It's fully responsive, so you can use it on any device.",
             stack: "HTML, CSS, JavaScript, Bootstrap, jQuery",
             image: youngs_store
@@ -344,12 +330,25 @@ const info = {
             stack: "JavaScript, jQuery, HTML, CSS",
             image: coffee_boom
         }, {
-            name: "Portfolio Website",
-            link: "https://zhassulan.netlify.app",
-            description: "Portfolio web - page that introduces me. This project is made to show my abilities and information, such as education, skills and work experience. Thanks to this page, you don't have to download a PDF file and read boring text on one text file.",
-            stack: "HTML, CSS, JavaScript, jQuery",
-            image: portfolio
+            name: "Rento",
+            link: "https://rentokz.netlify.app",
+            description: "Онлайн сервис для бронирования и автоматизация для сферы спорта.",
+            stack: "React.js, Redux, Firebase",
+            image: rento
+        }, {
+            name: "ЧЕК МАРКЕТ",
+            link: "https://github.com/zhassulaan/check-market",
+            description: "Компания «ЧЕК МАРКЕТ» создана с целью помогать. Помогать вам в решении ваших задач и проблем. Основной принцип работы компании – подбор оптимальных решений по безопасности предприятий торговли и оказание профессиональных услуг по автоматизации производства, установке и обслуживанию оборудования, а также предоставление качественного расходного материала!",
+            stack: "Next.js",
+            image: check_market
+        }, {
+            name: "Sxodim.kz",
+            link: "https://github.com/zhassulaan/sxodim",
+            description: "My first full-stack project written in django framework of python and react framework of javascript.",
+            stack: "React.js, Django.py",
+            image: sxodim
         }
+
     ],
     education: [
         {
