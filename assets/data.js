@@ -7,29 +7,40 @@ import key_horse from "assets/logos/key_horse_logo.png";
 import cv from "assets/files/Zhassulan_Serikuly_CV.pdf";
 import recommendation1 from "assets/files/Characteristics.pdf";
 import recommendation2 from "assets/files/Recommendations.pdf";
-import qazaq_taxi from "assets/images/qazaq-taxi.png";
-import tez_zhet from "assets/images/tez-zhet.png";
-import geonomix from "assets/images/geonomix.png";
-import rakhat from "assets/images/rakhat.png";
-import tahit from "assets/images/tahit.png";
-import yaq from "assets/images/yaq.png";
-import qonys_toi from "assets/images/qonys-toi.png";
-import rento from "assets/images/rento.png";
-import new_navat from "assets/images/new_navat.png";
-import midas_event from "assets/images/midas_event.png";
+import abi_construction from "assets/images/projects/abi-construction.png";
+import age_counter from "assets/images/projects/age-counter.png";
+import asiacreditbank from "assets/images/projects/asiacreditbank.png";
+import azm_trade from "assets/images/projects/azm-trade.png";
+import calculator from "assets/images/projects/calculator.png";
+import check_market from "assets/images/projects/check-market.png";
+import coffee_boom from "assets/images/projects/coffee-boom.png";
+import dobraya from "assets/images/projects/dobraya.png";
+import dostyk_trans_terminal from "assets/images/projects/dostyk-trans-terminal.png";
+import ikeruen from "assets/images/projects/ikeruen.png";
+import kazmed from "assets/images/projects/kazmed.png";
+import kostyum from "assets/images/projects/kostyum.png";
+import m1_service from "assets/images/projects/m1-service.png";
+import melissa from "assets/images/projects/melissa.png";
+import midas_event from "assets/images/projects/midas-event.png";
+import new_navat from "assets/images/projects/new-navat.png";
+import number_speller from "assets/images/projects/number-speller.png";
+import pharmacom from "assets/images/projects/pharmacom.png";
+import portfolio from "assets/images/projects/portfolio.png";
+import qazbooking from "assets/images/projects/qazbooking.png";
+import qazaq_taxi from "assets/images/projects/qazaq-taxi.png";
+import geonomix from "assets/images/projects/geonomix.png";
+import qonys_toi from "assets/images/projects/qonys-toi.png";
+import rakhat from "assets/images/projects/rakhat.png";
+import rento from "assets/images/projects/rento.png";
+import tahit from "assets/images/projects/tahit.png";
+import tez_zhet from "assets/images/projects/tez-zhet.png";
+import torgsoft from "assets/images/projects/torgsoft.png";
+import yaq from "assets/images/projects/yaq.png";
 import sxodim from "assets/images/sxodim.png";
-import m1_service from "assets/images/m1-service.png";
-import check_market from "assets/images/check_market.png";
 import art_galery from "assets/images/art-galery.png";
 import unistory from "assets/images/unistory.png";
-import torgsoft from "assets/images/torgsoft.png";
 import youngs_store from "assets/images/youngs_store.png";
 import md_stadt from "assets/images/md_stadt.png";
-import age_counter from "assets/images/age_counter.png";
-import calculator from "assets/images/calculator.png";
-import number_speller from "assets/images/number_speller.png";
-import coffee_boom from "assets/images/coffee_boom.png";
-import portfolio from "assets/images/portfolio.png";
 
 const info = {
     name: "Serikuly Zhassulan",
@@ -133,41 +144,138 @@ const info = {
     ],
     projects: [
         {
-            name: "Qazaq Taxi Application",
-            link: "https://play.google.com/store/apps/details?id=com.driver.qazaqtaxi&pli=1",
-            description: "App for taxi drivers and passengers, key feature is you can order Lady car type for more secure travel. Also I have prepared Admin, B2B websites for Qazaq Taxi.",
-            stack: "Vue.js, Nuxt.js, Vuetify, SCSS, CSS",
-            image: qazaq_taxi
+            name: "Qaz Booking",
+            link: "https://qazbooking.kz",
+            description: "Qazbooking - это сервис онлайн бронирования хостелов и баз отдыха. С его помощью можно легко и удобно запланировать своё путешествие в пару кликов. Не придётся много раз звонить, если линии заняты, или долго ожидать ответа в WhatsApp. Бронирование проходит в онлайн режиме. На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан",
+            stack: "1C Bitrix, PHP (HTML, JS, SASS, CSS), Bootstrap",
+            image: qazbooking
         }, {
-            name: "Tez Zhet",
-            link: "https://tez-zhet.netlify.app",
-            description: "Website for ordering dishes and products using nuxt.",
-            stack: "Nuxt.js, CSS, SCSS",
-            image: tez_zhet
+            name: "Kostyum.kz",
+            link: "https://kostyum.kz",
+            description: "​Kostyum.kz - это Ваш надежный партнёр в мире мужской одежды. Работает в сфере торговли с 1998 года, благодаря высокому качеству товаров и индивидуальному подходу, завоевали широкий круг постоянных клиентов. Основным принципом работы является честность, ответственность и нацеленность на долгосрочное сотрудничество.",
+            stack: "Nuxt.js, Swiper",
+            image: kostyum
         }, {
-            name: "Kagis > Geonomix",
-            link: "https://alauzo.kz/",
-            description: "Multifunctional platform. Within the framework of regional geographic information systems / platforms, digital twins (object / city / territory), provision of interdepartmental public services, implementation of the functions of state bodies, interdepartmental automation, industry GIS, digital registers of state property, archives of documentation, monitoring of the activities of departments and subordinate enterprises, dispatching, situational centers and operational management centers.",
-            stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
-            image: geonomix
+            name: "Сеть аптек «Добрая»",
+            link: "https://dobraya-apteka.kz",
+            description: "Сеть аптек «Добрая» начала свою деятельность в 1995 году в г. Алматы и Алматинской области. Компания всегда двигается в ногу со временем и развиваем онлайн технологии через интернет-аптеку «Добрая», где цены зачастую ниже, чем в наших точках продаж.",
+            stack: "HTML, JS, Bootstrap, jQuery, CSS",
+            image: dobraya
         }, {
-            name: "Rakhat",
-            link: "https://rakhat.a-lux.dev",
-            description: "Single page website for Rakhat compang with 360 degree camera. Prepared with Vue3.",
-            stack: "Vue.js, SCSS",
-            image: rakhat
+            name: "KazMed Engineering",
+            link: "https://www.kme.kz",
+            description: "ТОО «КазМедИнжиниринг» было основано в 2007 году, является авторизованным сервисным партнером Philips Medical Systems Nederland B.V. (НИДЕРЛАНДЫ) в Республике Казахстан. В своем составе компания имеет высококвалифицированных инженеров, прошедших обучение в ведущих учебных центрах Европы и США. Предоставляет качественные услуги по диагностике, ремонту и обслуживанию медицинского оборудования. Стремиться поддерживать самые высокие стандарты и используем передовые технологии для обеспечения безопасности и надежности медицинской техники.",
+            stack: "Nuxt.js, Swiper",
+            image: kazmed
+        }, {
+            name: "Pharmacom",
+            link: "https://pharma.com.kz",
+            description: "Бренд Pharmacom основан в 1996 году. Сегодня оно объединяет Клинику вакцинации в г. Алматы и классическую аптеку в современном формате, представленную сетью из 55 точек продаж в городах Алматы, Астана, Шымкент, Кызылорда, Павлодар и Петропавловск.",
+            stack: "HTML, JS, Bootstrap, jQuery, CSS",
+            image: pharmacom
         }, {
             name: "Tahit",
             link: "https://tahit.kz",
-            description: "Multi page project in two languages with authorization and authentication for Profile account. In the catalog its comfortable filter for finding some items.",
-            stack: "Vue.js, JavaScript, SCSS",
+            description: "На производстве ТОО TAHIT самые передовые технологии и современные материалы. Сублимационный метод нанесения рисунка на ткань позволяет получить яркие, глубокие, стойкие к выцветанию принты. Фабрика оснащена современным европейским оборудованием, мощностей которого достаточно, чтобы в минимальные сроки качественно справиться с заказом любого объема и получить качественную продукцию, соответствующую высоким стандартам качества.",
+            stack: "Vue.js, SCSS",
             image: tahit
+        }, {
+            name: "Asia Credit Bank",
+            link: "https://asiacreditbank.kz",
+            description: "Контактный центр АО «AsiaCredit Bank (АзияКредит Банк)» обеспечивает дистанционное консультирование юридических и физических лиц. Каждый поступающий звонок регистрируется и оперативно обрабатывается высококвалифицированными специалистами, консультирующими по предоставляемым продуктам и услугам Банка.",
+            stack: "PHP (HTML, JS, SCSS, CSS)",
+            image: asiacreditbank
+        }, {
+            name: "Melissa",
+            link: "https://melissaapteka.kz",
+            description: "Melissa — современный удобный интернет-магазин медикаментов, в котором можно купить онлайн сертифицированные лекарственные средства, витамины, товары для детей и мам, БАДы, косметику и другие товары для здоровья, красоты и гигиены по низким ценам. Общий ассортимент интернет аптеки включает более 13 000 фармацевтических, косметологических и медицинских изделий.",
+            stack: "Nuxt.js",
+            image: melissa
+        }, {
+            name: "ABI Construction",
+            link: "https://abi-construction.kz",
+            description: "ABI Construction является проектно - строительной компанией, специализирующейся на комплексном проектировании и строительстве.",
+            stack: "WordPress, Vue.js, PHP",
+            image: abi_construction
+        }, {
+            name: "IKeruen",
+            link: "https://ikeruen.kz",
+            description: "Компания IKeruen специализируется на предоставлении широкого спектра услуг по грузоперевозкам. Компания предлагает надежные и эффективные решения для перевозки грузов любого типа и объема.",
+            stack: "Nuxt.js, Swiper",
+            image: ikeruen
+        }, {
+            name: "Rakhat",
+            link: "https://rakhat.a-lux.dev",
+            description: "АО «ЛОТТЕ Рахат» представляют уникальный проект «Rakhat Qazaqstan óneri», цель которого, познакомить Вас с богатой современной культурой Казахстана, вдохновить на исследование казахстанского искусства  и неповторимого художественного стиля.",
+            stack: "Vue.js, SCSS",
+            image: rakhat
         }, {
             name: "YAQ - Альпинист Товаров",
             link: "https://yaq.kz",
-            description: "The Alpinist-Products online store, known as yaq, is a network of multi-brand sports stores offering equipment for outdoor activities, hiking, trekking, skyrunning, running and other sports and outdoor activities. The React framework was used to implement this site. This project has a rather complex filtering point where the user can search for goods by category, by color, by gender, by size, by type, and sort the goods as they wish.",
+            description: "YAQ - это магазин спецодежды и снаряжения для активного отдыха. В магазине вы найдете целые коллекции первоклассной спецодежды, обуви, аксессуаров и снаряжения от известных брендов для всех нужд и возрастных категорий. Также вы получите профессиональную консультацию по всем интересующим вопросам.",
             stack: "React.js",
             image: yaq
+        }, {
+            name: "Dostyk Trans Terminal",
+            link: "https://dostyk-trans-terminal.netlify.app",
+            description: "Dostyk Trans Terminal - модерн-терминал на границе «Достык - Алашанькоу» предоставляет ряд высококачественных услуг, от стандартного хранения контейнеров и перегруза, до сложнореализуемых операций.",
+            stack: "Nuxt.js",
+            image: dostyk_trans_terminal
+        }, {
+            name: "Qazaq Taxi Application",
+            link: "https://play.google.com/store/apps/details?id=com.user.qazaqtaxi&hl=en&gl=US",
+            description: "QAZAQ TAXI — отечественное приложение для заказа быстрых и комфортных поездок.",
+            stack: "Vue.js, Nuxt.js, Vuetify, SCSS, CSS",
+            image: qazaq_taxi
+        }, {
+            name: "Midas EVENT",
+            link: "https://midasevent.kz",
+            description: "Цель «Midas Event» - быть самым эффективным event-агентством в Казахстане. Команда работает по системному подходу, от разработки концепции, до конечной реализации.",
+            stack: "HTML, JavaScript, CSS, jQuery",
+            image: midas_event
+        }, {
+            name: "Tez Zhet",
+            link: "https://apps.apple.com/sk/app/tezzhet/id6473077229",
+            description: "Приложение для доставки продуктов предоставляет удобный способ заказа еды и товаров из различных магазинов и ресторанов, прямо к вам домой. Откройте приложение, выберите из разнообразных предложений, оформите заказ, и наши курьеры быстро доставят ваш заказ в удобное для вас место. С широким ассортиментом и удобным интерфейсом, мы делаем процесс покупок легким и приятным",
+            stack: "Nuxt.js, CSS, SCSS",
+            image: tez_zhet
+        }, {
+            name: "New Navat",
+            link: "https://newnavat.netlify.app",
+            description: "Navat — это лэндинг, предназначенный для того, чтобы донести аутентичный вкус среднеазиатской кухни до вашего порога. Специализируясь на блюдах в стиле «чайхана», Navat предлагает разнообразные вкусные блюда, вдохновленные богатыми кулинарными традициями Узбекистана, Таджикистана, Кыргызстана, Казахстана и других стран.",
+            stack: "HTML, JavaScript, CSS, jQuery",
+            image: new_navat
+        }, {
+            name: "M1 Service",
+            link: "https://m1-service.netlify.app",
+            description: "Мы — сеть автосервисов М1 Сервис. Работаем с 2006 года и уже 16 лет успешно развиваемся в сфере технического обслуживания автомобилей.",
+            stack: "Nuxt.js, SCSS, TypeScript",
+            image: m1_service
+        }, {
+            name: "Азия - Мебель",
+            link: "https://asiamebel.com",
+            description: "​Торгово - сервисная компания. «Азия Мебель» — специализируется на продаже поитных материалов, фурнитуры и инструментов, а также оказывает услуги распила, фрезеровки и закатки пвх.",
+            stack: "1C Bitrix, PHP (HTML, JS, SASS, CSS), Bootstrap",
+            image: azm_trade
+        }, {
+            name: "Torg Soft",
+            link: "https://torgsoft.netlify.app",
+            description: "ТОРГСОФТ — это программное обеспечение, созданное с целью автоматизировать бизнес на самом высоком уровне. Благодаря простому интерфейсу и логичной структуре ТОРГСОФТА, Вы сможете наладить контроль своего бизнеса уже сегодня!",
+            stack: "HTML, JavaScript, CSS",
+            image: torgsoft
+        }, {
+            name: "ЧЕК МАРКЕТ",
+            link: "https://github.com/zhassulaan/check-market",
+            description: "Компания «ЧЕК МАРКЕТ» создана с целью помогать. Помогать вам в решении ваших задач и проблем. Основной принцип работы компании – подбор оптимальных решений по безопасности предприятий торговли и оказание профессиональных услуг по автоматизации производства, установке и обслуживанию оборудования, а также предоставление качественного расходного материала!",
+            stack: "Next.js",
+            image: check_market
+        }, {
+
+            name: "Kagis > Geonomix",
+            link: "https://alauzo.kz",
+            description: "Государственный архитектурно-строительный контроль. Казахстанское агентство географических информационных систем и дистанционного зондирования.",
+            stack: "Vue.js, HTML, CSS, Django.py, PostgresSQL",
+            image: geonomix
         }, {
             name: "Qonys Toi",
             link: "https://qonys-toi.netlify.app",
@@ -177,39 +285,16 @@ const info = {
         }, {
             name: "Rento",
             link: "https://rentokz.netlify.app",
-            description: "Startapp project written on react with own admin panel for both users and hosts, and also simple users. Online service for booking sport facilities. Website has phone number verification before registering the user and resetting password.",
+            description: "Онлайн сервис для бронирования и автоматизация для сферы спорта.",
             stack: "React.js, Redux, Firebase",
             image: rento
         }, {
-            name: "New Navat",
-            link: "https://newnavat.kz",
-            description: "Multilingual site of the new, sensational, fifth point of Teahouse Navat, which is located in the city of Almaty. Website is unusual in that each page block is the same size, allowing for the benefits of snap scrolling.",
-            stack: "HTML, JavaScript, CSS, jQuery",
-            image: new_navat
-        }, {
-            name: "Midas EVENT",
-            link: "https://midasevent.kz",
-            description: "A company that organizes various kinds of events. Famous for the organization of the show program in the 'NEBO' and the concert of Irina Kairatovna. Each part of the landing page has its own unusual animation.",
-            stack: "HTML, JavaScript, CSS, jQuery",
-            image: midas_event
-        }, {
+
             name: "Sxodim.kz",
             link: "https://github.com/zhassulaan/sxodim",
             description: "My first full-stack project written in django framework of python and react framework of javascript.",
             stack: "React.js, Django.py",
             image: sxodim
-        }, {
-            name: "M1 Service",
-            link: "https://m1-service.netlify.app",
-            description: "...",
-            stack: "Nuxt.js, SCSS, TypeScript",
-            image: m1_service
-        }, {
-            name: "ЧЕК МАРКЕТ",
-            link: "https://github.com/zhassulaan/check-market",
-            description: "Multi-page site written in next.js. The hardest part of this site is the large number of modals and forms. This company is engaged in consultations, design, sale of equipment, installation and adjustment of security systems, warranty and post-warranty service, technical support.",
-            stack: "Next.js",
-            image: check_market
         }, {
             name: "Art - Galery",
             link: "https://art-galery.netlify.app",
@@ -222,12 +307,6 @@ const info = {
             description: "Application on React, with connecting a crypto wallet and displaying information from the backend.",
             stack: "React.ts, CSS, Typescript",
             image: unistory
-        }, {
-            name: "Torg Soft",
-            link: "https://torgsoft.netlify.app",
-            description: "The site of the Torgsoft company, which is suitable for accounting for both retail and wholesale trade. The program specializes in automating the following areas: clothing and footwear stores; building and household materials stores; children's shops; stationery stores; salons of curtains, fabrics and accessories; enterprises for the production of various products; online stores and warehouses.",
-            stack: "HTML, JavaScript, CSS",
-            image: torgsoft
         }, {
             name: "Korean Clothes Store",
             link: "https://youngsstore.netlify.app",
@@ -266,8 +345,8 @@ const info = {
             image: coffee_boom
         }, {
             name: "Portfolio Website",
-            link: "https://zhassulaan.github.io/Portfolio",
-            description: "Portfolio web-page that introduces me. This project is made to show my abilities and information, such as education, skills and work experience. Thanks to this page, you don't have to download a PDF file and read boring text on one text file.",
+            link: "https://zhassulan.netlify.app",
+            description: "Portfolio web - page that introduces me. This project is made to show my abilities and information, such as education, skills and work experience. Thanks to this page, you don't have to download a PDF file and read boring text on one text file.",
             stack: "HTML, CSS, JavaScript, jQuery",
             image: portfolio
         }
