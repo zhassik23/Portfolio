@@ -461,7 +461,7 @@ const info = {
                 {
                     key: "js",
                     name: "Java Script",
-                    percentage: 96
+                    percentage: 100
                 }, {
                     key: "ts",
                     name: "Type Script",
@@ -469,7 +469,7 @@ const info = {
                 }, {
                     key: "react_next",
                     name: "React / Next .js",
-                    percentage: 92
+                    percentage: 93
                 }, {
                     key: "vue_nuxt",
                     name: "Vue / Nuxt .js",
@@ -477,27 +477,31 @@ const info = {
                 }, {
                     key: "django",
                     name: "Django.py",
-                    percentage: 84
+                    percentage: 75
                 }, {
                     key: "css",
                     name: "CSS",
-                    percentage: 100
-                }, {
-                    key: "scss",
-                    name: "SCSS",
                     percentage: 100
                 }, {
                     key: "sass",
                     name: "SASS",
                     percentage: 100
                 }, {
+                    key: "scss",
+                    name: "SCSS",
+                    percentage: 100
+                }, {
                     key: "less",
                     name: "Less",
-                    percentage: 85
+                    percentage: 95
                 }, {
                     key: "bootstrap",
                     name: "Bootstrap",
-                    percentage: 77
+                    percentage: 79
+                }, {
+                    key: "jquery",
+                    name: "jQuery",
+                    percentage: 75
                 }, {
                     key: "html",
                     name: "HTML",
@@ -520,7 +524,7 @@ const info = {
                 }, {
                     key: "postgres_sql",
                     name: "PostgresSQL",
-                    percentage: 89
+                    percentage: 85
                 }, {
                     key: "sqlite",
                     name: "SQLite",
@@ -535,19 +539,19 @@ const info = {
                 {
                     key: "adobe_photoshop",
                     name: "Adobe Photoshop",
-                    percentage: 88
+                    percentage: 86
                 }, {
                     key: "figma",
                     name: "Figma",
-                    percentage: 95
+                    percentage: 96
                 }, {
                     key: "fusion",
                     name: "Fusion 360°",
-                    percentage: 76
+                    percentage: 75
                 }, {
                     key: "coreldraw",
                     name: "CorelDRAW",
-                    percentage: 76
+                    percentage: 75
                 }
             ]
         }, {
@@ -563,15 +567,18 @@ const info = {
                 }, {
                     key: "kazakh",
                     name: "Kazakh",
-                    level: "Native"
+                    level: "Native",
+                    link: ""
                 }, {
                     key: "russian",
                     name: "Russian",
-                    level: "Fluent"
+                    level: "Fluent",
+                    link: ""
                 }, {
                     key: "turkish",
                     name: "Turkish",
-                    level: "Upper-Intermediate"
+                    level: "Upper-Intermediate",
+                    link: ""
                 }, {
                     key: "chinese",
                     name: "Chinese",
