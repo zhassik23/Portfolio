@@ -19,7 +19,9 @@
             </div>
             
             <div class="tree-row__cell">
-                <h5 class="title">{{ item.title }}</h5>
+                <a :href="item.link">
+                    <h5 class="title">{{ item.title }}</h5>
+                </a>
                 <h6 class="subtitle">{{ item.description }}</h6>
                 <div class="date">
                     <i class="fa-solid fa-calendar-days date-icon"></i>
