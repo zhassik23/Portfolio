@@ -1,9 +1,14 @@
 <template>
-    <div class="skill">
+    <div :id="key" class="skill">
         <div class="skill-data">
-            <h5>{{ name }}</h5>
+            <a :href="link">
+                <h5>{{ name }}</h5>
+            </a>
+
             <p v-if="percentage" class="percentage">{{ percentage }}%</p>
-            <p v-if="level" class="level">{{ level }}</p>
+            <a :href="link">
+                <p v-if="level" class="level">{{ level }}</p>
+            </a>
         </div>
 
         <div class="skill-bar">
@@ -16,7 +21,7 @@
 const props = defineProps({
     skill: Object
 });
-const { name, percentage, level } = props.skill;
+const { name, percentage, level, link } = props.skill;
 </script>
 
 <style lang="sass" scoped>
