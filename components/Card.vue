@@ -8,7 +8,7 @@
             :transparent="true"
             @click="toggleModal(id)"
         />
-        
+
         <Modal
             :id="`modal${id}`"
             :company="company"

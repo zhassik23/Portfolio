@@ -9,7 +9,7 @@
 						</nuxt-link>
 					</li>
 				</ul>
-				
+
 				<div class="home-info">
 					<p class="text">Hello, my name is</p>
 					<h1 class="text">{{ info.name }}</h1>
@@ -21,7 +21,7 @@
 					</nuxt-link>
 				</div>
 			</div>
-		
+
 			<a id="btn_home" href="#about">
 				<Button
 					text="Scroll Down"

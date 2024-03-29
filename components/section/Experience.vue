@@ -2,9 +2,9 @@
 	<Section id="experience" title="Experience" subtitle="My profesional journey">
 		<div class="experience section-content">
 			<Card
-				:key="index"
-				v-for="(item, index) in info.experience"
-				:id="index"
+				:id="info.id"
+				:key="info.id"
+				v-for="item in info.experience"
 				:company="item"
 			/>
 		</div>

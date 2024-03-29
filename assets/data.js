@@ -91,6 +91,7 @@ const info = {
     },
     experience: [
         {
+            id: "kashim",
             name: "TOO «КасХИМ»",
             position: "Intern Software Engineer",
             icon: "fa-solid fa-laptop-code",
@@ -103,6 +104,7 @@ const info = {
                 'Conducted computer diagnostics to investigate issues and provide technical assistance and support, demonstrating a problem-solving mindset and ensuring the smooth operation of web applications.',
             ]
         }, {
+            id: "athena_plus",
             name: "Athena Plus",
             position: "Frontend Developer (React.js, Next.js)",
             icon: "fa-brands fa-react",
@@ -115,6 +117,7 @@ const info = {
                 'Established smooth integration between frontend and backend systems of the website, collaborated closely with Backend Developer to ensure efficient data exchange and contributing to the dynamic and interactive elements of web applications.'
             ]
         }, {
+            id: "a_Lux",
             name: "A - Lux",
             position: "Frontend Developer (Nuxt.js, Vue.js)",
             icon: "fa-brands fa-vuejs",
@@ -127,6 +130,7 @@ const info = {
                 'Worked closely with product managers and other stakeholders to understand project requirements and delivered solutions that met or exceeded expectations.'
             ]
         }, {
+            id: "key_horse",
             name: "Key Horse",
             position: "Full-stack Developer (Vue.js, Django.py, PostgresSQL)",
             icon: "fa-solid fa-server",
