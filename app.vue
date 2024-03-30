@@ -4,14 +4,14 @@
 	<layout-header />
 	<div class="main">
 		<div class="box">
-			<layout-section-home />
-			<layout-section-about />
-			<layout-section-experience />
-			<layout-section-qualification />
-			<layout-section-skills />
-			<layout-section-projects />
-			<layout-section-recomendations />
-			<layout-section-contacts />
+			<section-home />
+			<section-about />
+			<section-experience />
+			<section-qualification />
+			<section-skills />
+			<section-projects />
+			<section-recomendations />
+			<section-contacts />
 		</div>
 	</div>
 	<layout-footer />
