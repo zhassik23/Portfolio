@@ -1,33 +1,28 @@
 <template>
-	<div class="card">
+	<div :id="company.id" class="card">
 		<i :class="`${icon} card-icon`"></i>
 		<h3 class="card-text">{{ name }}</h3>
 		<Button
 			text="View More"
 			icon="fa-solid fa-angle-down"
 			:transparent="true"
-			@click="toggleModal(id)"
+			@click="toggleModal(company.id)"
 		/>
 
-		<Modal
-			:id="`modal${id}`"
-			:company="company"
-			@close="toggleModal(id)"
-		/>
+		<Modal :company="company" @close="toggleModal(company.id)" />
 	</div>
 </template>
 
 <script setup>
 const props = defineProps({
-	id: Number,
-	company: Object,
+	company: Object
 });
 const { name, icon } = props.company;
 const isOpen = ref(false);
 
 function toggleModal(id) {
 	isOpen.value = !isOpen.value;
-	let modal = document.querySelector(`#modal${id}`);
+	let modal = document.querySelector(`#modal-${id}`);
 
 	if (isOpen.value) {
 		modal.classList.add("active");

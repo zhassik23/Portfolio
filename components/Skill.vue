@@ -6,8 +6,8 @@
 			</a>
 
 			<p v-if="percentage" class="percentage">{{ percentage }}%</p>
-			<a :href="link">
-				<p v-if="level" class="level">{{ level }}</p>
+			<a v-if="level" :href="link">
+				<p class="level">{{ level }}</p>
 			</a>
 		</div>
 
@@ -21,7 +21,7 @@
 const props = defineProps({
 	skill: Object
 });
-const { name, percentage, level, link } = props.skill;
+const { key, name, percentage, level, link } = props.skill;
 </script>
 
 <style lang="sass" scoped>

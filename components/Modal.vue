@@ -1,5 +1,5 @@
 <template>
-	<div class="modal">
+	<div :id="`modal-${id}`" class="modal">
 		<div class="modal-background btn" @click="$emit('close')"></div>
 
 		<div class="modal-wrap">
@@ -32,5 +32,5 @@ const props = defineProps({
 	company: Object,
 });
 
-const { name, position, logo, date, responsibilities } = props.company;
+const { id, name, position, logo, date, responsibilities } = props.company;
 </script>

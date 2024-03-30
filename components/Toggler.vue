@@ -1,14 +1,13 @@
 <template>
-	<div class="toggler btn" :class="{ 'active': (active === id) }">
+	<div :id="`toggler-${section}`" class="toggler btn" :class="{ 'active': (active === section) }">
 		<i :class="`${icon} icon`"></i>
-		<h4 class="text">{{ text }}</h4>
+		<h4 class="text">{{ section.charAt(0).toUpperCase() + section.slice(1) }}</h4>
 	</div>
 </template>
 
 <script setup>
 const props = defineProps({
-	id: String,
-	text: String,
+	section: String,
 	icon: String,
 	active: String
 });

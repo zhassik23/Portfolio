@@ -117,7 +117,7 @@ const info = {
 				'Established smooth integration between frontend and backend systems of the website, collaborated closely with Backend Developer to ensure efficient data exchange and contributing to the dynamic and interactive elements of web applications.'
 			]
 		}, {
-			id: "a_Lux",
+			id: "a_lux",
 			name: "A - Lux",
 			position: "Frontend Developer (Nuxt.js, Vue.js)",
 			icon: "fa-brands fa-vuejs",
@@ -458,6 +458,7 @@ const info = {
 	],
 	skills: [
 		{
+			id: "programming_languages",
 			title: "Programming Languages",
 			subtitle: "Aproximately 4 years",
 			icon: "fa-solid fa-code",
@@ -513,6 +514,7 @@ const info = {
 				}
 			]
 		}, {
+			id: "data_base",
 			title: "Data Base",
 			subtitle: "More than 4 years",
 			icon: "fa-solid fa-clapperboard",
@@ -536,6 +538,7 @@ const info = {
 				}
 			]
 		}, {
+			id: "designer",
 			title: "Designer",
 			subtitle: "More than 6 years",
 			icon: "fa-solid fa-object-group",
@@ -559,6 +562,7 @@ const info = {
 				}
 			]
 		}, {
+			id: "languages",
 			title: "Languages",
 			subtitle: "From birth",
 			icon: "fa-solid fa-language",

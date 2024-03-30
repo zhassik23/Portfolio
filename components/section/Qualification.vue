@@ -3,28 +3,26 @@
 		<div class="qualification section-content">
 			<div class="qualification-header">
 				<Toggler
-					id="education"
-					text="Education"
+					:section="sections[0]"
 					icon="fa-solid fa-graduation-cap"
 					:active="active"
-					@click="active = 'education'"
+					@click="active = sections[0]"
 				/>
 				<Toggler
-					id="achievement"
-					text="Achievements"
+					:section="sections[1]"
 					icon="fa-solid fa-briefcase"
 					:active="active"
-					@click="active = 'achievement'"
+					@click="active = sections[1]"
 				/>
 			</div>
 
 			<Tree
-				id="education"
+				:section="sections[0]"
 				:list="info.education"
 				:active="active"
 			/>
 			<Tree
-				id="achievement"
+				:section="sections[1]"
 				:list="info.achievement"
 				:active="active"
 			/>
@@ -35,5 +33,6 @@
 <script setup>
 import info from "assets/data.js";
 
+const sections = ["education", "achievement"];
 const active = ref("education");
 </script>

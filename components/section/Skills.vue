@@ -2,10 +2,11 @@
 	<Section id="skills" title="Skills" subtitle="My abilities">
 		<div class="skills section-content">
 			<div
-				:key="index"
-				v-for="(skill, index) in info.skills"
+				:id="skill.id"
+				:key="skill.id"
+				v-for="skill in info.skills"
 				class="skills-box"
-				:class="{ 'active': active === index }"
+				:class="{ 'active': active === skill.id }"
 			>
 				<div class="skills-box__header">
 					<i :class="`${skill.icon} icon`"></i>
@@ -15,11 +16,15 @@
 						<h6 class="subtitle">{{ skill.subtitle }}</h6>
 					</div>
 
-					<i class="fa-solid fa-angle-down icon btn" @click="active = index"></i>
+					<i class="fa-solid fa-angle-down icon btn" @click="active = skill.id"></i>
 				</div>
 
 				<div class="skills-box__list">
-					<Skill :key="item.key" v-for="item in skill.list" :skill="item" />
+					<Skill
+						:key="item.key"
+						v-for="item in skill.list"
+						:skill="item"
+					/>
 				</div>
 			</div>
 		</div>
@@ -29,5 +34,5 @@
 <script setup>
 import info from "@/assets/data.js";
 
-const active = ref(0);
+const active = ref(info.skills[0].id);
 </script>

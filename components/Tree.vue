@@ -1,12 +1,12 @@
 <template>
-	<div class="tree" :class="{ 'active': (active === id) }">
+	<div :id="`tree-${section}`" class="tree" :class="{ 'active': (active === section) }">
 		<div
 			:key="index"
 			v-for="(item, index) in list"
 			class="tree-row"
 			:class="
-				((index % 2 === 1) && id === 'education') ||
-				((index % 2 === 0) && id === 'achievement')
+				((index % 2 === 1) && section === 'education') ||
+				((index % 2 === 0) && section === 'achievement')
 					? 'right'
 					: 'left'
 			"
@@ -41,7 +41,7 @@
 
 <script setup>
 const props = defineProps({
-	id: String,
+	section: String,
 	list: Array,
 	active: String
 });
