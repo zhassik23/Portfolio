@@ -1,14 +1,14 @@
 <template>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div :key="index" v-for="(item, index) in list" class="carousel-item">
-                <slot :element="item"></slot>
-            </div>
-        </div>
+	<div class="carousel">
+		<div class="carousel-inner">
+			<div :key="index" v-for="(item, index) in list" class="carousel-item">
+				<slot :element="item"></slot>
+			</div>
+		</div>
 
-        <i id="prev" class="fa-regular fa-circle-left icon btn" @click="slider().prevSlide"></i>
-        <i id="next" class="fa-regular fa-circle-right icon btn" @click="slider().nextSlide"></i>
-    </div>
+		<i id="prev" class="fa-regular fa-circle-left icon btn" @click="slider().prevSlide"></i>
+		<i id="next" class="fa-regular fa-circle-right icon btn" @click="slider().nextSlide"></i>
+	</div>
 </template>
 
 <script setup>
@@ -75,19 +75,19 @@ onUnmounted(() => {
 @import "@/assets/sass/_mixins.sass"
 
 .carousel
-    position: relative
-    overflow: hidden
-    &-inner
-        @include aic
-    &-item
-        min-width: 80%
-        margin: 0 10%
-    .icon
-        position: absolute
-        @include center-vertical
-        font-size: 28px
-        &#prev
-            left: 0
-        &#next
-            right: 0
+	position: relative
+	overflow: hidden
+	&-inner
+		@include aic
+	&-item
+		min-width: 80%
+		margin: 0 10%
+	.icon
+		position: absolute
+		@include center-vertical
+		font-size: 28px
+		&#prev
+			left: 0
+		&#next
+			right: 0
 </style>

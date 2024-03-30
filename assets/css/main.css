@@ -662,8 +662,7 @@
   gap: 24px;
   width: 44%;
 }
-.contacts-form .input,
-.contacts-form .textarea {
+.contacts-form .input {
   display: flex;
   flex-direction: column;
   padding: 10px 15px;

@@ -3,13 +3,13 @@
 		<div class="home">
 			<div class="home-wrap">
 				<ul class="home-icons">
-					<li :key="index" v-for="(item, index) in list">
+					<li :key="item.id" v-for="item in list">
 						<nuxt-link :to="item.link">
 							<i :class="`${item.icon} icon`"></i>
 						</nuxt-link>
 					</li>
 				</ul>
-				
+
 				<div class="home-info">
 					<p class="text">Hello, my name is</p>
 					<h1 class="text">{{ info.name }}</h1>
@@ -21,7 +21,7 @@
 					</nuxt-link>
 				</div>
 			</div>
-		
+
 			<a id="btn_home" href="#about">
 				<Button
 					text="Scroll Down"
@@ -39,18 +39,23 @@ import info from "@/assets/data.js";
 
 const list = [
 	{
+		id: "github",
 		link: info.links.github,
 		icon: "fa-brands fa-github"
 	}, {
+		id: "linkedin",
 		link: info.links.linkedin,
 		icon: "fa-brands fa-linkedin"
 	}, {
+		id: "gmail",
 		link: info.links.gmail,
 		icon: "fa-solid fa-envelope"
 	}, {
+		id: "telegram",
 		link: info.links.telegram,
 		icon: "fa-brands fa-telegram"
 	}, {
+		id: "phone",
 		link: info.links.phone,
 		icon: "fa-solid fa-phone"
 	}

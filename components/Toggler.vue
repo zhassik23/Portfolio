@@ -1,16 +1,15 @@
 <template>
-    <div class="toggler btn" :class="{ 'active': (active === id) }">
-        <i :class="`${icon} icon`"></i>
-        <h4 class="text">{{ text }}</h4>
-    </div>
+	<div :id="`toggler-${section}`" class="toggler btn" :class="{ 'active': (active === section) }">
+		<i :class="`${icon} icon`"></i>
+		<h4 class="text">{{ section.charAt(0).toUpperCase() + section.slice(1) }}</h4>
+	</div>
 </template>
 
 <script setup>
 const props = defineProps({
-    id: String,
-    text: String,
-    icon: String,
-    active: String
+	section: String,
+	icon: String,
+	active: String
 });
 </script>
 
@@ -19,13 +18,13 @@ const props = defineProps({
 @import "@/assets/sass/_mixins.sass"
 
 .toggler
-    @include aic
-    gap: 8px
-    &:hover,
-    &.active
-        .icon,
-        .text
-            color: $accent
-    .icon
-        font-size: 16px
+	@include aic
+	gap: 8px
+	&:hover,
+	&.active
+		.icon,
+		.text
+			color: $accent
+	.icon
+		font-size: 16px
 </style>
