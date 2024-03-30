@@ -451,7 +451,7 @@ const info = {
 			date: "2022"
 		}, {
 			title: "Bachelor degree",
-			link: "",
+			link: "https://drive.google.com/file/d/18C7FIeKxUVyKwXf2K95jU1TsKytAKB3K",
 			description: "Red diploma",
 			date: "2023"
 		}
