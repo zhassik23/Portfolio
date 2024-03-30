@@ -14,11 +14,33 @@
 			</div>
 			
 			<!-- Form -->
-			<form id="form" @submit="validation($event)" method="post" enctype="text/plain" class="contacts-form">
-				<Input id="name" label="Name - Surname" type="text" placeholder="Name - Surname" v-model="user" />
-				<Input id="contact" label="Contacts" type="text" placeholder="Phone number / Email" v-model="contact" />
-				<Textarea id="message" label="Message" placeholder="Message..." v-model="message" />
-				<Button text="Send Message" icon="fa-solid fa-paper-plane" type="submit" />
+			<form id="form" @submit.prevent="validation" method="post" enctype="text/plain" class="contacts-form">
+				<Input
+					id="name"
+					label="Name - Surname"
+					type="text"
+					placeholder="Name - Surname"
+					v-model="user"
+				/>
+				<Input
+					id="contact"
+					label="Contacts"
+					type="text"
+					placeholder="Phone number / Email"
+					v-model="contact"
+				/>
+				<Input
+					id="message"
+					label="Message"
+					placeholder="Message..."
+					:textarea="true"
+					v-model="message"
+				/>
+				<Button
+					text="Send Message"
+					icon="fa-solid fa-paper-plane"
+					type="submit"
+				/>
 				<p>{{ error }}</p>
 			</form>
 		</div>
