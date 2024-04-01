@@ -689,6 +689,11 @@
     width: 420px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .contacts-form {
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

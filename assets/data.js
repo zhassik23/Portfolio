@@ -10,7 +10,7 @@ import key_horse from "assets/images/logos/key-horse.png";
 import abi_construction from "assets/images/projects/abi-construction.png";
 import age_counter from "assets/images/projects/age-counter.png";
 import art_galery from "assets/images/projects/art-galery.png";
-import asiacreditbank from "assets/images/projects/asiacreditbank.png";
+import asia_credit_bank from "assets/images/projects/asia-credit-bank.png";
 import azm_trade from "assets/images/projects/azm-trade.png";
 import calculator from "assets/images/projects/calculator.png";
 import check_market from "assets/images/projects/check-market.png";
@@ -149,22 +149,22 @@ const info = {
 	],
 	projects: [
 		{
-			name: "Kostyum.kz",
+			name: "Kostyum",
 			link: "https://kostyum.kz",
 			description: "​Kostyum.kz - это Ваш надежный партнёр в мире мужской одежды. Работает в сфере торговли с 1998 года, благодаря высокому качеству товаров и индивидуальному подходу, завоевали широкий круг постоянных клиентов. Основным принципом работы является честность, ответственность и нацеленность на долгосрочное сотрудничество.",
-			stack: "Nuxt.js, Swiper",
+			stack: "Nuxt.js, SCSS, CSS",
 			image: kostyum
 		}, {
 			name: "Сеть аптек «Добрая»",
 			link: "https://dobraya-apteka.kz",
 			description: "Сеть аптек «Добрая» начала свою деятельность в 1995 году в г. Алматы и Алматинской области. Компания всегда двигается в ногу со временем и развиваем онлайн технологии через интернет-аптеку «Добрая», где цены зачастую ниже, чем в наших точках продаж.",
-			stack: "HTML, JS, Bootstrap, jQuery, CSS",
+			stack: "HTML, Bootstrap, JavaScript, jQuery, SCSS, CSS",
 			image: dobraya
 		}, {
 			name: "QazBooking",
 			link: "https://qazbooking.kz",
-			description: "Qazbooking - это сервис онлайн бронирования хостелов и баз отдыха. С его помощью можно легко и удобно запланировать своё путешествие в пару кликов. Не придётся много раз звонить, если линии заняты, или долго ожидать ответа в WhatsApp. Бронирование проходит в онлайн режиме. На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан",
-			stack: "1C Bitrix, PHP (HTML, JS, SASS, CSS), Bootstrap",
+			description: "Qazbooking - это сервис онлайн бронирования хостелов и баз отдыха. С его помощью можно легко и удобно запланировать своё путешествие в пару кликов. Не придётся много раз звонить, если линии заняты, или долго ожидать ответа в WhatsApp. Бронирование проходит в онлайн режиме. На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан.",
+			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
 			image: qazbooking
 		}, {
 			name: "«YAQ» - Альпинист Товаров",
@@ -182,7 +182,7 @@ const info = {
 			name: "Pharmacom",
 			link: "https://pharma.com.kz",
 			description: "Бренд Pharmacom основан в 1996 году. Сегодня оно объединяет Клинику вакцинации в г. Алматы и классическую аптеку в современном формате, представленную сетью из 55 точек продаж в городах Алматы, Астана, Шымкент, Кызылорда, Павлодар и Петропавловск.",
-			stack: "HTML, JS, Bootstrap, jQuery, CSS",
+			stack: "HTML, JavaScript, Bootstrap, jQuery, CSS",
 			image: pharmacom
 		}, {
 			name: "Tahit",
@@ -200,13 +200,13 @@ const info = {
 			name: "Asia Credit Bank",
 			link: "https://asiacreditbank.kz",
 			description: "Контактный центр АО «AsiaCredit Bank (АзияКредит Банк)» обеспечивает дистанционное консультирование юридических и физических лиц. Каждый поступающий звонок регистрируется и оперативно обрабатывается высококвалифицированными специалистами, консультирующими по предоставляемым продуктам и услугам Банка.",
-			stack: "PHP (HTML, JS, SCSS, CSS)",
-			image: asiacreditbank
+			stack: "PHP (HTML, JavaScript, SCSS, CSS)",
+			image: asia_credit_bank
 		}, {
 			name: "ABI Construction",
 			link: "https://abi-construction.kz",
-			description: "ABI Construction является проектно - строительной компанией, специализирующейся на комплексном проектировании и строительстве.",
-			stack: "WordPress, Vue.js, PHP",
+			description: "Abi construction — это проектно-строительная компания, специализирующаяся на комплексном проектировании и строительстве различных объектов, включая жилые и коммерческие здания. Компания предлагает полный цикл работ — от сбора требований и разработки проекта до строительства и отделки.",
+			stack: "WordPress, Vue.js, PHP, SCSS",
 			image: abi_construction
 		}, {
 			name: "Midas Event",
@@ -259,12 +259,12 @@ const info = {
 		}, {
 			name: "Tez Zhet",
 			link: "https://apps.apple.com/sk/app/tezzhet/id6473077229",
-			description: "Приложение для доставки продуктов предоставляет удобный способ заказа еды и товаров из различных магазинов и ресторанов, прямо к вам домой. Откройте приложение, выберите из разнообразных предложений, оформите заказ, и наши курьеры быстро доставят ваш заказ в удобное для вас место. С широким ассортиментом и удобным интерфейсом, мы делаем процесс покупок легким и приятным",
+			description: "Приложение для доставки продуктов предоставляет удобный способ заказа еды и товаров из различных магазинов и ресторанов, прямо к вам домой. Откройте приложение, выберите из разнообразных предложений, оформите заказ, и наши курьеры быстро доставят ваш заказ в удобное для вас место. С широким ассортиментом и удобным интерфейсом, мы делаем процесс покупок легким и приятным.",
 			stack: "Nuxt.js, CSS, SCSS",
 			image: tez_zhet
 		}, {
 			name: "Mobi Event",
-			link: "https://https://mobievent.kz/",
+			link: "https://mobievent.kz",
 			description: "«MobiEvent» - мобильные сервисы и платежи” - знаковое отраслевое событие, посвященное вопросам развития рынка мобильных и электронных финансовых услуг и технологий Казахстана и стран СНГ.",
 			stack: "Nuxt.js",
 			image: mobi_event
@@ -287,7 +287,7 @@ const info = {
 			stack: "Nuxt.js, Swiper",
 			image: ikeruen
 		}, {
-			name: "Korean Clothes Store",
+			name: "Young’s Store",
 			link: "https://youngs-store.netlify.app",
 			description: "Personal website for a shop that sells stylish Korean clothes. Here you can view products, place an order and apply for a job. It's fully responsive, so you can use it on any device.",
 			stack: "HTML, CSS, JavaScript, Bootstrap, jQuery",
@@ -302,7 +302,7 @@ const info = {
 			name: "Азия - Мебель",
 			link: "https://asiamebel.com",
 			description: "​Торгово - сервисная компания. «Азия Мебель» — специализируется на продаже поитных материалов, фурнитуры и инструментов, а также оказывает услуги распила, фрезеровки и закатки пвх.",
-			stack: "1C Bitrix, PHP (HTML, JS, SASS, CSS), Bootstrap",
+			stack: "1C Bitrix, PHP (HTML, JavaScript, SASS, CSS), Bootstrap",
 			image: azm_trade
 		}, {
 			name: "Age Counter",
@@ -326,7 +326,7 @@ const info = {
 			name: "MD Stadt",
 			link: "https://md-stadt.netlify.app",
 			description: "Description: App for tourists of Kazakhstan with beautiful places in our cities. Written in Nuxt 3.",
-			stack: "Nuxt.js, Vue, SCSS, CSS, Typescript",
+			stack: "Nuxt.js, SCSS, CSS, Typescript",
 			image: md_stadt
 		}, {
 			name: "Coffee Boom",
@@ -381,6 +381,18 @@ const info = {
 			title: "Front - End Web Development with React",
 			description: "Coursera",
 			date: "April - 2022"
+		}, {
+			title: "Python (Basic) Certificate",
+			description: "HackerRank",
+			date: "June - 2022"
+		}, {
+			title: "Java (Basic) Certificate",
+			description: "HackerRank",
+			date: "June - 2022"
+		}, {
+			title: "SQL (Basic) Certificate",
+			description: "HackerRank",
+			date: "June - 2022"
 		}
 	],
 	achievement: [
@@ -395,14 +407,14 @@ const info = {
 			description: "III place",
 			date: "2016"
 		}, {
-			title: "Robotics",
-			link: "https://drive.google.com/file/d/1d5cTWh0y8LDrCVYhXj_5GZlXAKT8dGkN",
-			description: "Participation",
-			date: "2017"
-		}, {
 			title: "Regional Olympiad in Informatics",
 			link: "",
 			description: "I place",
+			date: "2017"
+		}, {
+			title: "Robotics",
+			link: "https://drive.google.com/file/d/1d5cTWh0y8LDrCVYhXj_5GZlXAKT8dGkN",
+			description: "Participation",
 			date: "2017"
 		}, {
 			title: "International Competition «Infomatrix»",
@@ -571,26 +583,31 @@ const info = {
 					key: "english",
 					name: "English",
 					level: "Upper-Intermediate",
+					percentage: 80,
 					link: "https://drive.google.com/file/d/1FDTru0F0fmUbImlWmFKx1PQ9QbS0zvqR"
 				}, {
 					key: "kazakh",
 					name: "Kazakh",
 					level: "Native",
+					percentage: 100,
 					link: ""
 				}, {
 					key: "russian",
 					name: "Russian",
 					level: "Fluent",
+					percentage: 95,
 					link: ""
 				}, {
 					key: "turkish",
 					name: "Turkish",
 					level: "Upper-Intermediate",
+					percentage: 80,
 					link: ""
 				}, {
 					key: "chinese",
 					name: "Chinese",
 					level: "Intermediate",
+					percentage: 60,
 					link: "https://drive.google.com/file/d/1Nc2r3H21SrN_16sO473fxIXHeC-gScnL"
 				}
 			]

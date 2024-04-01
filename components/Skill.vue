@@ -5,10 +5,10 @@
 				<h5>{{ name }}</h5>
 			</a>
 
-			<p v-if="percentage" class="percentage">{{ percentage }}%</p>
 			<a v-if="level" :href="link">
 				<p class="level">{{ level }}</p>
 			</a>
+			<p v-else class="percentage">{{ percentage }}%</p>
 		</div>
 
 		<div class="skill-bar">
