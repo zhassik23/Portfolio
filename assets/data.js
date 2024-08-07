@@ -81,11 +81,11 @@ const info = {
 			{
 				cheif: "Mammadov E.",
 				file: recommendation1,
-				description: "TOO «KasHIM» - August, 2021 / Atyrau"
+				description: "TOO «КасХИМ» - August, 2021 / Atyrau"
 			}, {
 				cheif: "Sain S.",
 				file: recommendation2,
-				description: "«Athena plus» - May, 2022 / Almaty"
+				description: "«Athena Plus» - May, 2022 / Almaty"
 			}
 		]
 	},
@@ -98,10 +98,10 @@ const info = {
 			logo: kashim,
 			date: "January, 2021 - March, 2021 / Atyrau",
 			responsibilities: [
-				'Created responsive front-end interfaces using HTML, CSS, and JavaScript, ensuring an aesthetically pleasing User Experience across various devices.',
-				'Transformed design mockups into high-quality, functional code, paying attention to detail, and maintaining consistency with design guidelines.',
-				'Actively participated in daily stand-up meetings and workshops, discussing project progress, challenges, and solutions.',
-				'Conducted computer diagnostics to investigate issues and provide technical assistance and support, demonstrating a problem-solving mindset and ensuring the smooth operation of web applications.',
+				"Created responsive front-end interfaces using HTML, CSS, and JavaScript, ensuring an aesthetically pleasing User Experience across various devices.",
+				"Transformed design mockups into high-quality, functional code, paying attention to detail, and maintaining consistency with design guidelines.",
+				"Actively participated in daily stand-up meetings and workshops, discussing project progress, challenges, and solutions.",
+				"Conducted computer diagnostics to investigate issues and provide technical assistance and support, demonstrating a problem-solving mindset and ensuring the smooth operation of web applications."
 			]
 		}, {
 			id: "athena_plus",
@@ -111,10 +111,10 @@ const info = {
 			logo: athena_plus,
 			date: "June, 2021 - May, 2022 / Almaty",
 			responsibilities: [
-				'Created logos and animations for websites, playing a pivotal role in enhancing overall visual branding and UX.',
-				'Developed and implemented reusable code components for client projects, ensuring functionality and optimal performance.',
+				"Created logos and animations for websites, playing a pivotal role in enhancing overall visual branding and UX.",
+				"Developed and implemented reusable code components for client projects, ensuring functionality and optimal performance.",
 				"Utilized JavaScript framework (React, Next) to translate design concepts into seamless and responsive user interface designs.",
-				'Established smooth integration between frontend and backend systems of the website, collaborated closely with Backend Developer to ensure efficient data exchange and contributing to the dynamic and interactive elements of web applications.'
+				"Established smooth integration between frontend and backend systems of the website, collaborated closely with Backend Developer to ensure efficient data exchange and contributing to the dynamic and interactive elements of web applications."
 			]
 		}, {
 			id: "a_lux",
@@ -124,10 +124,10 @@ const info = {
 			logo: a_lux,
 			date: "March, 2022 - August, 2022 / Almaty",
 			responsibilities: [
-				'Led the front-end development of new projects and contributed significantly to the modernization of existing projects, ensuring adherence to industry best practices.',
-				'Created visually appealing web pages based on design layouts to optimize User Interface (UI) and User Experience (UX).',
-				'Actively participated in design discussions and provided valuable insights to create user-friendly interfaces and interactive components.',
-				'Worked closely with product managers and other stakeholders to understand project requirements and delivered solutions that met or exceeded expectations.'
+				"Led the front-end development of new projects and contributed significantly to the modernization of existing projects, ensuring adherence to industry best practices.",
+				"Created visually appealing web pages based on design layouts to optimize User Interface (UI) and User Experience (UX).",
+				"Actively participated in design discussions and provided valuable insights to create user-friendly interfaces and interactive components.",
+				"Worked closely with product managers and other stakeholders to understand project requirements and delivered solutions that met or exceeded expectations."
 			]
 		}, {
 			id: "key_horse",
@@ -135,15 +135,15 @@ const info = {
 			position: "Full-stack Developer (Vue.js, Django.py, PostgresSQL)",
 			icon: "fa-solid fa-server",
 			logo: key_horse,
-			date: "June, 2022 - February, 2024 / Almaty",
+			date: "June, 2022 - June, 2024 / Almaty",
 			responsibilities: [
-				'Contributed significantly to the end-to-end development of internal projects and company tools.',
-				'Collaborated with stakeholders to understand business requirements and translated them into technical solutions.',
-				'Mentored junior team members, conducted code reviews, and actively participated in knowledge-sharing sessions.',
-				'Enhanced service functionality by adding and implementing new utility features, optimizing overall performance, and addressing user feedback.',
-				'Developed and maintained API for various forms, catalogs, and interactive components.',
-				'Documented each step of the development procedure, providing comprehensive guides for future maintenance and facilitating knowledge transfer within the team.',
-				'Proactively identified and resolved errors/bugs during the layout phase.'
+				"Contributed significantly to the end-to-end development of internal projects and company tools.",
+				"Collaborated with stakeholders to understand business requirements and translated them into technical solutions.",
+				"Mentored junior team members, conducted code reviews, and actively participated in knowledge-sharing sessions.",
+				"Enhanced service functionality by adding and implementing new utility features, optimizing overall performance, and addressing user feedback.",
+				"Developed and maintained API for various forms, catalogs, and interactive components.",
+				"Documented each step of the development procedure, providing comprehensive guides for future maintenance and facilitating knowledge transfer within the team.",
+				"Proactively identified and resolved errors/bugs during the layout phase."
 			]
 		}
 	],
